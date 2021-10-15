@@ -9,19 +9,40 @@
    skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.1/könsidentitet>;
    skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersoner> .
 
-<https://queerlit.dh.gu.se/qlit/0.1/äldreLesbiska> a skos:Concept;
-   dc:identifier "äldreLesbiska";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   rdfs:comment "Lesbiska över medelålder - enligt WHO används oftast 60 eller 65 år som undre gräns, men begreppet kan användas mer relativt.";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.1/äldreHBTQIPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.1/lesbiska>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.1/kön>;
+<https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersoner> a skos:Concept;
+   dc:identifier "HBTQIPersoner";
+   dc:issued "2021-06-08"^^xsd:date;
+   dc:modified "2021-06-21"^^xsd:date;
+   rdfs:comment "Personer som identifierar sig som, eller av andra identifieras som, homosexuella, bisexuella, transpersoner, queera och/eller intersexpersoner.";
+   skos:altLabel "HBT-personer",
+     "HBTQ-personer",
+     "Sexuella minoriteter";
+   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersoner>;
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.1>;
-   skos:prefLabel "Äldre lesbiska";
-   skos:exactMatch <http://homosaurus.org/v2/olderLesbians>,
-     <https://id.loc.gov/authorities/subjects/sh86004768.html> .
+   skos:narrower <https://queerlit.dh.gu.se/qlit/0.1/kvinnorSomHarSexMedKvinnor>,
+     <https://queerlit.dh.gu.se/qlit/0.1/mänSomHarSexMedMän>,
+     <https://queerlit.dh.gu.se/qlit/0.1/fysisktFunktionshindradeHBTQIPersoner>,
+     <https://queerlit.dh.gu.se/qlit/0.1/pansexuellaPersoner>,
+     <https://queerlit.dh.gu.se/qlit/0.1/HBTQIAktivister>,
+     <https://queerlit.dh.gu.se/qlit/0.1/bisexuellaPersoner>,
+     <https://queerlit.dh.gu.se/qlit/0.1/ateisterHBTQI>,
+     <https://queerlit.dh.gu.se/qlit/0.1/artisterHBTQI>,
+     <https://queerlit.dh.gu.se/qlit/0.1/bögar>,
+     <https://queerlit.dh.gu.se/qlit/0.1/lesbiska>,
+     <https://queerlit.dh.gu.se/qlit/0.1/queeraPersoner>,
+     <https://queerlit.dh.gu.se/qlit/0.1/skådespelareHBTQI>,
+     <https://queerlit.dh.gu.se/qlit/0.1/hemlösaHBTQIPersoner>,
+     <https://queerlit.dh.gu.se/qlit/0.1/älskareHBTQI>,
+     <https://queerlit.dh.gu.se/qlit/0.1/migranterHBTQI>,
+     <https://queerlit.dh.gu.se/qlit/0.1/musikerHBTQI>,
+     <https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersonerIAvvänjning>,
+     <https://queerlit.dh.gu.se/qlit/0.1/fångarHBTQI>,
+     <https://queerlit.dh.gu.se/qlit/0.1/brottsofferHBTQI>,
+     <https://queerlit.dh.gu.se/qlit/0.1/krigsofferHBTQI>,
+     <https://queerlit.dh.gu.se/qlit/0.1/äldreHBTQIPersoner>,
+     <https://queerlit.dh.gu.se/qlit/0.1/transpersoner>;
+   skos:prefLabel "HBTQI-personer";
+   skos:closeMatch <http://homosaurus.org/v2/LGBTQPeople> .
 
 <https://queerlit.dh.gu.se/qlit/0.1/femmes> a skos:Concept;
    dc:identifier "femmes";
@@ -60,41 +81,6 @@
    skos:related <https://queerlit.dh.gu.se/qlit/0.1/lesbiska>;
    skos:exactMatch <http://homosaurus.org/v2/dykes> .
 
-<https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersoner> a skos:Concept;
-   dc:identifier "HBTQIPersoner";
-   dc:issued "2021-06-08"^^xsd:date;
-   dc:modified "2021-06-21"^^xsd:date;
-   rdfs:comment "Personer som identifierar sig som, eller av andra identifieras som, homosexuella, bisexuella, transpersoner, queera och/eller intersexpersoner.";
-   skos:altLabel "HBT-personer",
-     "HBTQ-personer",
-     "Sexuella minoriteter";
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.1>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.1/kvinnorSomHarSexMedKvinnor>,
-     <https://queerlit.dh.gu.se/qlit/0.1/mänSomHarSexMedMän>,
-     <https://queerlit.dh.gu.se/qlit/0.1/fysisktFunktionshindradeHBTQIPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.1/pansexuellaPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.1/HBTQIAktivister>,
-     <https://queerlit.dh.gu.se/qlit/0.1/bisexuellaPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.1/ateisterHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.1/artisterHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.1/bögar>,
-     <https://queerlit.dh.gu.se/qlit/0.1/lesbiska>,
-     <https://queerlit.dh.gu.se/qlit/0.1/queeraPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.1/skådespelareHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.1/hemlösaHBTQIPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.1/älskareHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.1/migranterHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.1/musikerHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersonerIAvvänjning>,
-     <https://queerlit.dh.gu.se/qlit/0.1/fångarHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.1/brottsofferHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.1/krigsofferHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.1/äldreHBTQIPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.1/transpersoner>;
-   skos:prefLabel "HBTQI-personer";
-   skos:closeMatch <http://homosaurus.org/v2/LGBTQPeople> .
-
 <https://queerlit.dh.gu.se/qlit/0.1/kvinnor> a skos:Concept;
    dc:identifier "kvinnor";
    dc:issued "2019-05-14"^^xsd:date;
@@ -118,40 +104,6 @@
      <https://queerlit.dh.gu.se/qlit/0.1/transpersoner>;
    skos:exactMatch <http://homosaurus.org/v2/women>,
      <https://id.loc.gov/authorities/subjects/sh85147274.html> .
-
-<https://queerlit.dh.gu.se/qlit/0.1/läppstiftslesbiska> a skos:Concept;
-   dc:identifier "läppstiftslesbiska";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   rdfs:comment "Lesbiska med utpräglat feminin stil.";
-   skos:altLabel "Lipstick lesbians";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.1/lesbiska>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.1/kön>,
-     <https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.1>;
-   skos:prefLabel "Läppstiftslesbiska";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.1/femmes>,
-     <https://queerlit.dh.gu.se/qlit/0.1/passeraKön>;
-   skos:exactMatch <http://homosaurus.org/v2/lipstickLesbians> .
-
-<https://queerlit.dh.gu.se/qlit/0.1/lesbiskaFlickor> a skos:Concept;
-   dc:identifier "lesbiskaFlickor";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   rdfs:comment "Lesbiska under 15 år. Kan användas mer relativt för att beskriva personer som ej genomgått puberteten.";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.1/HBTQIBarn>,
-     <https://queerlit.dh.gu.se/qlit/0.1/ungdomarLesbiskaOchBögar>,
-     <https://queerlit.dh.gu.se/qlit/0.1/flickor>,
-     <https://queerlit.dh.gu.se/qlit/0.1/ungaLesbiska>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.1/familjemedlemmar>,
-     <https://queerlit.dh.gu.se/qlit/0.1/ungdomar>,
-     <https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.1>;
-   skos:prefLabel "Lesbiska flickor";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.1/lesbiskaKaraktärer>,
-     <https://queerlit.dh.gu.se/qlit/0.1/lesbiska>,
-     <https://queerlit.dh.gu.se/qlit/0.1/lesbiskIdentitet>;
-   skos:exactMatch <http://homosaurus.org/v2/lesbianGirls> .
 
 <https://queerlit.dh.gu.se/qlit/0.1/lesbiska> a skos:Concept;
    dc:identifier "lesbiska";
@@ -191,6 +143,40 @@
      <https://queerlit.dh.gu.se/qlit/0.1/lesbiskGemenskap>;
    skos:exactMatch <http://homosaurus.org/v2/lesbians>,
      <https://id.loc.gov/authorities/subjects/sh85076160.html> .
+
+<https://queerlit.dh.gu.se/qlit/0.1/lesbiskaFlickor> a skos:Concept;
+   dc:identifier "lesbiskaFlickor";
+   dc:issued "2019-05-14"^^xsd:date;
+   dc:modified "2019-05-14"^^xsd:date;
+   rdfs:comment "Lesbiska under 15 år. Kan användas mer relativt för att beskriva personer som ej genomgått puberteten.";
+   skos:broader <https://queerlit.dh.gu.se/qlit/0.1/HBTQIBarn>,
+     <https://queerlit.dh.gu.se/qlit/0.1/ungdomarLesbiskaOchBögar>,
+     <https://queerlit.dh.gu.se/qlit/0.1/flickor>,
+     <https://queerlit.dh.gu.se/qlit/0.1/ungaLesbiska>;
+   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.1/familjemedlemmar>,
+     <https://queerlit.dh.gu.se/qlit/0.1/ungdomar>,
+     <https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersoner>;
+   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.1>;
+   skos:prefLabel "Lesbiska flickor";
+   skos:related <https://queerlit.dh.gu.se/qlit/0.1/lesbiskaKaraktärer>,
+     <https://queerlit.dh.gu.se/qlit/0.1/lesbiska>,
+     <https://queerlit.dh.gu.se/qlit/0.1/lesbiskIdentitet>;
+   skos:exactMatch <http://homosaurus.org/v2/lesbianGirls> .
+
+<https://queerlit.dh.gu.se/qlit/0.1/läppstiftslesbiska> a skos:Concept;
+   dc:identifier "läppstiftslesbiska";
+   dc:issued "2019-05-14"^^xsd:date;
+   dc:modified "2019-05-14"^^xsd:date;
+   rdfs:comment "Lesbiska med utpräglat feminin stil.";
+   skos:altLabel "Lipstick lesbians";
+   skos:broader <https://queerlit.dh.gu.se/qlit/0.1/lesbiska>;
+   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.1/kön>,
+     <https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersoner>;
+   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.1>;
+   skos:prefLabel "Läppstiftslesbiska";
+   skos:related <https://queerlit.dh.gu.se/qlit/0.1/femmes>,
+     <https://queerlit.dh.gu.se/qlit/0.1/passeraKön>;
+   skos:exactMatch <http://homosaurus.org/v2/lipstickLesbians> .
 
 <https://queerlit.dh.gu.se/qlit/0.1/män> a skos:Concept;
    dc:identifier "män";
@@ -245,3 +231,17 @@
      <https://queerlit.dh.gu.se/qlit/0.1/ungdomslitteraturLesbiska>;
    skos:exactMatch <http://homosaurus.org/v2/lesbianYouth>,
      <http://id.loc.gov/authorities/subjects/sh95001078> .
+
+<https://queerlit.dh.gu.se/qlit/0.1/äldreLesbiska> a skos:Concept;
+   dc:identifier "äldreLesbiska";
+   dc:issued "2019-05-14"^^xsd:date;
+   dc:modified "2019-05-14"^^xsd:date;
+   rdfs:comment "Lesbiska över medelålder - enligt WHO används oftast 60 eller 65 år som undre gräns, men begreppet kan användas mer relativt.";
+   skos:broader <https://queerlit.dh.gu.se/qlit/0.1/äldreHBTQIPersoner>,
+     <https://queerlit.dh.gu.se/qlit/0.1/lesbiska>;
+   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersoner>,
+     <https://queerlit.dh.gu.se/qlit/0.1/kön>;
+   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.1>;
+   skos:prefLabel "Äldre lesbiska";
+   skos:exactMatch <http://homosaurus.org/v2/olderLesbians>,
+     <https://id.loc.gov/authorities/subjects/sh86004768.html> .

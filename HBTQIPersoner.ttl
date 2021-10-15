@@ -1,0 +1,40 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://queerlit.se/qlit/HBTQIPersoner> a skos:Concept;
+   dc:identifier "HBTQIPersoner";
+   dc:issued "2021-06-08"^^xsd:date;
+   dc:modified "2021-06-21"^^xsd:date;
+   rdfs:comment "Personer som identifierar sig som, eller av andra identifieras som, homosexuella, bisexuella, transpersoner, queera och/eller intersexpersoner.";
+   skos:altLabel "HBT-personer",
+     "HBTQ-personer",
+     "Sexuella minoriteter";
+   skos:hasTopConcept <http://queerlit.se/qlit/HBTQIPersoner>;
+   skos:inScheme <http://queerlit.se/termer>;
+   skos:narrower <http://queerlit.se/qlit/kvinnorSomHarSexMedKvinnor>,
+     <http://queerlit.se/qlit/mänSomHarSexMedMän>,
+     <http://queerlit.se/qlit/fysisktFunktionshindradeHBTQIPersoner>,
+     <http://queerlit.se/qlit/pansexuellaPersoner>,
+     <http://queerlit.se/qlit/HBTQIAktivister>,
+     <http://queerlit.se/qlit/bisexuellaPersoner>,
+     <http://queerlit.se/qlit/ateisterHBTQI>,
+     <http://queerlit.se/qlit/artisterHBTQI>,
+     <http://queerlit.se/qlit/bögar>,
+     <http://queerlit.se/qlit/lesbiska>,
+     <http://queerlit.se/qlit/queeraPersoner>,
+     <http://queerlit.se/qlit/skådespelareHBTQI>,
+     <http://queerlit.se/qlit/hemlösaHBTQIPersoner>,
+     <http://queerlit.se/qlit/älskareHBTQI>,
+     <http://queerlit.se/qlit/migranterHBTQI>,
+     <http://queerlit.se/qlit/musikerHBTQI>,
+     <http://queerlit.se/qlit/HBTQIPersonerIAvvänjning>,
+     <http://queerlit.se/qlit/fångarHBTQI>,
+     <http://queerlit.se/qlit/brottsofferHBTQI>,
+     <http://queerlit.se/qlit/krigsofferHBTQI>,
+     <http://queerlit.se/qlit/äldreHBTQIPersoner>,
+     <http://queerlit.se/qlit/transpersoner>;
+   skos:prefLabel "HBTQI-personer";
+   skos:closeMatch <http://homosaurus.org/v2/LGBTQPeople> .

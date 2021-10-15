@@ -1,0 +1,4 @@
+<https://queerlit.dh.gu.se/qlit/0.1> a skos:ConceptScheme;
+   skos:prefLabel "Queerlit"@sv;
+   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.1/könsidentitet>;
+   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.1/HBTQIPersoner> .
