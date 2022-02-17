@@ -47,3 +47,7 @@ def remove_broken_links_all(quiet=False, inplace=False):
             os.makedirs('out', exist_ok=True)
             with open('out/' + fn, 'w') as f:
                 f.write(remove_broken_links(fn, quiet))
+
+
+if __name__ == '__main__':
+    remove_broken_links_all()
