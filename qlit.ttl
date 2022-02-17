@@ -2928,29 +2928,6 @@
      <http://id.loc.gov/authorities/subjects/sh85081304>,
      <https://id.kb.se/term/sao/Civilst%C3%A5nd> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/crossdressing> a skos:Concept;
-   dc:identifier "crossdressing";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av personer som, tillfälligt eller genomgående och oavsett anledning, bär kläder som associeras med ett annat kön än det de identifierar sig som. För skildringar av personer som själva identifierar sig som, eller av andra identifieras som, transvestiter, använd termen "Transvestiter".";
-   skos:altLabel "Crossdressers";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/könsuttryck>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/kön>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Crossdressing";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/kläder>,
-     <https://queerlit.dh.gu.se/qlit/0.2/kabuki>,
-     <https://queerlit.dh.gu.se/qlit/0.2/transvestism>,
-     <https://queerlit.dh.gu.se/qlit/0.2/underkläder>,
-     <https://queerlit.dh.gu.se/qlit/0.2/eonism>,
-     <https://queerlit.dh.gu.se/qlit/0.2/dragartister>,
-     <https://queerlit.dh.gu.se/qlit/0.2/dragqueens>,
-     <https://queerlit.dh.gu.se/qlit/0.2/dragkings>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000318>,
-     <http://id.loc.gov/authorities/subjects/sh85137104>,
-     <https://id.kb.se/term/sao/Crossdressing>,
-     <https://id.kb.se/term/barn/Crossdressing> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/cruising> a skos:Concept;
    dc:identifier "cruising";
    dc:issued "2019-05-14"^^xsd:date;
@@ -3036,38 +3013,6 @@
    skos:exactMatch <https://homosaurus.org/v3/homoit0000325>,
      <http://id.loc.gov/authorities/subjects/sh96001657>,
      <https://id.kb.se/term/sao/Cybersex> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/damimitatörer> a skos:Concept;
-   dc:identifier "damimitatörer";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Historisk term för sång- och dansartist motsvarande dagens dragqueens.";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/teaterHBTQI>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/teaterHBTQI>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Damimitatörer";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/dragqueens>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000431>,
-    <http://id.loc.gov/authorities/subjects/sh85064634>
-   skos:closeMatch <https://id.kb.se/term/sao/M%C3%A4n%20i%20kvinnokl%C3%A4der%20p%C3%A5%20scenen>,
-   <https://id.kb.se/term/sao/M%C3%A4n%20i%20kvinnokl%C3%A4der%20i%20filmen> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/dandyer> a skos:Concept;
-   dc:identifier "dandyer";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Män med raffinerad "feminin" klädsel och uppträdande. Kännetecknas av ett världsvant och elegant sätt.";
-   skos:altLabel "Dandies";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/historiskaTermerHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellIdentitet>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/historiskaTermerHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellIdentitet>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Dandyer";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/dandyism>,
-     <https://queerlit.dh.gu.se/qlit/0.2/könsuttryck>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000326>,
-   <https://id.kb.se/term/sao/Dandyer> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/dandyism> a skos:Concept;
    dc:identifier "dandyism";
@@ -3164,22 +3109,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/megasexualitet>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000343> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/demisexuella> a skos:Concept;
-   dc:identifier "demisexuella";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "En demisexuell person kan endast utveckla sexuell attraktion till någon efter att ha skapat ett starkt känslomässigt band till personen";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/sexuellIdentitet>,
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/sexuellIdentitet>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Demisexuella";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/sexuellaRelationer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/känslorHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/asexuella>,
-     <https://queerlit.dh.gu.se/qlit/0.2/megasexuella>,
-     <https://queerlit.dh.gu.se/qlit/0.2/demisexualitet>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000344> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/demonstrationerHBTQI> a skos:Concept;
    dc:identifier "demonstrationerHBTQI";
    dc:issued "2019-05-14"^^xsd:date;
@@ -3237,23 +3166,6 @@
    skos:prefLabel "Disciplinbollar";
    skos:related <https://queerlit.dh.gu.se/qlit/0.2/BDSM>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000093> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/diskretion> a skos:Concept;
-   dc:identifier "diskretion";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Hemlighållande"
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Diskretion";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/garderobsbögar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/garderobslesbiska>,
-     <https://queerlit.dh.gu.se/qlit/0.2/kommaUt>,
-     <https://queerlit.dh.gu.se/qlit/0.2/outning>,
-     <https://queerlit.dh.gu.se/qlit/0.2/stealthTranspersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/garderobsbisexuella>;
-   skos:closeMatch <https://homosaurus.org/v3/homoit0001261>,
-     <http://id.loc.gov/authorities/subjects/sh85119431> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/diskrimineringAvHBTQIPersoner> a skos:Concept;
    dc:identifier "diskrimineringAvHBTQIPersoner";
@@ -3331,20 +3243,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/sadism>,
      <https://queerlit.dh.gu.se/qlit/0.2/undergivna>;
    skos:closeMatch <https://homosaurus.org/v3/homoit0000363> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/domstolsbeslut> a skos:Concept;
-   dc:identifier "domstolsbeslut";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/officiellDokumentation>,
-     <https://queerlit.dh.gu.se/qlit/0.2/juridik>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/rättsstatus>,
-     <https://queerlit.dh.gu.se/qlit/0.2/juridik>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Domstolsbeslut";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/körkort>,
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000311> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/donatorerMedicin> a skos:Concept;
    dc:identifier "donatorerMedicin";
@@ -3470,30 +3368,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/sexuellIdentitet>,
      <https://queerlit.dh.gu.se/qlit/0.2/dragbaler>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000370> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/dragkings> a skos:Concept;
-   dc:identifier "dragkings";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Drag kings",
-     "Drag-kings",
-     "Dragkungar",
-     "Drag-kungar";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/dragartister>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/dragartister>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/dragpappor>,
-     <https://queerlit.dh.gu.se/qlit/0.2/dragmammor>;
-   skos:prefLabel "Dragkings";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/dragfamiljer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/dragqueens>,
-     <https://queerlit.dh.gu.se/qlit/0.2/herrimitatörer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/draggemenskaper>,
-     <https://queerlit.dh.gu.se/qlit/0.2/crossdressing>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000373>,
-     <http://id.loc.gov/authorities/subjects/sh2021001446> 
-   skos:closeMatch <https://id.kb.se/term/sao/Kvinnor%20i%20manskl%C3%A4der%20p%C3%A5%20scenen>.
 
 <https://queerlit.dh.gu.se/qlit/0.2/dragmammor> a skos:Concept;
    dc:identifier "dragmammor";
@@ -3794,19 +3668,6 @@
    skos:related <https://queerlit.dh.gu.se/qlit/0.2/könsorgan>,
      <https://queerlit.dh.gu.se/qlit/0.2/partialism>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000401> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/erotik> a skos:Concept;
-   dc:identifier "erotik";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar med estetiska kvaliteter avsedda att framkallar sexuella känslor. Verk där denna aspekt är övervägande indexeras också med SAOGF-termen "Erotiska skildringar". Kan också användas för betraktelser över sexuellt begär och sensualism.";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Erotik";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/kroppsligNärhet>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellUpphetsning>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexualitet>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000404>,
-   <https://id.kb.se/term/sao/Erotik> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/erotiskMassage> a skos:Concept;
    dc:identifier "erotiskMassage";
@@ -4402,45 +4263,6 @@
    skos:related <https://queerlit.dh.gu.se/qlit/0.2/adoptivföräldrarHBTQI>;
    skos:closeMatch <https://homosaurus.org/v3/homoit0000872> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/föräldrarHBTQI> a skos:Concept;
-   dc:identifier "föräldrarHBTQI";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/familjemedlemmar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIFamiljer>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/familjemedlemmar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIFamiljer>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillBisexuella>,
-     <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillQueeraPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/queeraFöräldrar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/bisexuellaFöräldrar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/mammor>,
-     <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillHomosexuella>,
-     <https://queerlit.dh.gu.se/qlit/0.2/homosexuellaFöräldrar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/morOchFarföräldrar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/transföräldrar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/biologiskaFöräldrarHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/medföräldrarHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/fosterföräldrarHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillTranspersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/ensamståendeFöräldrarHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/pappor>,
-     <https://queerlit.dh.gu.se/qlit/0.2/biologiskaFöräldrarHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/adoptivföräldrarHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/adoptivföräldrar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/biologiskaFöräldrar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillIntersexpersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/intersexföräldrar>;
-   skos:prefLabel "Föräldrar (HBTQI)";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/fosterfamiljerHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/familjeplaneringHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIAdoption>,
-     <https://queerlit.dh.gu.se/qlit/0.2/föräldrarätt>
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIBarn>;;
-   skos:closeMatch <https://homosaurus.org/v3/homoit0001075> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillBisexuella> a skos:Concept;
    dc:identifier "föräldrarTillBisexuella";
    dc:issued "2019-05-14"^^xsd:date;
@@ -4476,25 +4298,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/bögar>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000509>;
    skos:closeMatch <http://id.loc.gov/authorities/subjects/sh90005864> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillHomosexuella> a skos:Concept;
-   dc:identifier "föräldrarTillHomosexuella";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av föräldrar till homosexuella, oavsett biologiskt släktskap.";
-   skos:altLabel "Homosexuellas föräldrar";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/föräldrarHBTQI>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/familjemedlemmar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIFamiljer>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillBögar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillLesbiska>,
-     <https://queerlit.dh.gu.se/qlit/0.2/mammorTillHomosexuella>,
-     <https://queerlit.dh.gu.se/qlit/0.2/papporTillHomosexuella>;
-   skos:prefLabel "Föräldrar till homosexuella";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/homosexuella>,
-     <https://queerlit.dh.gu.se/qlit/0.2/homosexuellaBarn> 
-   skos:exactMatch: <https://id.kb.se/term/sao/F%C3%B6r%C3%A4ldrar%20till%20homosexuella>.
 
 <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillIntersexpersoner> a skos:Concept;
    dc:identifier "föräldrarTillIntersexpersoner";
@@ -4856,21 +4659,6 @@
    skos:exactMatch <https://homosaurus.org/v3/homoit0000460>,
      <http://id.loc.gov/authorities/subjects/sh93002802> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/garderobsbisexuella> a skos:Concept;
-   dc:identifier "garderobsbisexuella";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av bisexuella personer som hemlighåller eller inte offentliggör sin sexuella läggning.";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/bisexuella>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/garderobsbisexuellaPerifert>;
-   skos:prefLabel "Garderobsbisexuella";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/kommaUt>,
-     <https://queerlit.dh.gu.se/qlit/0.2/outning>,
-     <https://queerlit.dh.gu.se/qlit/0.2/diskretion>,
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000285> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/garderobsbisexuellaPerifert> a skos:Concept;
    dc:identifier "garderobsbisexuellaPerifert";
    dc:issued "2019-05-14"^^xsd:date;
@@ -4898,18 +4686,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/outning>,
      <https://queerlit.dh.gu.se/qlit/0.2/diskretion>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000286> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/garderobsbögarPerifert> a skos:Concept;
-   dc:identifier "garderobsbögarPerifert";
-   dc:issued "2021-06-08"^^xsd:date;
-   dc:modified "2021-06-21"^^xsd:date;
-   skos:scopeNote "Används för skildringar där personer som hemlighåller eller inte offentliggör sin sexuella läggning har en perifer betydelse för verket.";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/garderobsbögar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/bögarPerifert>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/kön>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Garderobsbögar – perifert"> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/garderobslesbiska> a skos:Concept;
    dc:identifier "garderobslesbiska";
@@ -5177,18 +4953,6 @@
    skos:exactMatch <https://homosaurus.org/v3/homoit0000608>,
     <http://id.loc.gov/authorities/subjects/sh85058662> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/harness> a skos:Concept;
-   dc:identifier "harness";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Selar (BDSM)"
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/sexhjälpmedel>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/sexhjälpmedel>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Harness";
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000612> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/hatbrott> a skos:Concept;
    dc:identifier "hatbrott";
    dc:issued "2019-05-14"^^xsd:date;
@@ -5358,21 +5122,6 @@
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
    skos:prefLabel "Hermafroditer";
    skos:related <https://queerlit.dh.gu.se/qlit/0.2/intersexpersoner> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/herrimitatörer> a skos:Concept;
-   dc:identifier "herrimitatörer";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/teaterHBTQI>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/teaterHBTQI>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Herrimitatörer";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/dragkings>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000983>,
-    <http://id.loc.gov/authorities/subjects/sh85064636>
-   skos:closeMatch <https://id.kb.se/term/sao/Kvinnor%20i%20manskl%C3%A4der%20p%C3%A5%20scenen>,
-   <https://id.kb.se/term/sao/Kvinnor%20i%20manskl%C3%A4der%20i%20filmen> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/heterofeminism> a skos:Concept;
    dc:identifier "heterofeminism";
@@ -5636,26 +5385,6 @@
      <http://id.loc.gov/authorities/subjects/sh85002541>,
      <http://id.loc.gov/authorities/subjects/sh91004036> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/hivAidsaktivister> a skos:Concept;
-   dc:identifier "hivAidsaktivister";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av aktivister med fokus på hiv- och aids-frågor, som rätt till sjukvård och läkemedel och mot förtryck av och fördomar mot aidssjuka och personer som lever med hiv.";
-   skos:altLabel "Aids-aktivister",
-     "Aidsaktivister"
-     "Hiv-aktivister",
-     "Hivaktivister",
-     "Hiv-/aids-aktivister";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/HBTQIAktivister>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/hivAidsaktivisterPerifert>;
-   skos:prefLabel "Hiv-/aidsaktivister";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/hivAids>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIRörelser>,
-   skos:closeMatch <https://homosaurus.org/v3/homoit0000024>,
-     <http://id.loc.gov/authorities/subjects/sh93005197> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/hivAidsaktivisterPerifert> a skos:Concept;
    dc:identifier "hivAidsaktivisterPerifert";
    dc:issued "2019-05-14"^^xsd:date;
@@ -5800,40 +5529,6 @@
    skos:prefLabel "Homosexuella barn – perifert";
    skos:related <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillHomosexuella> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/homosexuellaFamiljer> a skos:Concept;
-   dc:identifier "homosexuellaFamiljer";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av familjer bestående av vuxna homosexuella som lever med sina barn.";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/HBTQIFamiljer>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/HBTQIFamiljer>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaFamiljer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/bögfamiljer>;
-   skos:prefLabel "Homosexuella familjer"
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/barnTillHomosexuella>,
-     <https://queerlit.dh.gu.se/qlit/0.2/homosexuellaFöräldrar> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/homosexuellaFöräldrar> a skos:Concept;
-   dc:identifier "homosexuellaFöräldrar";
-   dc:issued "2021-06-08"^^xsd:date;
-   dc:modified "2021-06-21"^^xsd:date;
-   skos:scopeNote "Används för skildringar av homosexuella som, ensamma eller tillsammans med andra, är föräldrar.";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/föräldrarHBTQI>,
-    <https://queerlit.dh.gu.se/qlit/0.2/homosexuella>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/familjemedlemmar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIFamiljer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaFöräldrar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/bögföräldrar>
-     <https://queerlit.dh.gu.se/qlit/0.2/homosexuellaFöräldrarPerifert>;
-   skos:prefLabel "Homosexuella föräldrar";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/barnTillHomosexuella>,
-     <https://queerlit.dh.gu.se/qlit/0.2/homosexuellaFamiljer>;
-   skos:exactMatch <https://id.kb.se/term/barn/Homosexuella%20f%C3%B6r%C3%A4ldrar>,
-    <https://id.kb.se/term/sao/Homosexuella%20f%C3%B6r%C3%A4ldrar> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/homosexuellaFöräldrarPerifert> a skos:Concept;
    dc:identifier "homosexuellaFöräldrarPerifert";
    dc:issued "2021-06-08"^^xsd:date;
@@ -5848,20 +5543,6 @@
    skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaFöräldrarPerifert>,
      <https://queerlit.dh.gu.se/qlit/0.2/bögföräldrarPerifert>;
    skos:prefLabel "Homosexuella föräldrar – perifert" .
-
-<https://queerlit.dh.gu.se/qlit/0.2/homosexuellaGemenskaper> a skos:Concept;
-   dc:identifier "homosexuellaGemenskaper";
-   dc:issued "2021-06-08"^^xsd:date;
-   dc:modified "2021-06-21"^^xsd:date;
-   skos:scopeNote "Används för skildringar av sociala gemenskaper där huvudsakligen homosexuella interagerar.";
-   skos:altLabel "Homosexuellt community";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/HBTQIGemenskaper>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/HBTQIGemenskaper>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaGemenskaper>,
-     <https://queerlit.dh.gu.se/qlit/0.2/böggemenskaper>
-   skos:prefLabel "Homosexuella gemenskaper";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/homosexuella> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/homosexuellaPar> a skos:Concept;
    dc:identifier "homosexuellaPar";
@@ -5909,48 +5590,6 @@
    skos:prefLabel "Homosexuella pojkar";
    skos:related <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillBögar>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000479> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/homosexuellaPojkarPerifert> a skos:Concept;
-   dc:identifier "homosexuellaPojkarPerifert";
-   dc:issued "2021-06-08"^^xsd:date;
-   dc:modified "2021-06-21"^^xsd:date;
-   skos:scopeNote "Används för skildringar där bögar under 15 år har en perifer betydelse för verket. Kan användas mer relativt för skildringar av personer som ej genomgått puberteten.";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/homosexuellaPojkar>
-     <https://queerlit.dh.gu.se/qlit/0.2/homosexuellaBarnPerifert>,
-     <https://queerlit.dh.gu.se/qlit/0.2/bögarPerifert>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/barn>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/kön>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Homosexuella pojkar – perifert" .
-
-<https://queerlit.dh.gu.se/qlit/0.2/homosexuellaRelationer> a skos:Concept;
-   dc:identifier "homosexuellaRelationer";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/relationerHBTQI>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/relationerHBTQI>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/bögrelationer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaRelationer>
-   skos:prefLabel "Homosexuella relationer"
-   skos:closeMatch <https://id.kb.se/term/sao/Samk%C3%B6nade%20relationer> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/homosexuellaRörelser> a skos:Concept;
-   dc:identifier "homosexuellaRörelser";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Homo-organisationer",
-     "Organisationer för homosexuella";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/homosexuellaRörelser>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/socialaRörelser>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaRörelser>,
-     <https://queerlit.dh.gu.se/qlit/0.2/bögrörelser>
-   skos:prefLabel "Homosexuella rörelser";
-   skos:exactMatch <http://id.loc.gov/authorities/subjects/sh85053580> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/homosocialitet> a skos:Concept;
    dc:identifier "homosocialitet";
@@ -6007,26 +5646,6 @@
    skos:related <https://queerlit.dh.gu.se/qlit/0.2/turismHBTQI>;
    skos:closeMatch <https://homosaurus.org/v3/homoit0000881> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/hypersexualitet> a skos:Concept;
-   dc:identifier "hypersexualitet";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Nymfomani",
-     "Satyriasis",
-     "Don Juanism",
-     "Furor amatorius",
-     "Furor uterinus",
-     "Översexualitet";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/sexmissbruk>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/sexmissbruk>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/sexuellUpphetsning>;
-   skos:prefLabel "Hypersexualitet";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/sexualitet>,
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000656>,
-   <https://id.kb.se/term/sao/Hypersexualitet> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/hysterektomi> a skos:Concept;
    dc:identifier "hysterektomi";
    dc:issued "2019-05-14"^^xsd:date;
@@ -6049,22 +5668,6 @@
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
    skos:prefLabel "icke-våld (HBTQI)";
    skos:closeMatch <https://homosaurus.org/v3/homoit0000910> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/ickeVitaBisexuella> a skos:Concept;
-   dc:identifier "ickeVitaBisexuella";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Bisexuella POC", 
-   "Bisexuella people of colour",
-   "Bisexuella rasifierade",
-   "Färgade bisexuella";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/ickeVitaHBTQIPersoner>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/etniskaGrupperHBTQI>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/svartaBisexuella>,
-   skos:prefLabel "Icke-vita bisexuella";
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000172> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/ickeVitaBögar> a skos:Concept;
    dc:identifier "ickeVitaBögar";
@@ -6139,22 +5742,6 @@
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
    skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/svartaIntersexpersoner>;
    skos:prefLabel "Icke-vita intersexpersoner" .
-
-<https://queerlit.dh.gu.se/qlit/0.2/ickeVitaLesbiska> a skos:Concept;
-   dc:identifier "ickeVitaLesbiska";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Lesbiska POC", 
-   "Lesbiska people of colour",
-   "Lesbiska rasifierade",
-   "Färgade lesbiska";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/ickeVitaHomosexuella>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/etniskaGrupperHBTQI>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/svartaLesbiska>
-   skos:prefLabel "Icke-vita lesbiska";
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000801> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/ickeVitaTranspersoner> a skos:Concept;
    dc:identifier "ickeVitaTranspersoner";
@@ -6238,22 +5825,6 @@
    skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/sexualundervisning>;
    skos:prefLabel "Informationsförmedling";
    skos:exactMatch <https://homosaurus.org/v3/homoit0000661> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/inseminering> a skos:Concept;
-   dc:identifier "inseminering";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Insemination";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/familjeplaneringHBTQI>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/familjeplaneringHBTQI>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/IVF>,
-     <https://queerlit.dh.gu.se/qlit/0.2/självinseminering>;
-   skos:prefLabel "Inseminering";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/spermadonatorer>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000069>.
-   <https://id.kb.se/term/sao/Insemination> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/intergenerationellaRelationer> a skos:Concept;
    dc:identifier "intergenerationellaRelationer";
@@ -6344,22 +5915,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/intersexpersoner>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000666> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/intersexföräldrar> a skos:Concept;
-   dc:identifier "intersexföräldrar";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/föräldrarHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/intersexpersoner>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/familjemedlemmar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIFamiljer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Intersexföräldrar";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/barnTillIntersexpersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/intersexfamiljer>;
-   skos: exactMatch <https://homosaurus.org/v3/homoit0001763> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/intersexgemenskaper> a skos:Concept;
    dc:identifier "intersexgemenskaper";
    dc:issued "2019-05-14"^^xsd:date;
@@ -6384,32 +5939,6 @@
    skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/relationerHBTQI>;
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
    skos:prefLabel "Intersexpar" .
-
-<https://queerlit.dh.gu.se/qlit/0.2/intersexpersoner> a skos:Concept;
-   dc:identifier "intersexpersoner";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Intersexuella";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/äldreIntersexpersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/intersexbarn>,
-     <https://queerlit.dh.gu.se/qlit/0.2/ungaIntersexpersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/intersexföräldrar>;
-   skos:prefLabel "Intersexpersoner";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/intersextillstånd>,
-     <https://queerlit.dh.gu.se/qlit/0.2/androgynos>,
-     <https://queerlit.dh.gu.se/qlit/0.2/könsstympningAvIntersexpersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillIntersexpersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/förföljelseAvIntersexpersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/intersexgemenskaper>,
-     <https://queerlit.dh.gu.se/qlit/0.2/intersexfobi>,
-     <https://queerlit.dh.gu.se/qlit/0.2/hermafroditer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/passeraKön>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000618>,
-     <http://id.loc.gov/authorities/subjects/sh2007003860> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/intersexrelationer> a skos:Concept;
    dc:identifier "intersexrelationer";
@@ -6436,31 +5965,6 @@
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
    skos:prefLabel "Intersexrörelser";
    skos:exactMatch <https://homosaurus.org/v3/homoit0000672> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/intersextillstånd> a skos:Concept;
-   dc:identifier "intersextillstånd";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Disorders of sexual development",
-     "Differences of sexual development",
-     "Diverse sex development",
-     "DSD",
-     "Rubbningar i könsutvecklingen",
-     "Avvikande könsutveckling",
-     "Varianter av könsutveckling",
-     "Intersexualism";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/medikalisering>,
-     <https://queerlit.dh.gu.se/qlit/0.2/biologisktKön>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/hälsoOchSjukvård>,
-     <https://queerlit.dh.gu.se/qlit/0.2/kön>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Intersextillstånd";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/intersexpersoner>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000669>,
-     <http://id.loc.gov/authorities/subjects/sh85060401> 
-   skos:closeMatch <https://id.kb.se/term/barn/Intersexualism>, 
-   <https://id.kb.se/term/sao/Intersexualism>.
 
 <https://queerlit.dh.gu.se/qlit/0.2/intimitetHBTQI> a skos:Concept;
    dc:identifier "intimitetHBTQI";
@@ -6573,18 +6077,6 @@
    <https://id.kb.se/term/barn/Juridik>, 
    <https://id.kb.se/term/sao/Juridik> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/juridisktKön> a skos:Concept;
-   dc:identifier "juridisktKön";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/kön>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/kön>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Juridiskt kön";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/officiellDokumentation>;
-    <https://queerlit.dh.gu.se/qlit/0.2/tilldelatKönVidFödseln> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/juridisktNamn> a skos:Concept;
    dc:identifier "juridisktNamn";
    dc:issued "2019-05-14"^^xsd:date;
@@ -6627,18 +6119,6 @@
    skos:exactMatch <https://homosaurus.org/v3/homoit0000241>,
      <http://id.loc.gov/authorities/subjects/sh85020752>,
      <https://id.kb.se/term/sao/Kastration> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/katolikerHBTQI> a skos:Concept;
-   dc:identifier "katolikerHBTQI";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av anhängare av romersk-katolska kyrkan, som identifierar sig eller av andra identifieras som homosexuella, bisexuella, transpersoner, queera eller intersexpersoner. Används även för skildringar av andra katolikers förhållningssätt till HBTQI.";
-   skos:altLabel "Papister (HBTQI)"
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/kristnaHBTQI>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/religionHBTQI>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Katoliker (HBTQI)";
-   skos:closeMatch <https://homosaurus.org/v3/homoit0001244> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/känslorHBTQI> a skos:Concept;
    dc:identifier "känslorHBTQI";
@@ -6795,18 +6275,6 @@
     <http://id.loc.gov/authorities/subjects/sh85027558>,
     <https://id.kb.se/term/sao/Kokain> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/kollektivHBTQI> a skos:Concept;
-   dc:identifier "kollektivHBTQI";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/HBTQIGemenskaper>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/HBTQIGemenskaper>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Kollektiv (HBTQI)";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/valdaFamiljerHBTQI>
-   skos:closeMatch <https://homosaurus.org/v3/homoit0000842> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/kommaUt> a skos:Concept;
    dc:identifier "kommaUt";
    dc:issued "2019-05-14"^^xsd:date;
@@ -6825,24 +6293,6 @@
    skos:exactMatch <https://homosaurus.org/v3/homoit0000295>,
    <https://id.kb.se/term/barn/Komma%20ut>;
    skos:closeMatch <http://id.kb.se/term/sao/Komma-ut-processen> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/kompisvårdHBTQI> a skos:Concept;
-   dc:identifier "kompisvårdHBTQI";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Kompisomsorg (HBTQI)"
-     "Buddies",
-     "Buddy care",
-     "Buddy-vård",
-     "Buddy-omsorg";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/hälsoOchSjukvårdFörHBTQIPersoner>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/hälsoOchSjukvård>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Kompisvård (HBTQI)";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/hivAids>,
-     <https://queerlit.dh.gu.se/qlit/0.2/personerSomLeverMedHiv>;
-   skos:closeMatch <https://homosaurus.org/v3/homoit0000226> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/kondomer> a skos:Concept;
    dc:identifier "kondomer";
@@ -7108,21 +6558,6 @@
    skos:prefLabel "Könssjukdomar";
    skos:exactMatch <https://homosaurus.org/v3/homoit0001308>,
    <https://id.kb.se/term/sao/K%C3%B6nssjukdomar> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/könsstympning> a skos:Concept;
-   dc:identifier "Könsstympning";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Borttagande av hela eller delar av vulvan, så som klitoris, yttre och inre blygdläppar";
-   skos:altLabel "Kvinnlig könsstympning",
-    "Kvinnlig omskärelse";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/klitoridektomi>;
-   skos:prefLabel "Könsstympning";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/könsstympningAvIntersexpersoner>
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000430>,
-    <http://id.loc.gov/authorities/subjects/sh93002781>,
-    <https://id.kb.se/term/sao/Kvinnlig%20k%C3%B6nsstympning> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/könsstympningAvIntersexpersoner> a skos:Concept;
    dc:identifier "könsstympningAvIntersexpersoner";
@@ -7801,45 +7236,6 @@
    skos:exactMatch <https://homosaurus.org/v3/homoit0000778>,
      <http://id.loc.gov/authorities/subjects/sh2009003403> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/lesbiska> a skos:Concept;
-   dc:identifier "lesbiska";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av personer som identifierar sig som, eller av andra identifieras som, tjejer eller kvinnor och som blir kära i och/eller attraherade av andra tjejer/kvinnor. Kan också användas för skildringar av lesbiska identiteter utan koppling till tvåkönsmodellen.";
-   skos:altLabel "Homosexuella kvinnor",
-     "Lesbiska kvinnor",
-     "Lesbianer";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/kvinnor>,
-     <https://queerlit.dh.gu.se/qlit/0.2/homosexuella>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/kön>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/femmes>,
-     <https://queerlit.dh.gu.se/qlit/0.2/garderobslesbiska>,
-     <https://queerlit.dh.gu.se/qlit/0.2/äldreLesbiska>,
-     <https://queerlit.dh.gu.se/qlit/0.2/läppstiftslesbiska>,
-     <https://queerlit.dh.gu.se/qlit/0.2/nyutkomnaLesbiska>,
-     <https://queerlit.dh.gu.se/qlit/0.2/ungaLesbiska>,
-     <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaFlickor>,
-     <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaFöräldrar>
-     <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaPerifert>;
-   skos:prefLabel "Lesbiska";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/flator>,
-     <https://queerlit.dh.gu.se/qlit/0.2/kvinnorSomHarSexMedKvinnor>,
-     <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillLesbiska>,
-     <https://queerlit.dh.gu.se/qlit/0.2/förföljelseAvLesbiska>,
-     <https://queerlit.dh.gu.se/qlit/0.2/tribader>,
-     <https://queerlit.dh.gu.se/qlit/0.2/relationerMellanLesbiskaOchBögar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/partnersTillLesbiska>,
-     <https://queerlit.dh.gu.se/qlit/0.2/butchar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/amazoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/dykeMarch>,
-     <https://queerlit.dh.gu.se/qlit/0.2/lesbofobi>,
-     <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaGemenskaper>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000556>,
-     <http://id.loc.gov/authorities/subjects/sh85076160>,
-     <https://id.kb.se/term/sao/Lesbiska%20kvinnor> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaFamiljer> a skos:Concept;
    dc:identifier "lesbiskaFamiljer";
    dc:issued "2019-05-14"^^xsd:date;
@@ -7931,21 +7327,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/lesbiska>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000733>,
      <http://id.loc.gov/authorities/subjects/sh95005870> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/lesbiskaKörer> a skos:Concept;
-   dc:identifier "lesbiskaKörer";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/lesbiskKultur>,
-     <https://queerlit.dh.gu.se/qlit/0.2/körerHBTQI>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/subkulturer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/körerHBTQI>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Lesbiska körer";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/bögkörer>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000730>,
-   skos:closeMatch <http://id.loc.gov/authorities/subjects/sh2010003068> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaPar> a skos:Concept;
    dc:identifier "lesbiskaPar";
@@ -8083,31 +7464,6 @@
    skos:related <https://queerlit.dh.gu.se/qlit/0.2/maskulinitet>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000655>,
     <http://id.loc.gov/authorities/subjects/sh88006590> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/mammor> a skos:Concept;
-   dc:identifier "mammor";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Mödrar,"
-     "Morsor";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/föräldrarHBTQI>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/familjemedlemmar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIFamiljer>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/mammorTillBisexuella>,
-     <https://queerlit.dh.gu.se/qlit/0.2/mammorTillTranspersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/mammorTillHomosexuella>,
-     <https://queerlit.dh.gu.se/qlit/0.2/mammorTillQueeraPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/mammorTillIntersexpersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/medmammorHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/ensamståendeMammorHBTQI>;
-   skos:prefLabel "Mammor";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaFöräldrar>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001021>,
-     <http://id.loc.gov/authorities/subjects/sh85087526>,
-     <https://id.kb.se/term/barn/Mammor>,
-     <https://id.kb.se/term/sao/M%C3%B6drar> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/mammorTillBisexuella> a skos:Concept;
    dc:identifier "mammorTillBisexuella";
@@ -8261,20 +7617,6 @@
      <http://id.loc.gov/authorities/subjects/sh85081828>,
      <https://id.kb.se/term/sao/Masochism> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/massage> a skos:Concept;
-   dc:identifier "massage";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/erotiskMassage>;
-   skos:prefLabel "Massage";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/kroppsligNärhet>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000998>,
-    <http://id.loc.gov/authorities/subjects/sh85081957>,
-    <https://id.kb.se/term/barn/Massage;
-    <https://id.kb.se/term/sao/Massage> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/mastersHBTQI> a skos:Concept;
    dc:identifier "mastersHBTQI";
    dc:issued "2019-05-14"^^xsd:date;
@@ -8420,23 +7762,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/medmammorHBTQI>;
    skos:prefLabel "Medföräldrar (HBTQI)";
    skos:closeMatch <https://homosaurus.org/v3/homoit0000840> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/medikalisering> a skos:Concept;
-   dc:identifier "medikalisering";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Översätt Process by which human conditions and problems come to be defined andtreated as medical conditions, and thus become the subject of medical study, diagnosis,prevention, or treatment";
-   skos:altLabel "Patologisering";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/hälsoOchSjukvård>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/hälsoOchSjukvård>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/könsdysfori>,
-     <https://queerlit.dh.gu.se/qlit/0.2/intersextillstånd>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellInversion>,
-     <https://queerlit.dh.gu.se/qlit/0.2/transsexualism>;
-   skos:prefLabel "Medikalisering";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/socialkonstruktivism>,
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001006> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/medmammorHBTQI> a skos:Concept;
    dc:identifier "medmammorHBTQI";
@@ -8648,26 +7973,6 @@
      <http://id.loc.gov/authorities/subjects/sh85056410>,
      <https://id.kb.se/term/sao/Mor-%20och%20farf%C3%B6r%C3%A4ldrar>,
      <https://id.kb.se/term/barn/Mor-%20och%20farf%C3%B6r%C3%A4ldrar> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/mordPåHBTQIPersoner> a skos:Concept;
-   dc:identifier "mordPåHBTQIPersoner";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av mord på homosexuella, bisexuella, transpersoner, queera eller intersexpersoner.";
-   skos:altLabel "Mord på homosexuella".
-     "Mord på lesbiska",
-     "Mord på bögar",
-     "Mord på bisexuella",
-     "Mord på transpersoner",
-     "Mord på queera",
-     "Mord på intersexpersoner";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/våldMotHBTQIPersoner>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/våldMotHBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Mord på HBTQI-personer";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/hatbrott>,
-     <https://queerlit.dh.gu.se/qlit/0.2/dödenOchDöendeHBTQI>;
-   skos:closeMatch <https://homosaurus.org/v3/homoit0000641> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/mormonerHBTQI> a skos:Concept;
    dc:identifier "mormonerHBTQI";
@@ -8916,22 +8221,6 @@
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
    skos:prefLabel "Offentliga duschar";
    skos:exactMatch <https://homosaurus.org/v3/homoit0001143> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/offentligaToaletter> a skos:Concept;
-   dc:identifier "offentligaToaletter";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Översätt Rooms or small buildings with one or more toilets (or urinals) available foruse by the general public, or by customers or employees of a business";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/offentligaToaletterOchOmklädningsrum>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/offentligaToaletterOchOmklädningsrum>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Offentliga toaletter";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/passeraKön>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexPåOffentligaToaletter>
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001140>,
-     <http://id.loc.gov/authorities/subjects/sh85108627>;
-   skos:closeMatch <https://homosaurus.org/v3/homoit0000308>,
-     <https://homosaurus.org/v3/homoit0001358> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/offentligaToaletterOchOmklädningsrum> a skos:Concept;
    dc:identifier "offentligaToaletterOchOmklädningsrum";
@@ -9236,23 +8525,6 @@
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
    skos:prefLabel "Paganister (HBTQI)";
    skos:closeMatch <https://homosaurus.org/v3/homoit0001069> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/pansexuella> a skos:Concept;
-   dc:identifier "pansexuella";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Omnisexuella";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/pansexuellaPerifert>
-   skos:prefLabel "Pansexuella";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/cispersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/transsexuella>,
-     <https://queerlit.dh.gu.se/qlit/0.2/allosexualitet>,
-     <https://queerlit.dh.gu.se/qlit/0.2/bisexuella>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001073> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/pansexuellaPerifert> a skos:Concept;
    dc:identifier "pansexuellaPerifert";
@@ -10308,22 +9580,6 @@
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
    skos:prefLabel "Queera föräldrar – perifert" .
 
-<https://queerlit.dh.gu.se/qlit/0.2/queeraGemenskaper> a skos:Concept;
-   dc:identifier "queeraGemenskaper";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "Queercommunityt",
-     "Queer-communityt";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/HBTQIGemenskaper>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/HBTQIGemenskaper>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Queera gemenskaper";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/HBTQI+>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQI>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001170> 
-   skos:closeMatch <https://id.kb.se/term/sao/Queer>.
-
 <https://queerlit.dh.gu.se/qlit/0.2/queeraIckeVita> a skos:Concept;
    dc:identifier "queeraIckeVita";
    dc:issued "2019-05-14"^^xsd:date;
@@ -10358,28 +9614,6 @@
    skos:prefLabel "Queera par";
    skos:exactMatch <https://homosaurus.org/v3/homoit0001172> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/queeraPersoner> a skos:Concept;
-   dc:identifier "queeraPersoner";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av personer som identifierar sig som, eller av andra identifieras som, queera personer.";
-   skos:altLabel "Queers";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/äldreQueeraPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/queeraUngdomar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/queeraBarn>,
-     <https://queerlit.dh.gu.se/qlit/0.2/queeraFöräldrar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/queeraPersonerPerifert>;
-   skos:prefLabel "Queera personer";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillQueeraPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/förföljelseAvQueeraPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/queerfobi>,
-     <https://queerlit.dh.gu.se/qlit/0.2/återvunnaTermer>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001195>
-   skos:closeMatch <https://id.kb.se/term/sao/Queer>,
-   <https://id.kb.se/term/barn/Queer> .
 <https://queerlit.dh.gu.se/qlit/0.2/queeraPersonerPerifert> a skos:Concept;
    dc:identifier "queeraPersonerPerifert";
    dc:issued "2019-05-14"^^xsd:date;
@@ -10576,35 +9810,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/äktenskap>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000274>,
      <http://id.loc.gov/authorities/subjects/sh2003003097> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/relationerHBTQI> a skos:Concept;
-   dc:identifier "relationerHBTQI";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av nära relationer mellan HBTQI-personer. Kan omfatta aspekter som släktskap, vänskap, sex eller kärlek, men då någon av dessa har en övervägande betydelse används termerna "Familjemedlemmar", "Vänskap", "Sexuella relationer (HBTQI)" eller "Kärlek (HBTQI)".";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/tvärkulturellaRelationer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/vänskap>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellaRelationer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/queeraRelationer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/bisexuellaRelationer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/homosexuellaRelationer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/heterosocialitet>,
-     <https://queerlit.dh.gu.se/qlit/0.2/intergenerationellaRelationer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/transrelationer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/intersexrelationer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/butchFemmeRelationer>;
-   skos:prefLabel "Relationer (HBTQI)";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/förälskelse>,
-     <https://queerlit.dh.gu.se/qlit/0.2/samboförhållanden>,
-     <https://queerlit.dh.gu.se/qlit/0.2/familjemedlemmar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/kärlekHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/separationerHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/partnersHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/relationspreferens>,
-     <https://queerlit.dh.gu.se/qlit/0.2/svartsjuka>;
-   skos:closeMatch <https://homosaurus.org/v3/homoit0001237> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/relationerMellanLesbiskaOchBögar> a skos:Concept;
    dc:identifier "relationerMellanLesbiskaOchBögar";
@@ -10951,29 +10156,6 @@
    skos:exactMatch <https://homosaurus.org/v3/homoit0000662>,
    <https://id.kb.se/term/sao/Samlag> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/samtycke> a skos:Concept;
-   dc:identifier "samtycke";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Samtycke",
-   "Sexuellt samtycke";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/bondage>,
-     <https://queerlit.dh.gu.se/qlit/0.2/kastrering>,
-     <https://queerlit.dh.gu.se/qlit/0.2/fetischismSexualitet>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellMyndighetsålder>,
-     <https://queerlit.dh.gu.se/qlit/0.2/polygami>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellaPraktiker>
-     <https://queerlit.dh.gu.se/qlit/0.2/sex>,
-     <https://queerlit.dh.gu.se/qlit/0.2/BDSM>,
-     <https://queerlit.dh.gu.se/qlit/0.2/våldtäktsofferHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/offerFörSexuellaÖvergreppHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/våldINäraRelationerHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellaÖvergreppHBTQI>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000302>,
-   <https://id.kb.se/term/sao/Sexuellt%20samtycke> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/samvetsäktenskap> a skos:Concept;
    dc:identifier "samvetsäktenskap";
    dc:issued "2019-05-14"^^xsd:date;
@@ -11162,33 +10344,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/offentligtSex>;
    skos:closeMatch <https://homosaurus.org/v3/homoit0000309>,
      <https://homosaurus.org/v3/homoit0001357> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/sexarbetareHBTQI> a skos:Concept;
-   dc:identifier "sexarbetareHBTQI";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "";
-   skos:altLabel "";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/prostituerade>,
-     <https://queerlit.dh.gu.se/qlit/0.2/strippor>,
-     <https://queerlit.dh.gu.se/qlit/0.2/telefonsexarbetare>,
-     <https://queerlit.dh.gu.se/qlit/0.2/porrstjärnor>,;
-   skos:prefLabel "Sexarbetare (HBTQI)";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/sexindustri>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexköpare>;
-   skos:closeMatch <https://homosaurus.org/v3/homoit0001277> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/sexarbete> a skos:Concept;
-   dc:identifier "sexarbete";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Översätt The exchange of sexual services, performances, or products for materialcompensation. It includes activities of direct physical contact between buyers andsellers as well as indirect sexual stimulation";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/prostitution>;
-   skos:prefLabel "Sex work";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/sexindustri>,
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001276> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/sexbutiker> a skos:Concept;
    dc:identifier "sexbutiker";
@@ -11505,21 +10660,6 @@
      <https://id.kb.se/term/barn/Sexualitet>,
      <https://id.kb.se/term/sao/Sexualitet> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/sexualundervisning> a skos:Concept;
-   dc:identifier "sexualundervisning";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Undervisning om mänsklig sexualitet, sexuellt umgänge, sexuell anatomi, människans fortplantning, könssjukdomar, preventivmedel, ansvar och rättigheter i sexuella relationer, samlevnad, säkrare sex och andra närliggande ämnen.";
-   skos:altLabel: "Sexualkunskap", 
-   "Sexualupplysning"
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/informationsförmedling>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/informationsförmedling>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Sexualundervisning";
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001271>;
-   skos:closeMatch <http://id.loc.gov/authorities/subjects/sh85120630>,
-   <https://id.kb.se/term/sao/Sexualundervisning> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/sexuellAvhållsamhet> a skos:Concept;
    dc:identifier "sexuellAvhållsamhet";
    dc:issued "2019-05-14"^^xsd:date;
@@ -11550,59 +10690,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/sexualitet>,
      <https://queerlit.dh.gu.se/qlit/0.2/sexterapi>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0001291> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/sexuellIdentitet> a skos:Concept;
-   dc:identifier "sexuellIdentitet";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "En persons uppfattning av vem som attraherar den själv, både romantiskt och sexuellt.";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/mastersHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/uttrarIdentitet>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexslavar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/switcharBDSM>,
-     <https://queerlit.dh.gu.se/qlit/0.2/chubsIdentitet>,
-     <https://queerlit.dh.gu.se/qlit/0.2/demisexuella>,
-     <https://queerlit.dh.gu.se/qlit/0.2/megasexuella>;
-     <https://queerlit.dh.gu.se/qlit/0.2/femmes>,
-     <https://queerlit.dh.gu.se/qlit/0.2/pederaster>,
-     <https://queerlit.dh.gu.se/qlit/0.2/dominanta>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellaRoller>,
-     <https://queerlit.dh.gu.se/qlit/0.2/dominatrixerHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/undergivna>,
-     <https://queerlit.dh.gu.se/qlit/0.2/butchar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/björnarIdentitet>,
-     <https://queerlit.dh.gu.se/qlit/0.2/dandyer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/faeries>,
-     <https://queerlit.dh.gu.se/qlit/0.2/megasexualitet>;
-   skos:prefLabel "Sexual identity";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/polyamori>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellPreferens>,
-     <https://queerlit.dh.gu.se/qlit/0.2/ballroomkultur>,
-     <https://queerlit.dh.gu.se/qlit/0.2/tvärkulturellaRelationer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/kulturspecifikaKönsidentiteter>,
-     <https://queerlit.dh.gu.se/qlit/0.2/dekadens>,
-     <https://queerlit.dh.gu.se/qlit/0.2/essentialism>,
-     <https://queerlit.dh.gu.se/qlit/0.2/femmes>,
-     <https://queerlit.dh.gu.se/qlit/0.2/fetischismSexualitet>,
-     <https://queerlit.dh.gu.se/qlit/0.2/bögkultur>,
-     <https://queerlit.dh.gu.se/qlit/0.2/masochism>,
-     <https://queerlit.dh.gu.se/qlit/0.2/monogami>,
-     <https://queerlit.dh.gu.se/qlit/0.2/partnerpreferens>,
-     <https://queerlit.dh.gu.se/qlit/0.2/polygami>,
-     <https://queerlit.dh.gu.se/qlit/0.2/rollspelSexualitet>,
-     <https://queerlit.dh.gu.se/qlit/0.2/intergenerationellaRelationer>,
-     <https://queerlit.dh.gu.se/qlit/0.2/transkultur>,
-     <https://queerlit.dh.gu.se/qlit/0.2/lesbiskKultur>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellaRoller>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellMångfald>,
-     <https://queerlit.dh.gu.se/qlit/0.2/rollbeteende>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellLäggning>,
-     <https://queerlit.dh.gu.se/qlit/0.2/könsidentitet>,
-     <https://queerlit.dh.gu.se/qlit/0.2/draggemenskaper>,
-     <https://queerlit.dh.gu.se/qlit/0.2/BDSM>,
-     <https://queerlit.dh.gu.se/qlit/0.2/butchFemmeRelationer>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001295> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/sexuellInversion> a skos:Concept;
    dc:identifier "sexuellInversion";
@@ -11646,23 +10733,6 @@
    skos:exactMatch <https://homosaurus.org/v3/homoit0001298>,
      <http://id.loc.gov/authorities/subjects/sh91005179>,
      <https://id.kb.se/term/sao/Sexuell%20l%C3%A4ggning> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/sexuellMångfald> a skos:Concept;
-   dc:identifier "sexuellMångfald";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av mångfald av sexuella läggningar";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/mångfald>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/mångfald>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Sexuell mångfald";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/HBTQI+>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellIdentitet>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellPreferens>,
-     <https://queerlit.dh.gu.se/qlit/0.2/monosexualitet>
-     <https://queerlit.dh.gu.se/qlit/0.2/polysexualitet>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellLäggning>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001290> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/sexuellMyndighetsålder> a skos:Concept;
    dc:identifier "sexuellMyndighetsålder";
@@ -11732,17 +10802,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/sexuellLäggning>,
      <https://queerlit.dh.gu.se/qlit/0.2/partnersHBTQI>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0001300> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/sexuellRevolution> a skos:Concept;
-   dc:identifier "sexualRevolution";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Social rörelse som utmanade traditionella koder och beteenden relaterade till sexualitet och interpersonella relationer i västvärlden under 1960- och 1970-talet";
-   skos:altLabel "Sexuella frigörelsen"
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Sexuell revolution";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/socialaProcesserHBTQI>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001303> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/sexuellUpphetsning> a skos:Concept;
    dc:identifier "sexuellUpphetsning";
@@ -11895,20 +10954,6 @@
      <https://id.kb.se/term/barn/Sexuella%20trakasserier>,
      <https://id.kb.se/term/sao/Sexuella%20trakasserier> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/sexuelltVåld> a skos:Concept;
-   dc:identifier "sexuelltVåld";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av kränkningar och övergrepp med sexuell karaktär.";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/våldtäktsofferHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/våldINäraRelationerHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellaÖvergreppHBTQI>;
-   skos:prefLabel "Sexuellt våld";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/våldMotHBTQIPersoner>
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001305>;
-   skos:closeMatch <http://id.loc.gov/authorities/subjects/sh85120572> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/schamanismHBTQI> a skos:Concept;
    dc:identifier "schamanismHBTQI";
    dc:issued "2019-05-14"^^xsd:date;
@@ -11949,20 +10994,6 @@
      <http://id.loc.gov/authorities/subjects/sh85122849>,
      <https://id.kb.se/term/sao/Ensamst%C3%A5ende> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/situationsbetingatSexuelltBeteende> a skos:Concept;
-   dc:identifier "situationsbetingatSexuelltBeteende";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av situationer då en eller flera personers sexuella beteende skiljer sig från hur det vanligen yttrar sig, beroende på yttre omständigheter. Vanligen gäller det personer som befinner sig i samkönade miljöer, som fängelser, armén, skolor med mera"
-   skos:altLabel "Situationsbetingad homosexualitet";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Situationsbetingat sexuellt beteende";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/sex>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellPreferens>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellaPraktiker>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexualitet>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001315> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/självförsvarHBTQI> a skos:Concept;
    dc:identifier "självförsvarHBTQI";
    dc:issued "2019-05-14"^^xsd:date;
@@ -11973,17 +11004,6 @@
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
    skos:prefLabel "Självförsvar (HBTQI)";
    skos:closeMatch <https://homosaurus.org/v3/homoit0000935> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/självförtryckHBTQI> a skos:Concept;
-   dc:identifier "självförtryckHBTQI";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av att applicera nedvärderande tankar kring sexualitet eller könsidentitet på sig själv utifrån rådande normer";
-   skos:altLabel "Internaliserat förtryck (HBTQI)"
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Självförtryck (HBTQI)";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/förnekandeAvSexuellLäggning>;
-   skos:closeMatch <https://homosaurus.org/v3/homoit0000936> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/självinseminering> a skos:Concept;
    dc:identifier "självinseminering";
@@ -12045,21 +11065,6 @@
    skos:related <https://queerlit.dh.gu.se/qlit/0.2/HBTQIKonst>;
    skos:closeMatch <https://homosaurus.org/v3/homoit0000008> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/skildaPersoner> a skos:Concept;
-   dc:identifier "skildaPersoner";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av personer som genomgått en skilsmässa";
-   skos:altLabel "Frånskilda personer"
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/civilstånd>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/relationsformer>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Skilda personer";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/skilsmässorHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/singlar>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000359>;
-   skos:exactMatch <http://id.loc.gov/authorities/subjects/sh85038648>,
-   <https://id.kb.se/term/sao/Fr%C3%A5nskilda%20personer> .
 <https://queerlit.dh.gu.se/qlit/0.2/skilsmässorHBTQI> a skos:Concept;
    dc:identifier "skilsmässorHBTQI";
    dc:issued "2019-05-14"^^xsd:date;
@@ -12142,35 +11147,6 @@
    skos:prefLabel "Smiskpaddlar";
    skos:exactMatch <https://homosaurus.org/v3/homoit0001068> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/socialaMedier> a skos:Concept;
-   dc:identifier "socialaMedier";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Webbplatser och mobila appar med användargenererat innehåll och möjlighet att interagera i sociala nätverk.";
-   skos:altLabel "Användargenererad media"
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/dejtingsidor>,
-     <https://queerlit.dh.gu.se/qlit/0.2/bloggar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/dejtingappar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/internetforum>;
-   skos:prefLabel "Sociala medier";
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001321>,
-     <http://id.loc.gov/authorities/subjects/sh2006007023>.
-     <https://id.kb.se/term/sao/Sociala%20medier>,
-     <https://id.kb.se/term/barn/Sociala%20medier> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/socialaNormer> a skos:Concept;
-   dc:identifier "socialaNormer";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Allmänt delade, många gånger outtalade, regler och förväntningar på beteenden inom en social gemenskap eller i samhället i stort";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Sociala normer";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/normalisering>,
-     <https://queerlit.dh.gu.se/qlit/0.2/rollbeteende>,
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001323>,
-     <http://id.loc.gov/authorities/subjects/sh85123980>
-   skos:closeMatch <https://id.kb.se/term/sao/Normer> .
 <https://queerlit.dh.gu.se/qlit/0.2/socialaProcesserHBTQI> a skos:Concept;
    dc:identifier "socialaProcesserHBTQI";
    dc:issued "2019-05-14"^^xsd:date;
@@ -12217,24 +11193,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/queerteori>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0001320>,
      <http://id.loc.gov/authorities/subjects/sh2009007835> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/sodomi> a skos:Concept;
-   dc:identifier "sodomi";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Historisk term för "onaturliga" sexuella beteenden som inte är direkt kopplade till fortplantningen. Bland annat räknas oralsex, analsex och tidelag som sodomi";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/historiskaTermerHBTQI>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/historiskaTermerHBTQI>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Sodomi";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/sodomiter>,
-     <https://queerlit.dh.gu.se/qlit/0.2/pederasti>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sodomilagar>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sex>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellaPraktiker>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001325>,
-     <http://id.loc.gov/authorities/subjects/sh85124275>,
-     <https://id.kb.se/term/sao/Sodomi> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/sodomilagar> a skos:Concept;
    dc:identifier "sodomilagar";
@@ -12456,22 +11414,6 @@
    skos:prefLabel "Substansmissbruk";
    skos:exactMatch <https://homosaurus.org/v3/homoit0000251>,
      <http://id.loc.gov/authorities/subjects/sh85129539> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/suffragetter> a skos:Concept;
-   dc:identifier "suffragetter";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av den militanta delen av rösträttsrörelsen kring sekelskiftet 1900";
-   skos:altLabel "Rösträttskvinnor",
-    "Kvinnorösträttskämpar",
-    "Suffragister";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/feminister>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/feminister>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Suffragetter";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/förstaVågensFeminism>
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001346>,
-    <http://id.loc.gov/authorities/subjects/sh85129648> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/surrogatskap> a skos:Concept;
    dc:identifier "surrogatskap";
@@ -12835,21 +11777,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/dykeMarch>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0001379> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/transbarn> a skos:Concept;
-   dc:identifier "transbarn";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av transpersoner under 15 år. Kan användas mer relativt för skildringar av personer som ej genomgått puberteten.";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/HBTQIBarn>,
-     <https://queerlit.dh.gu.se/qlit/0.2/transpersoner>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/barn>;
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Transbarn";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillTranspersoner>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001400>,
-     <http://id.loc.gov/authorities/subjects/sh2008003689> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/transfamiljer> a skos:Concept;
    dc:identifier "transfamiljer";
    dc:issued "2019-05-14"^^xsd:date;
@@ -12971,18 +11898,6 @@
    skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/MtFs>;
    skos:prefLabel "Transkvinnor";
    skos:exactMatch <https://homosaurus.org/v3/homoit0001642> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/transmaskulina> a skos:Concept;
-   dc:identifier "transmaskulina";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för transpersoner med ett maskulint könsuttryck som själva identifierar sig som, eller av andra definieras som, transmaskulina";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/transpersoner>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Transmaskulina";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/maskulinitet>,
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001466> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/transmän> a skos:Concept;
    dc:identifier "transmän";
@@ -13112,25 +12027,6 @@
    skos:exactMatch <https://homosaurus.org/v3/homoit0001468>,
      <http://id.loc.gov/authorities/subjects/sh94005829> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/transsexuella> a skos:Concept;
-   dc:identifier "transsexuella";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av personer som har fått eller strävar efter att få diagnosen transsexualism. För skildringar som inte fokuserar på diagnos och behandling, använd termen "Transpersoner".";
-   skos:hiddenLabel "Transexuella";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/biologisktKön>,
-     <https://queerlit.dh.gu.se/qlit/0.2/transpersoner>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/kön>,
-     <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Transsexuella";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/könsbekräftandeBehandling>,
-     <https://queerlit.dh.gu.se/qlit/0.2/könsdysfori>,,
-     <https://queerlit.dh.gu.se/qlit/0.2/transitionering>,
-     <https://queerlit.dh.gu.se/qlit/0.2/transsexualism>,
-     <https://queerlit.dh.gu.se/qlit/0.2/pansexuella>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0001381> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/transstudier> a skos:Concept;
    dc:identifier "transstudier";
    dc:issued "2019-05-14"^^xsd:date;
@@ -13147,36 +12043,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/bögstudier>,
      <https://queerlit.dh.gu.se/qlit/0.2/lesbiskaStudier>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0001447> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/transvestism> a skos:Concept;
-   dc:identifier "transvestism";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av transvestism. Transvestism innebär att någon klär sig som ett annat kön än personen identifierar sig som, att det är en del av personens identitet och att personen själv eller av andra definierar sig som transvestit.";
-   skos:altLabel "Transvestitism";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/könsuttryck>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/kön>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Transvestism";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/crossdressing>,
-     <https://queerlit.dh.gu.se/qlit/0.2/eonism>;
-   skos:exactMatch <http://id.loc.gov/authorities/subjects/sh85137104>,
-     <https://homosaurus.org/v3/homoit0000318>
-   skos:closeMatch <https://homosaurus.org/v3/homoit0001469> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/transvestiter> a skos:Concept;
-   dc:identifier "transvestiter";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av personer som själva identifierar sig som, eller av andra identifieras som, transvestiter. För skildringar av andra personer som, tillfälligt eller genomgående och oavsett anledning, bär kläder som associeras med ett annat kön än det de identifierar sig som, använd termen "Crossdressing".";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/transpersoner>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/HBTQIPersoner>,
-    <https://queerlit.dh.gu.se/qlit/0.2/kön>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Transvestiter";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/partnersTillTransvestiter>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000316>;
-   skos:closeMatch <https://homosaurus.org/v3/homoit0001470> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/travesti> a skos:Concept;
    dc:identifier "travesti";
@@ -13643,19 +12509,6 @@
      <https://queerlit.dh.gu.se/qlit/0.2/sexklubbar>;
    skos:closeMatch <https://homosaurus.org/v3/homoit0000909> .
 
-<https://queerlit.dh.gu.se/qlit/0.2/utpressning> a skos:Concept;
-   dc:identifier "utpressning";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av att med hot (t.ex. om att avslöja någons sexuella läggning eller transitionshistoria) tvinga någon (t.ex. att betala pengar till utpressaren).";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Utpressning";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/straffrätt>,
-     <https://queerlit.dh.gu.se/qlit/0.2/outning>
-     <https://queerlit.dh.gu.se/qlit/0.2/brottsofferHBTQI>;
-   skos:exactMatch <https://homosaurus.org/v3/homoit0000611>,
-     <http://id.loc.gov/authorities/subjects/sh97007082> .
-
 <https://queerlit.dh.gu.se/qlit/0.2/uttrarIdentitet> a skos:Concept;
    dc:identifier "uttrarIdentitet";
    dc:issued "2021-06-08"^^xsd:date;
@@ -13799,50 +12652,6 @@
    skos:prefLabel "Vänskap";
    skos:related <https://queerlit.dh.gu.se/qlit/0.2/homosocialitet>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000455> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/våldINäraRelationerHBTQI> a skos:Concept;
-   dc:identifier "våldINäraRelationerHBTQI";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av alla typer av våld, fysiskt och psykiskt, som kan förekomma mellan närstående samt inom syskon- och andra familje- och släktrelationer.";
-   skos altLabel "Närståendevåld",
-     "Partnervåld",
-     "Våld i hemmet",
-     "Våld i familjen";
-   skos:broader <https://queerlit.dh.gu.se/qlit/0.2/våldMotHBTQIPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuelltVåld>;
-   skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/0.2/våldMotHBTQIPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuelltVåld>;
-   skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:prefLabel "Våld i nära relationer (HBTQI)";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/offerFörSexuellaÖvergreppHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellaÖvergreppHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/partnersHBTQI>;
-   skos:closeMatch <https://homosaurus.org/v3/homoit0000855> .
-
-<https://queerlit.dh.gu.se/qlit/0.2/våldMotHBTQIPersoner> a skos:Concept;
-   dc:identifier "våldMotHBTQIPersoner";
-   dc:issued "2019-05-14"^^xsd:date;
-   dc:modified "2019-05-14"^^xsd:date;
-   skos:scopeNote "Används för skildringar av våld mot homosexuella, bisexuella, transpersoner, queera eller intersexpersoner.";
-   skos:altLabel "Våld mot homosexuella".
-     "Våld mot lesbiska",
-     "Våld mot bögar",
-     "Våld mot bisexuella",
-     "Våld mot transpersoner",
-     "Våld mot queera",
-     "Våld mot intersexpersoner";
-   skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
-   skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/mordPåHBTQIPersoner>,
-     <https://queerlit.dh.gu.se/qlit/0.2/våldINäraRelationerHBTQI>;
-   skos:prefLabel "Våld mot HBTQI-personer";
-   skos:related <https://queerlit.dh.gu.se/qlit/0.2/hatbrottsofferHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/våldtäktsofferHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/offerFörSexuellaÖvergreppHBTQI>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuellaTrakasserier>,
-     <https://queerlit.dh.gu.se/qlit/0.2/sexuelltVåld>,
-     <https://queerlit.dh.gu.se/qlit/0.2/förföljelseAvHBTQIPersoner>;
-   skos:closeMatch <https://homosaurus.org/v3/homoit0000059> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/våldtäktsofferHBTQI> a skos:Concept;
    dc:identifier "våldtäktsofferHBTQI";

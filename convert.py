@@ -1,4 +1,6 @@
 from os import listdir
+from shutil import which
+from subprocess import run
 
 version = '0.2'
 
@@ -14,8 +16,20 @@ files = [f for f in listdir(dir_path) if f.endswith('.ttl')]
 files.sort()
 prefix_lines = []
 other_lines = []
+validate = which('ttl') is not None
 for file in files:
     file_path = dir_path + file
+
+    if validate:
+        try:
+            validate_result = run(['ttl', file_path],
+                                  check=True, capture_output=True, start_new_session=True)
+        except KeyboardInterrupt:
+            exit
+        except:
+            print('Skipping invalid file', file)
+            continue
+
     other_lines.append('\n')
     with open(file_path) as fp:
         for line in fp.readlines():
