@@ -25,12 +25,13 @@ for file in files:
 
     if validate:
         try:
+            # Requires https://www.npmjs.com/package/turtle-validator
             validate_result = run(['ttl', file_path],
                                   check=True, capture_output=True, start_new_session=True)
         except KeyboardInterrupt:
             exit
         except:
-            print('Skipping invalid file', file)
+            print('Skipping invalid file (or turtle-validator not installed?)', file)
             continue
 
     other_lines.append('\n')
