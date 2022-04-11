@@ -1,3 +1,4 @@
+from configparser import ConfigParser
 from os import listdir
 from shutil import which
 from subprocess import run
@@ -11,14 +12,16 @@ SCHEMA_TTL = f"""
    skos:hasTopConcept <https://queerlit.dh.gu.se/qlit/{version}/HBTQIPersoner> .
 """
 
-dir_path = '/Users/arildm/University of Gothenburg/Olov Kriström - TTLs/'
-files = [f for f in listdir(dir_path) if f.endswith('.ttl')]
+config = ConfigParser()
+config.read('config.ini')
+
+files = [f for f in listdir(config['ttl']['ttls_dir']) if f.endswith('.ttl')]
 files.sort()
 prefix_lines = []
 other_lines = []
 validate = which('ttl') is not None
 for file in files:
-    file_path = dir_path + file
+    file_path = config['ttl']['ttls_dir'] + file
 
     if validate:
         try:
