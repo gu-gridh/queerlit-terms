@@ -1,7 +1,7 @@
 import argparse
 
 from rdflib import RDF, SKOS
-from thesaurus import read_ttl, Term
+from thesaurus import read_ttl, Term, get_parents, get_children, get_roots
 
 if __name__ == '__main__':
     argp = argparse.ArgumentParser(
@@ -16,3 +16,6 @@ if __name__ == '__main__':
     print(terms[1])
     term = Term(graph, 'https://queerlit.dh.gu.se/qlit/0.2/BDSMGemenskaper')
     print(term)
+    print('get_parents', list(get_parents(graph, term)))
+    print('get_children', list(get_children(graph, term)))
+    print('get_roots', list(get_roots(graph)))
