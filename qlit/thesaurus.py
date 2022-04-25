@@ -1,46 +1,30 @@
-from typing import Iterator
 from rdflib import RDF, SKOS, Graph, URIRef
-from term import Term
 
 
-def read_ttl(path: str) -> Graph:
-    graph = Graph()
-    graph.parse(path)
-    return graph
+class Termset(Graph):
+    def refs(self) -> list[URIRef]:
+        return list(self.subjects(RDF.type, SKOS.Concept))
 
 
-def read_ttls(path: str) -> Graph:
-    raise NotImplemented
+class Thesaurus(Termset):
+    def complete_relations(graph: Graph) -> Graph:
+        raise NotImplemented
 
+    def terms_if(self, f) -> Termset:
+        g = Termset()
+        for term in self.refs():
+            if f(term):
+                g += self.triples((term, None, None))
+        return g
 
-def write_ttl(graph: Graph, path):
-    raise NotImplemented
+    def get_roots(self) -> Termset:
+        return self.terms_if(lambda term: (term, SKOS.broader, None) not in self)
 
+    def get_parents(self, child: URIRef) -> Termset:
+        return self.terms_if(lambda term: (child, SKOS.broader, term) in self)
 
-def complete_relations(graph: Graph) -> Graph:
-    raise NotImplemented
+    def get_children(self, parent: URIRef) -> Termset:
+        return self.terms_if(lambda term: (term, SKOS.broader, parent) in self)
 
-
-def autocomplete(graph: Graph, q: str) -> Term:
-    raise NotImplemented
-
-
-def get_children(graph: Graph, term: Term) -> Iterator[Term]:
-    term_ref = URIRef(term.uri)
-    child_refs = graph.subjects(SKOS.broader, term_ref)
-    for child_ref in child_refs:
-        yield Term(graph, child_ref)
-
-
-def get_parents(graph: Graph, term: Term) -> Iterator[Term]:
-    term_ref = URIRef(term.uri)
-    parent_refs = graph.objects(term_ref, SKOS.broader)
-    for parent_ref in parent_refs:
-        yield Term(graph, parent_ref)
-
-
-def get_roots(graph: Graph) -> Iterator[Term]:
-    term_refs = graph.subjects(RDF.type, SKOS.Concept)
-    for term_ref in term_refs:
-        if not next(graph.objects(term_ref, SKOS.broader), None):
-            yield Term(graph, term_ref)
+    def autocomplete(q: str) -> Termset:
+        raise NotImplemented
