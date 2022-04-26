@@ -68,7 +68,7 @@
    dc:issued "2022-05-02"^^xsd:date;
    dc:modified "2022-05-02"^^xsd:date;
    skos:scopeNote "Används för skildringar av personer som beskrivs som FtX, vilket vanligen ses som transition från kvinna till annat eller inte kvinnlig.";
-   skos:altLabel: "FtX",
+   skos:altLabel "FtX",
      "F2X",
      "F2Xs",
      "Female-to-X",
@@ -665,7 +665,7 @@
    dc:issued "2022-05-02"^^xsd:date;
    dc:modified "2022-05-02"^^xsd:date;
    skos:scopeNote "Används för skildringar av personer som beskrivs som MtX, vilket vanligen ses som transition från man till annat eller inte manlig.";
-   skos:altLabel: "MtX",
+   skos:altLabel "MtX",
      "M2X",
      "M2Xs",
      "Male-to-X",
@@ -718,7 +718,7 @@
    dc:issued "2022-05-02"^^xsd:date;
    dc:modified "2022-05-02"^^xsd:date;
    skos:scopeNote "Används för skildringar av SM-föreningar, klubbar och andra gemenskaper, framförallt då dessa agerar för rättigheter eller vidgade möjligheter för gruppen.";
-   skos:altLabel: "Sadomasochism-rörelser";
+   skos:altLabel "Sadomasochism-rörelser";
    skos:broader <https://queerlit.dh.gu.se/qlit/0.2/socialaRörelser>;
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
    skos:prefLabel "SM-rörelser";
@@ -4323,7 +4323,7 @@
    skos:prefLabel "Föräldrar till homosexuella";
    skos:related <https://queerlit.dh.gu.se/qlit/0.2/homosexuella>,
      <https://queerlit.dh.gu.se/qlit/0.2/homosexuellaBarn>;
-   skos:exactMatch: <https://id.kb.se/term/sao/F%C3%B6r%C3%A4ldrar%20till%20homosexuella> .
+   skos:exactMatch <https://id.kb.se/term/sao/F%C3%B6r%C3%A4ldrar%20till%20homosexuella> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/föräldrarTillIntersexpersoner> a skos:Concept;
    dc:identifier "föräldrarTillIntersexpersoner";
@@ -5970,7 +5970,7 @@
    skos:topConceptOf <https://queerlit.dh.gu.se/qlit/0.2>;
    skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/sexualundervisning>;
    skos:prefLabel "Informationsförmedling";
-   skos:related: <https://queerlit.dh.gu.se/qlit/0.2/medvetenhetOmHivAids>;
+   skos:related <https://queerlit.dh.gu.se/qlit/0.2/medvetenhetOmHivAids>;
    skos:exactMatch <https://homosaurus.org/v3/homoit0000661> .
 
 <https://queerlit.dh.gu.se/qlit/0.2/inseminering> a skos:Concept;
@@ -9394,7 +9394,7 @@
    dc:issued "2022-05-02"^^xsd:date;
    dc:modified "2022-05-02"^^xsd:date;
    skos:scopeNote "Används för skildringar av överraskande polisiära ingripanden och undersökningar.";
-   skos:altLabel: "Polisrazzior";
+   skos:altLabel "Polisrazzior";
    skos:broader <https://queerlit.dh.gu.se/qlit/0.2/polistrakasserier>,
      <https://queerlit.dh.gu.se/qlit/0.2/förföljelseAvHBTQIPersoner>;
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
@@ -10944,7 +10944,7 @@
    dc:issued "2022-05-02"^^xsd:date;
    dc:modified "2022-05-02"^^xsd:date;
    skos:scopeNote "Används för skildringar av undervisning om mänsklig sexualitet, sexuellt umgänge, sexuell anatomi, människans fortplantning, könssjukdomar, preventivmedel, ansvar och rättigheter i sexuella relationer, samlevnad, säkrare sex och andra närliggande ämnen.";
-   skos:altLabel: "Sexualkunskap", 
+   skos:altLabel "Sexualkunskap", 
     "Sexualupplysning";
    skos:broader <https://queerlit.dh.gu.se/qlit/0.2/informationsförmedling>;
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
@@ -10958,7 +10958,7 @@
    dc:issued "2022-05-02"^^xsd:date;
    dc:modified "2022-05-02"^^xsd:date;
    skos:scopeNote "Används för skildringar av att medvetet under längre perioder avstå från sexuella handlingar.";
-   skos:altLabel: "Kyskhet";
+  skos:altLabel "Kyskhet";
    skos:broader <https://queerlit.dh.gu.se/qlit/0.2/sex>;
    skos:inScheme <https://queerlit.dh.gu.se/qlit/0.2>;
    skos:narrower <https://queerlit.dh.gu.se/qlit/0.2/oskuld>;
