@@ -16,7 +16,7 @@ class Thesaurus(Termset):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.   base = BASE
+        self.base = BASE
 
     def complete_relations() -> "Thesaurus":
         """Add triples to ensure that all term-term relations are two-way."""
@@ -29,11 +29,15 @@ class Thesaurus(Termset):
 
     def terms_if(self, f) -> Termset:
         """Creates a subset with terms matching some condition."""
-        g = Termset()
+        g = Termset(base=self.base)
         for term in self.refs():
             if f(term):
                 g += self.triples((term, None, None))
         return g
+
+    def get(self, ref: URIRef) -> Termset:
+        """Get the triples of a single term."""
+        return self.terms_if(lambda term: term == ref)
 
     def get_roots(self) -> Termset:
         """Find all terms without parents."""

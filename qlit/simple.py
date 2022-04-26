@@ -35,6 +35,7 @@ class SimpleTerm(dict):
 
     @staticmethod
     def from_termset(termset: Termset) -> list["SimpleTerm"]:
+        """Make simple dicts for the given set of terms."""
         return [
             SimpleTerm.from_subject(termset, ref)
             for ref in termset.refs()
@@ -47,8 +48,15 @@ class SimpleThesaurus(Thesaurus):
     def terms_if(self, f) -> list[SimpleTerm]:
         return SimpleTerm.from_termset(super().terms_if(f))
 
+    def get(self, name: str) -> SimpleTerm:
+        return SimpleTerm.from_subject(self, name_to_ref(name))
+
     def get_children(self, parent: str) -> list[SimpleTerm]:
         return super().get_children(name_to_ref(parent))
 
     def get_parents(self, child: str) -> list[SimpleTerm]:
         return super().get_parents(name_to_ref(child))
+
+    def get_all(self) -> list[SimpleTerm]:
+        """All terms as dicts."""
+        return SimpleTerm.from_termset(self)
