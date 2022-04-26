@@ -1,4 +1,4 @@
-from rdflib import RDF, SKOS, Graph, URIRef
+from rdflib import DCTERMS, RDF, SKOS, Graph, URIRef
 
 BASE = 'https://queerlit.dh.gu.se/qlit/0.2/'
 
@@ -13,6 +13,7 @@ class Termset(Graph):
 
 class Thesaurus(Termset):
     """An RDF graph indended to contain a full thesaurus."""
+    # TODO Source files use "dc" for "dcterms", resulting in a conflict which results in "dc1" in the output. Is that ok?
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
