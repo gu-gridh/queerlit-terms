@@ -43,7 +43,11 @@ if __name__ == '__main__':
 
     # Write result.
     terms = thesaurus.refs()
-    OUTFILE = 'qlit.ttl'
+    OUTFILE = 'qlit.nt'
     print(f'Writing {len(terms)} terms...')
-    thesaurus.serialize(OUTFILE)
+    thesaurus.base = None
+    nt_data = thesaurus.serialize(format='nt')
+    nt_lines = sorted(nt_data.splitlines(True))
+    with open(OUTFILE, 'w') as f:
+        f.writelines(nt_lines)
     print(f'Wrote {OUTFILE}')
