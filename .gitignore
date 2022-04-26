@@ -1,3 +1,4 @@
+test/
 out/
-config.ini
 .ipynb_checkpoints/
+qlit.ttl

@@ -1,6 +1,9 @@
-from rdflib import DCTERMS, RDF, SKOS, Graph, URIRef
+from os.path import basename
+from datetime import datetime
+from itertools import chain
+from rdflib import DCTERMS, RDF, SKOS, XSD, Graph, Literal, URIRef
 
-BASE = 'https://queerlit.dh.gu.se/qlit/0.2/'
+BASE = 'https://queerlit.dh.gu.se/qlit/v1/'
 
 
 class Termset(Graph):
@@ -18,15 +21,62 @@ class Thesaurus(Termset):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.base = BASE
+        self.scheme = URIRef(self.base.rstrip('/'))
+        self.add((self.scheme, RDF.type, SKOS.ConceptScheme))
+        self.add((self.scheme, SKOS.prefLabel, Literal("Queerlit")))
 
-    def complete_relations() -> "Thesaurus":
+    def complete_relations(self) -> "Thesaurus":
         """Add triples to ensure that all term-term relations are two-way."""
-        # broader <-> narrower
-        # set inScheme
-        # ajust topConceptOf
-        # topConceptOf <-> hasTopConcept
-        # related <-> related (or not?)
-        raise NotImplemented
+
+        for term in self.refs():
+            # broader <-> narrower
+            parents = chain(
+                self.objects(term, SKOS.broader),
+                self.subjects(SKOS.narrower, term),
+            )
+            for parent in parents:
+                self.add((parent, SKOS.narrower, term))
+
+            children = chain(
+                self.objects(term, SKOS.narrower),
+                self.subjects(SKOS.broader, term),
+            )
+            for child in children:
+                self.add((term, SKOS.narrower, child))
+
+            # related <-> related
+            relateds = chain(
+                self.objects(term, SKOS.related),
+                self.subjects(SKOS.related, term),
+            )
+            for related in relateds:
+                self.add((term, SKOS.related, related))
+                self.add((related, SKOS.related, term))
+
+            # set inScheme
+            self.set((term, SKOS.inScheme, self.scheme))
+
+            # adjust topConceptOf
+            # topConceptOf <-> hasTopConcept
+            if list(self.objects(term, SKOS.broader)):
+                self.set((term, SKOS.topConceptOf, self.scheme))
+                self.add((self.scheme, SKOS.hasTopConcept, term))
+            else:
+                self.remove((term, SKOS.topConceptOf, None))
+                self.remove((self.scheme, SKOS.hasTopConcept, term))
+
+            # set dates
+            # TODO Remove after first launch. Figure out how to update "modified".
+            now_str = datetime.utcnow().isoformat().split('.')[0]
+            now = Literal(now_str, datatype=XSD.dateTime)
+            self.set((term, DCTERMS.issued, now))
+            self.set((term, DCTERMS.modified, now))
+
+            # validate identifiers
+            name = basename(term)
+            identifier = str(self.value(term, DCTERMS.identifier))
+            if name != identifier:
+                print(f'Identifier "{identifier}" != URI basename "{name}"')
 
     def terms_if(self, f) -> Termset:
         """Creates a subset with terms matching some condition."""

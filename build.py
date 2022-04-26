@@ -1,8 +1,5 @@
-
-
 from os import listdir
 from os.path import join
-
 from rdflib import Graph
 from qlit.thesaurus import Thesaurus
 
@@ -23,9 +20,13 @@ if __name__ == '__main__':
             continue
 
         try:
-            # Why not thesaurus.parse(path)? Because then we cannot resolve parse errors by skipping the input file.
-            # Graph.parse adds triples incrementally, so we'd get weird data. Better skip entire terms then, I think.
-            term_graph = Graph().parse(join(INDIR, fn))
+            with open(join(INDIR, fn)) as f:
+                data = f.read()
+                data = data.replace('http://queerlit.se/qlit/',
+                                    'https://queerlit.dh.gu.se/qlit/v1/')
+                data = data.replace('http://queerlit.se/termer',
+                                    'https://queerlit.dh.gu.se/qlit/v1')
+            term_graph = Graph().parse(data=data)
             thesaurus += term_graph
         except Exception as err:
             # Report error and skip this input file.
@@ -37,7 +38,8 @@ if __name__ == '__main__':
         print(f'WARNING: Skipped {len(skipped)} files')
     print(f'Parsed {len(fns) - len(skipped)} files')
 
-    # TODO Complete relations
+    # Complete relations
+    thesaurus.complete_relations()
 
     # Write result.
     terms = thesaurus.refs()
