@@ -1,0 +1,2 @@
+FLASK_APP=qlit.server
+FLASK_RUN_PORT=5010

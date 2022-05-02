@@ -1,12 +1,14 @@
+import os
 from flask import Flask, Response, jsonify, make_response, request
-
+from qlit.thesaurus import Termset, Thesaurus
 from qlit.simple import SimpleThesaurus, name_to_ref
-from .thesaurus import Termset, Thesaurus
 
 app = Flask(__name__)
 
 THESAURUS = Thesaurus().parse('qlit.nt')
 THESAURUS_SIMPLE = SimpleThesaurus() + THESAURUS
+
+print(f'Loaded thesaurus with {len(THESAURUS.refs())} terms')
 
 
 def termset_response(termset: Termset) -> Response:

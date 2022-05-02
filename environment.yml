@@ -1,0 +1,9 @@
+name: qlit
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  - python=3.10
+  - Flask=2.1.*
+  - python-dotenv=0.20.*
+  - rdflib=6.1.*

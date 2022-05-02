@@ -66,8 +66,9 @@ class Thesaurus(Termset):
                 self.remove((self.scheme, SKOS.hasTopConcept, term))
 
             # set dates
-            # TODO Remove after first launch. Figure out how to update "modified".
-            now_str = datetime.utcnow().isoformat().split('.')[0]
+            # TODO Update at first launch. Figure out how to update "modified".
+            # now_str = datetime.utcnow().isoformat().split('.')[0]
+            now_str = "2022-05-02T13:57:47"
             now = Literal(now_str, datatype=XSD.dateTime)
             self.set((term, DCTERMS.issued, now))
             self.set((term, DCTERMS.modified, now))

@@ -1,14 +1,18 @@
 from os import listdir
+import os
 from os.path import join
+from dotenv import load_dotenv
 from rdflib import Graph
 from qlit.thesaurus import Thesaurus
 
+load_dotenv()
+
 if __name__ == '__main__':
-    INDIR = '/Users/arildm/OneDrive-Shared/Olov Kriström - TTLs'
-    # INDIR = 'ttls_test'
+    if 'INDIR' not in os.environ:
+        raise EnvironmentError('Error: INDIR missing from env')
 
     # Prepare parsing.
-    fns = [fn for fn in listdir(INDIR) if not fn.startswith('.')]
+    fns = [fn for fn in listdir(os.environ['INDIR']) if not fn.startswith('.')]
     print(f'Parsing {len(fns)} files...')
     thesaurus = Thesaurus()
     skipped = []
@@ -20,7 +24,7 @@ if __name__ == '__main__':
             continue
 
         try:
-            with open(join(INDIR, fn)) as f:
+            with open(join(os.environ['INDIR'], fn)) as f:
                 data = f.read()
                 data = data.replace('http://queerlit.se/qlit/',
                                     'https://queerlit.dh.gu.se/qlit/v1/')

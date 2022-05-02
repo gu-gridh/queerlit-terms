@@ -1,4 +1,4 @@
 test/
 out/
-.ipynb_checkpoints/
-qlit.ttl
+__pycache__/
+.env
