@@ -5,7 +5,7 @@ from .thesaurus import Termset, Thesaurus
 
 app = Flask(__name__)
 
-THESAURUS = Thesaurus().parse('qlit.ttl')
+THESAURUS = Thesaurus().parse('qlit.nt')
 THESAURUS_SIMPLE = SimpleThesaurus() + THESAURUS
 
 
