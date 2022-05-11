@@ -10,20 +10,35 @@ THESAURUS_SIMPLE = SimpleThesaurus() + THESAURUS
 
 print(f'Loaded thesaurus with {len(THESAURUS.refs())} terms')
 
+FORMATS = {
+    'ttl': 'text/turtle',
+    'jsonld': 'application/ld+json',
+    'xml': 'application/rdf+xml',
+}
+
+
+def find_mimetype() -> str:
+    # First prio: `format` param
+    format_param = request.args.get('format')
+    if format_param and FORMATS.get(format_param):
+        return FORMATS.get(format_param)
+
+    # Next prio: `Accept` header
+    header_mimetype = request.accept_mimetypes.best
+    if header_mimetype and header_mimetype in FORMATS.values():
+        return header_mimetype
+
+    # Fall back to Turtle
+    return 'text/turtle'
+
 
 def termset_response(termset: Termset) -> Response:
     """Use preferred MIME type for serialization and response."""
-    # Default to Turtle
-    DEFAULT_MIMETYPE = 'text/turtle'
-    mimetype = request.accept_mimetypes.best.replace('*/*', DEFAULT_MIMETYPE)
-    # Allowed are at least: application/ld+json, text/turtle
-    try:
-        data = termset.serialize(format=mimetype)
-    except PluginException:
-        mimetype = DEFAULT_MIMETYPE
-        data = termset.serialize(format=mimetype)
+    mimetype = find_mimetype()
 
-    # For Turtle, specify encoding. For other formats, the encoding is
+    data = termset.serialize(format=mimetype)
+
+    # Specify encoding.
     if mimetype.startswith('text/'):
         mimetype += '; charset=utf-8'
 
