@@ -1,9 +1,10 @@
 from flask import Flask, Response, jsonify, make_response, request
+from flask_cors import CORS
 from qlit.thesaurus import Termset, Thesaurus
 from qlit.simple import SimpleThesaurus, name_to_ref
-from rdflib.plugin import PluginException
 
 app = Flask(__name__)
+CORS(app)
 
 THESAURUS = Thesaurus().parse('qlit.nt')
 THESAURUS_SIMPLE = SimpleThesaurus() + THESAURUS
