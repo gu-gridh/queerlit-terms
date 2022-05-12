@@ -1,6 +1,7 @@
 from os.path import basename
 from datetime import datetime
 from itertools import chain
+import re
 from rdflib import DCTERMS, RDF, SKOS, XSD, Graph, Literal, URIRef
 
 BASE = 'https://queerlit.dh.gu.se/qlit/v1/'
@@ -103,6 +104,19 @@ class Thesaurus(Termset):
         """Find terms that are related to a given term."""
         return self.terms_if(lambda term: (term, SKOS.related, other) in self)
 
-    def autocomplete(q: str) -> Termset:
+    def autocomplete(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
-        raise NotImplemented
+        def split_label(string):
+            return re.split(r'[ -/()]', string)
+
+        def is_match(term):
+            label = self.value(term, SKOS.prefLabel)
+            altLabels = self.objects(term, SKOS.altLabel)
+            labels = [label] + list(altLabels)
+            return any(
+                word.startswith(s)
+                for label in labels
+                for word in split_label(label)
+            )
+
+        return self.terms_if(is_match)
