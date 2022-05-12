@@ -31,6 +31,9 @@ if __name__ == '__main__':
                 data = data.replace('http://queerlit.se/termer',
                                     'https://queerlit.dh.gu.se/qlit/v1')
             term_graph = Graph().parse(data=data)
+            for s, p, o in term_graph:
+                if p.endswith(':'):
+                    raise Exception(f'Predicate ends with colon: {p}')
             thesaurus += term_graph
         except Exception as err:
             # Report error and skip this input file.
