@@ -28,30 +28,26 @@ class Thesaurus(Termset):
     def complete_relations(self) -> "Thesaurus":
         """Add triples to ensure that all term-term relations are two-way."""
 
+        def exists_or_warn(s_term, p_label, o_term):
+            s = s_term.split('/')[-1]
+            o = o_term.split('/')[-1]
+            if o_term not in self.refs():
+                print(f'WARNING: Missing {o} ({p_label} in {s})')
+
         for term in self.refs():
             # broader <-> narrower
-            parents = chain(
-                self.objects(term, SKOS.broader),
-                self.subjects(SKOS.narrower, term),
-            )
-            for parent in parents:
-                self.add((parent, SKOS.narrower, term))
+            for parent in self.objects(term, SKOS.broader):
+                exists_or_warn(term, 'broader', parent)
+                self.add((term, SKOS.broader, parent))
 
-            children = chain(
-                self.objects(term, SKOS.narrower),
-                self.subjects(SKOS.broader, term),
-            )
-            for child in children:
+            for child in self.objects(term, SKOS.narrower):
+                exists_or_warn(term, 'narrower', child)
                 self.add((term, SKOS.narrower, child))
 
             # related <-> related
-            relateds = chain(
-                self.objects(term, SKOS.related),
-                self.subjects(SKOS.related, term),
-            )
-            for related in relateds:
-                self.add((term, SKOS.related, related))
-                self.add((related, SKOS.related, term))
+            for relatee in self.objects(term, SKOS.related):
+                exists_or_warn(term, 'related', relatee)
+                self.add((relatee, SKOS.related, term))
 
             # set inScheme
             self.set((term, SKOS.inScheme, self.scheme))
