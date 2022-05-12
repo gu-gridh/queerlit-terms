@@ -92,3 +92,10 @@ def api_parents():
     # TODO Distinguish 404 from root
     child = request.args.get('child')
     return jsonify(THESAURUS_SIMPLE.get_parents(child))
+
+@app.route("/api/related")
+def api_related():
+    # TODO Handle missing/bad arg
+    # TODO Distinguish 404 from root
+    other = request.args.get('other')
+    return jsonify(THESAURUS_SIMPLE.get_related(other))

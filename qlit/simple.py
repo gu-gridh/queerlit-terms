@@ -58,6 +58,9 @@ class SimpleThesaurus(Thesaurus):
     def get_parents(self, child: str) -> list[SimpleTerm]:
         return super().get_parents(name_to_ref(child))
 
+    def get_related(self, other: str) -> list[SimpleTerm]:
+        return super().get_related(name_to_ref(other))
+
     def get_all(self) -> list[SimpleTerm]:
         """All terms as dicts."""
         return SimpleTerm.from_termset(self)

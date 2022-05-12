@@ -91,13 +91,17 @@ class Thesaurus(Termset):
         """Find all terms without parents."""
         return self.terms_if(lambda term: (term, SKOS.broader, None) not in self)
 
+    def get_children(self, parent: URIRef) -> Termset:
+        """Find terms that are directly narrower than a given term."""
+        return self.terms_if(lambda term: (term, SKOS.broader, parent) in self)
+
     def get_parents(self, child: URIRef) -> Termset:
         """Find terms that are directly broader than a given term."""
         return self.terms_if(lambda term: (child, SKOS.broader, term) in self)
 
-    def get_children(self, parent: URIRef) -> Termset:
-        """Find terms that are directly narrower than a given term."""
-        return self.terms_if(lambda term: (term, SKOS.broader, parent) in self)
+    def get_related(self, other: URIRef) -> Termset:
+        """Find terms that are related to a given term."""
+        return self.terms_if(lambda term: (term, SKOS.related, other) in self)
 
     def autocomplete(q: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
