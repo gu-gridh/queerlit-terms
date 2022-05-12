@@ -114,7 +114,7 @@ class Thesaurus(Termset):
             altLabels = self.objects(term, SKOS.altLabel)
             labels = [label] + list(altLabels)
             return any(
-                word.startswith(s)
+                word.lower().startswith(s.lower())
                 for label in labels
                 for word in split_label(label)
             )
