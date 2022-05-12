@@ -67,7 +67,7 @@ def api_all():
     return jsonify(THESAURUS_SIMPLE.get_all())
 
 
-@app.route("/api/<name>")
+@app.route("/api/term/<name>")
 def api_one(name):
     # TODO Handle 404
     return jsonify(THESAURUS_SIMPLE.get(name))
