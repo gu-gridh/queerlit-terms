@@ -25,6 +25,7 @@ class SimpleTerm(dict):
             uri=str(subject),
             prefLabel=termset.value(subject, SKOS.prefLabel),
             altLabels=list(termset.objects(subject, SKOS.altLabel)),
+            scopeNote=termset.value(subject, SKOS.scopeNote),
             broader=[ref_to_name(ref)
                      for ref in termset.objects(subject, SKOS.broader)],
             narrower=[ref_to_name(ref)
