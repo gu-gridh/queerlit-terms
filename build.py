@@ -1,4 +1,3 @@
-from os import listdir
 import os
 from os.path import join
 from dotenv import load_dotenv
@@ -12,17 +11,13 @@ if __name__ == '__main__':
         raise EnvironmentError('Error: INDIR missing from env')
 
     # Prepare parsing.
-    fns = [fn for fn in listdir(os.environ['INDIR']) if not fn.startswith('.')]
+    fns = [fn for fn in os.listdir(os.environ['INDIR']) if not fn.startswith('.')]
     print(f'Parsing {len(fns)} files...')
     thesaurus = Thesaurus()
     skipped = []
 
     # Parse input files.
     for fn in fns:
-        # Skip non-RDF files.
-        if fn.startswith('.'):
-            continue
-
         try:
             with open(join(os.environ['INDIR'], fn)) as f:
                 data = f.read()
