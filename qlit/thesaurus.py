@@ -55,6 +55,7 @@ class Thesaurus(Termset):
 
             # adjust topConceptOf
             # topConceptOf <-> hasTopConcept
+            self.remove((term, SKOS.hasTopConcept, None))
             if list(self.objects(term, SKOS.broader)):
                 self.set((term, SKOS.topConceptOf, self.scheme))
                 self.add((self.scheme, SKOS.hasTopConcept, term))

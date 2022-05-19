@@ -8862,7 +8862,6 @@
 <https://queerlit.dh.gu.se/qlit/v1/pz10lk70> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/pz10lk70> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/vh55tv72> .
 <https://queerlit.dh.gu.se/qlit/v1/pz10lk70> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000625> .
-<https://queerlit.dh.gu.se/qlit/v1/pz10lk70> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://queerlit.dh.gu.se/qlit/v1/ba46pk33> .
 <https://queerlit.dh.gu.se/qlit/v1/pz10lk70> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/pz10lk70> <http://www.w3.org/2004/02/skos/core#prefLabel> "Heterosexuella äktenskap" .
 <https://queerlit.dh.gu.se/qlit/v1/pz10lk70> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där heterosexuella äktenskap har betydelse för verket." .
