@@ -65,7 +65,7 @@ class Thesaurus(Termset):
             # set dates
             # TODO Update at first launch. Figure out how to update "modified".
             # now_str = datetime.utcnow().isoformat().split('.')[0]
-            now_str = "2022-05-02T13:57:47"
+            now_str = "2022-05-19T10:12:00"
             now = Literal(now_str, datatype=XSD.dateTime)
             self.set((term, DCTERMS.issued, now))
             self.set((term, DCTERMS.modified, now))
