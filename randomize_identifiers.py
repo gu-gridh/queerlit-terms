@@ -21,7 +21,7 @@ new_ids = id_generator.render_set(len(old_refs))
 
 old_ids = [ref_to_name(old_ref) for old_ref in old_refs]
 new_refs = [name_to_ref(new_id) for new_id in new_ids]
-items = zip(old_refs, new_refs, old_ids, new_ids)
+items = list(zip(old_refs, new_refs, old_ids, new_ids))
 
 if __name__ == '__main__':
     for (old_ref, new_ref, old_id, new_id) in items:
