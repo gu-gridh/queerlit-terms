@@ -38,6 +38,8 @@ See [build.py](build.py) and [Thesaurus.complete_relations()](qlit/thesaurus.py#
 1. Add to `.env` file: `FLASK_ENV=development`
 2. Run `flask run`
 
+See [server.py](qlit/server.py).
+
 ### HTTP API
 
 | Path                          | Response                                    |
