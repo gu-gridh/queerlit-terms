@@ -41,6 +41,7 @@ if __name__ == '__main__':
     print(f'Parsed {len(fns) - len(skipped)} files')
 
     # Complete relations
+    print('Completing relations...')
     thesaurus.complete_relations()
 
     # Write result.

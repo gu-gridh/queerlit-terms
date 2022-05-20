@@ -34,34 +34,36 @@ class Thesaurus(Termset):
             o = o_term.split('/')[-1]
             if o_term not in self.refs():
                 print(f'WARNING: Missing {o} ({p_label} in {s})')
+                return False
+            return True
 
         for term in self.refs():
             # broader <-> narrower
             for parent in self.objects(term, SKOS.broader):
-                exists_or_warn(term, 'broader', parent)
-                self.add((term, SKOS.broader, parent))
+                if exists_or_warn(term, 'broader', parent):
+                    self.add((parent, SKOS.narrower, term))
 
             for child in self.objects(term, SKOS.narrower):
-                exists_or_warn(term, 'narrower', child)
-                self.add((term, SKOS.narrower, child))
+                if exists_or_warn(term, 'narrower', child):
+                    self.add((child, SKOS.broader, term))
 
             # related <-> related
             for relatee in self.objects(term, SKOS.related):
-                exists_or_warn(term, 'related', relatee)
-                self.add((relatee, SKOS.related, term))
+                if exists_or_warn(term, 'related', relatee):
+                    self.add((relatee, SKOS.related, term))
 
             # set inScheme
             self.set((term, SKOS.inScheme, self.scheme))
 
             # adjust topConceptOf
             # topConceptOf <-> hasTopConcept
-            self.remove((term, SKOS.hasTopConcept, None))
-            if list(self.objects(term, SKOS.broader)):
+            self.remove((term, SKOS.topConceptOf, None))
+            if list(self.objects(term, SKOS.hasTopConcept)):
+                print(f'WARNING: Term {term} must not use hasTopConcept')
+                self.remove((term, SKOS.hasTopConcept, None))
+            if not list(self.objects(term, SKOS.broader)):
                 self.set((term, SKOS.topConceptOf, self.scheme))
                 self.add((self.scheme, SKOS.hasTopConcept, term))
-            else:
-                self.remove((term, SKOS.topConceptOf, None))
-                self.remove((self.scheme, SKOS.hasTopConcept, term))
 
             # set dates
             # TODO Update at first launch. Figure out how to update "modified".
