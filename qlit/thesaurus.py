@@ -65,14 +65,6 @@ class Thesaurus(Termset):
                 self.set((term, SKOS.topConceptOf, self.scheme))
                 self.add((self.scheme, SKOS.hasTopConcept, term))
 
-            # set dates
-            # TODO Update at first launch. Figure out how to update "modified".
-            # now_str = datetime.utcnow().isoformat().split('.')[0]
-            now_str = "2022-05-19T10:12:00"
-            now = Literal(now_str, datatype=XSD.dateTime)
-            self.set((term, DCTERMS.issued, now))
-            self.set((term, DCTERMS.modified, now))
-
             # validate identifiers
             name = basename(term)
             identifier = str(self.value(term, DCTERMS.identifier))
