@@ -2,12 +2,12 @@ from datetime import datetime
 from itertools import filterfalse
 import os
 from os.path import join
-import sys
+import re
 from dotenv import load_dotenv
-from rdflib import DCTERMS, SKOS, XSD, Literal, URIRef
+from rdflib import DCTERMS, SKOS, XSD, Literal
 from qlit.identifier import generate_identifier, validate_identifier
 from qlit.simple import name_to_ref, ref_to_name
-from qlit.thesaurus import BASE, Termset, Thesaurus
+from qlit.thesaurus import Termset, Thesaurus
 
 load_dotenv()
 
@@ -23,41 +23,6 @@ rdf_now = Literal(
     datetime.utcnow().isoformat().split('.')[0],
     datatype=XSD.dateTime)
 
-
-
-def update_or_create_term(thesaurus: Thesaurus, termset: Termset):
-    # TODO: Update modified in complete_relations() too
-    term_uri = termset.refs()[0]
-    identifier = termset.value(term_uri, DCTERMS.identifier)
-    termset.base = BASE
-    
-    existing_terms = list(thesaurus.subjects(DCTERMS.identifier, identifier))
-    if len(existing_terms) > 1:
-        raise ValueError(f'Multiple terms with id "{identifier}"')
-    if existing_terms:
-        update_term(thesaurus, termset)
-    else:
-        print(f'Adding new term {identifier}')
-        termset.set((term_uri, DCTERMS.issued, rdf_now))
-        termset.set((term_uri, DCTERMS.modified, rdf_now))
-        thesaurus += termset
-
-def update_term(thesaurus: Thesaurus, termset: Termset):
-    term_uri = termset.refs()[0]
-    old_termset = thesaurus.terms_if(lambda term: term == term_uri)
-    # ps = [SKOS.altLabel, SKOS.broader, SKOS.broadMatch, SKOS.exactMatch, SKOS.narrower, SKOS.prefLabel, SKOS.scopeNote]
-    ps = [SKOS.altLabel, SKOS.broadMatch, SKOS.exactMatch, SKOS.prefLabel, SKOS.scopeNote]
-    has_changed = False
-    for p in ps:
-        if list(termset.objects(term_uri, p)) != list(old_termset.objects(term_uri, p)):
-            if not has_changed:
-                print(f'Updating term {ref_to_name(term_uri)}')
-            print(f'- Change in {p}')
-            thesaurus.remove((term_uri, p, None))
-            thesaurus += termset.triples((term_uri, p, None))
-            thesaurus.set((term_uri, DCTERMS.modified, rdf_now))
-            has_changed = True
-    return has_changed
 
 def randomize_ids(thesaurus: Thesaurus):
     """Replace all non-randomized ids with new, randomized ids."""
@@ -85,10 +50,45 @@ def replace_identifier(thesaurus: Thesaurus, old_id: str, new_id: str):
     thesaurus.set((new_ref, DCTERMS.identifier, Literal(new_id)))
 
 
+def check_changes(thesaurus: Thesaurus, thesaurus_prev: Thesaurus):
+    ps = [SKOS.altLabel, SKOS.broader, SKOS.broadMatch, SKOS.exactMatch, SKOS.narrower, SKOS.prefLabel, SKOS.scopeNote]
+    
+    uris = thesaurus.refs()
+    uris_prev = thesaurus_prev.refs()
+    
+    count_new = 0
+    count_changed = 0
+    count_removed = len(list(uri for uri in uris_prev if uri not in uris))
+
+    for term_uri in uris:
+        if term_uri not in uris_prev:
+            # This term is a new addition.
+            thesaurus.set((term_uri, DCTERMS.issued, rdf_now))
+            thesaurus.set((term_uri, DCTERMS.modified, rdf_now))
+            count_new += 1
+        else:
+            # Are there any changes in the term?
+            changed_ps = []
+            for p in ps:
+                a = sorted(thesaurus.objects(term_uri, p))
+                b = sorted(thesaurus_prev.objects(term_uri, p))
+                if a != b:
+                    changed_ps.append(p)
+                    # print(p)
+                    # print(a)
+                    # print(b)
+            if (changed_ps):
+                # The term has changes.
+                p_names = [re.sub(r'.*[/#]', '', p) for p in changed_ps]
+                print(f'Changes for {ref_to_name(term_uri)} in {", ".join(p_names)}')
+                thesaurus.set((term_uri, DCTERMS.modified, rdf_now))
+                count_changed += 1
+    return count_changed, count_new, count_removed
+
 
 if __name__ == '__main__':
     # Load current state.
-    thesaurus = Thesaurus().parse(THESAURUSFILE)
+    thesaurus = Thesaurus()
 
     # Prepare parsing.
     fns = [fn for fn in os.listdir(INDIR) if not fn.startswith('.')]
@@ -105,7 +105,9 @@ if __name__ == '__main__':
             for s, p, o in termset:
                 if p.endswith(':'):
                     raise SyntaxError(f'Predicate ends with colon: {p}')
-            update_or_create_term(thesaurus, termset)
+            term_uri = termset.refs()[0]
+            thesaurus.remove((term_uri, None, None))
+            thesaurus += termset
         except Exception as err:
             # Report error and skip this input file.
             print(f'{fn}: {type(err)} {err}')
@@ -123,6 +125,12 @@ if __name__ == '__main__':
     # Complete relations
     print('Completing relations...')
     thesaurus.complete_relations()
+
+    # Load another copy to track changes.
+    print('Checking changes...')
+    thesaurus_prev = Thesaurus().parse(THESAURUSFILE)
+    count_changed, count_new, count_removed = check_changes(thesaurus, thesaurus_prev)
+    print(f'{count_changed} changed, {count_new} new, {count_removed} removed')
 
     # Write result.
     terms = thesaurus.refs()
