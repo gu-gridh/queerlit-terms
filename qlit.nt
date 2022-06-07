@@ -79,7 +79,6 @@
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85039675> .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000378> .
-<https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Drogmissbruk> .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#prefLabel> "Drogmissbruk" .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/si22wr35> .
@@ -151,11 +150,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/af08vn83> <http://www.w3.org/2004/02/skos/core#altLabel> "Erhållen fitta" .
 <https://queerlit.dh.gu.se/qlit/v1/af08vn83> <http://www.w3.org/2004/02/skos/core#altLabel> "Erhållen vagina" .
 <https://queerlit.dh.gu.se/qlit/v1/af08vn83> <http://www.w3.org/2004/02/skos/core#altLabel> "Neofitta" .
-<https://queerlit.dh.gu.se/qlit/v1/af08vn83> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ca74me52> .
 <https://queerlit.dh.gu.se/qlit/v1/af08vn83> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/xx33tt54> .
 <https://queerlit.dh.gu.se/qlit/v1/af08vn83> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001040> .
 <https://queerlit.dh.gu.se/qlit/v1/af08vn83> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/af08vn83> <http://www.w3.org/2004/02/skos/core#prefLabel> "Neovaginor" .
+<https://queerlit.dh.gu.se/qlit/v1/af08vn83> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/sd59fm82> .
 <https://queerlit.dh.gu.se/qlit/v1/af08vn83> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av vaginor skapade genom kirurgi på någon som tidigare saknat vagina." .
 <https://queerlit.dh.gu.se/qlit/v1/af25bs10> <http://purl.org/dc/terms/identifier> "af25bs10" .
 <https://queerlit.dh.gu.se/qlit/v1/af25bs10> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -415,8 +414,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/at95bg04> <http://www.w3.org/2004/02/skos/core#altLabel> "Bisexuellas mammor" .
 <https://queerlit.dh.gu.se/qlit/v1/at95bg04> <http://www.w3.org/2004/02/skos/core#altLabel> "Bisexuellas mödrar" .
 <https://queerlit.dh.gu.se/qlit/v1/at95bg04> <http://www.w3.org/2004/02/skos/core#altLabel> "Mödrar till bisexuella" .
+<https://queerlit.dh.gu.se/qlit/v1/at95bg04> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/co94lt05> .
 <https://queerlit.dh.gu.se/qlit/v1/at95bg04> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/gp40jp83> .
-<https://queerlit.dh.gu.se/qlit/v1/at95bg04> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> .
+<https://queerlit.dh.gu.se/qlit/v1/at95bg04> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/mammorTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/at95bg04> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ok80xs64> .
+<https://queerlit.dh.gu.se/qlit/v1/at95bg04> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/za20tz00> .
 <https://queerlit.dh.gu.se/qlit/v1/at95bg04> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001022> .
 <https://queerlit.dh.gu.se/qlit/v1/at95bg04> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/at95bg04> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mammor till bisexuella" .
@@ -650,7 +652,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/bi56bw40> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/bi56bw40> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/bi56bw40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://queerlit.dh.gu.se/qlit/v1/bi56bw40> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> .
+<https://queerlit.dh.gu.se/qlit/v1/bi56bw40> <http://www.w3.org/2004/02/skos/core#altLabel> "Transpersoners föräldrar" .
+<https://queerlit.dh.gu.se/qlit/v1/bi56bw40> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/en57qx14> .
+<https://queerlit.dh.gu.se/qlit/v1/bi56bw40> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/bi56bw40> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ka03eo05> .
+<https://queerlit.dh.gu.se/qlit/v1/bi56bw40> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ry47im63> .
 <https://queerlit.dh.gu.se/qlit/v1/bi56bw40> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001078> .
 <https://queerlit.dh.gu.se/qlit/v1/bi56bw40> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/bi56bw40> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/cw73qe15> .
@@ -763,8 +769,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/bp52jf13> <http://www.w3.org/2004/02/skos/core#altLabel> "Intersexpersoners mammor" .
 <https://queerlit.dh.gu.se/qlit/v1/bp52jf13> <http://www.w3.org/2004/02/skos/core#altLabel> "Intersexpersoners mödrar" .
 <https://queerlit.dh.gu.se/qlit/v1/bp52jf13> <http://www.w3.org/2004/02/skos/core#altLabel> "Mödrar till intersexpersoner" .
-<https://queerlit.dh.gu.se/qlit/v1/bp52jf13> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> .
+<https://queerlit.dh.gu.se/qlit/v1/bp52jf13> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/co94lt05> .
+<https://queerlit.dh.gu.se/qlit/v1/bp52jf13> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/mammorTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/bp52jf13> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ok80xs64> .
 <https://queerlit.dh.gu.se/qlit/v1/bp52jf13> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/um33qf35> .
+<https://queerlit.dh.gu.se/qlit/v1/bp52jf13> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/za20tz00> .
 <https://queerlit.dh.gu.se/qlit/v1/bp52jf13> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/bp52jf13> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mammor till intersexpersoner" .
 <https://queerlit.dh.gu.se/qlit/v1/bp52jf13> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av mammor till intersexpersoner, oavsett mammans egen identitet." .
@@ -1052,6 +1061,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/by72wh90> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/by72wh90> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/by72wh90> <http://www.w3.org/2004/02/skos/core#altLabel> "Hiv-positiva" .
+<https://queerlit.dh.gu.se/qlit/v1/by72wh90> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh95001199> .
 <https://queerlit.dh.gu.se/qlit/v1/by72wh90> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000636> .
 <https://queerlit.dh.gu.se/qlit/v1/by72wh90> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Personer%20som%20lever%20med%20HIV%20> .
 <https://queerlit.dh.gu.se/qlit/v1/by72wh90> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
@@ -1134,7 +1144,6 @@
 <https://queerlit.dh.gu.se/qlit/v1/ca74me52> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/rb83rq15> .
 <https://queerlit.dh.gu.se/qlit/v1/ca74me52> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000584> .
 <https://queerlit.dh.gu.se/qlit/v1/ca74me52> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
-<https://queerlit.dh.gu.se/qlit/v1/ca74me52> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/af08vn83> .
 <https://queerlit.dh.gu.se/qlit/v1/ca74me52> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/am70ft34> .
 <https://queerlit.dh.gu.se/qlit/v1/ca74me52> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/sd59fm82> .
 <https://queerlit.dh.gu.se/qlit/v1/ca74me52> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/zj98an94> .
@@ -1181,23 +1190,22 @@
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/um90bw50> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://homosaurus.org/v3/homoit0001075> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
-<https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/bi56bw40> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ca40ds96> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> .
+<https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/en57qx14> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/fg62ba53> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/fk47ml54> .
-<https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/fv17pe76> .
-<https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> .
-<https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gp40jp83> .
+<https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/jm19os62> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/jt69hs39> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/jv45ng56> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/jz19cb14> .
+<https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ka03eo05> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/nv42jb62> .
+<https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ry47im63> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/sj39nw12> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/uc52sc28> .
-<https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/um33qf35> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/uy59sk22> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/xx44cw56> .
 <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> <http://www.w3.org/2004/02/skos/core#prefLabel> "Föräldrar (HBTQI)" .
@@ -1459,6 +1467,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/cm18bw55> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/aq42lk11> .
 <https://queerlit.dh.gu.se/qlit/v1/cm18bw55> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85081797> .
 <https://queerlit.dh.gu.se/qlit/v1/cm18bw55> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000995> .
+<https://queerlit.dh.gu.se/qlit/v1/cm18bw55> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Manlighet> .
 <https://queerlit.dh.gu.se/qlit/v1/cm18bw55> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/cm18bw55> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maskulinitet" .
 <https://queerlit.dh.gu.se/qlit/v1/cm18bw55> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/gh93af20> .
@@ -1481,6 +1490,23 @@
 <https://queerlit.dh.gu.se/qlit/v1/cm51lf45> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/bq69wo36> .
 <https://queerlit.dh.gu.se/qlit/v1/cm51lf45> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/nc67ku99> .
 <https://queerlit.dh.gu.se/qlit/v1/cm51lf45> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar, historiska eller historiserande, som använder begreppet inverterade - ett äldre ord som syftar på en föreställd omkastning av förväntade könsrelaterade egenskaper, begär eller kroppsliga karakteristika hos en person. Historiskt har begreppet främst använts för att beskriva personer med samkönad begärsriktning, men förekommer även som beskrivning på andra inom HBTQI-spektrat." .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://purl.org/dc/terms/identifier> "cm75il46" .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://purl.org/dc/terms/issued> "2022-06-07T13:46:08"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://purl.org/dc/terms/modified> "2022-06-07T13:46:08"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#altLabel> "Fäder till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers fäder" .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers pappor" .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gz58ku31> .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/je63sm61> .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/tm80vg73> .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/tt22xp58> .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/yc15ui85> .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pappor till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/cm75il46> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av pappor till HBTQI-personer, oavsett pappans egen identitet." .
 <https://queerlit.dh.gu.se/qlit/v1/cn23yx07> <http://purl.org/dc/terms/identifier> "cn23yx07" .
 <https://queerlit.dh.gu.se/qlit/v1/cn23yx07> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/cn23yx07> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -1533,6 +1559,23 @@
 <https://queerlit.dh.gu.se/qlit/v1/co90rk32> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/qb93wl71> .
 <https://queerlit.dh.gu.se/qlit/v1/co90rk32> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/up80qv89> .
 <https://queerlit.dh.gu.se/qlit/v1/co90rk32> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av samlag där en dildo fastsatt på ett harness används för att penetrera." .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://purl.org/dc/terms/identifier> "co94lt05" .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://purl.org/dc/terms/issued> "2022-06-07T13:46:08"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://purl.org/dc/terms/modified> "2022-06-07T13:46:08"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers mammor" .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers mödrar" .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#altLabel> "Mödrar till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/at95bg04> .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/bp52jf13> .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/cw73qe15> .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/db65rd76> .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/lw04vi58> .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mammor till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/co94lt05> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av mammor till HBTQI-personer, oavsett mammans egen identitet." .
 <https://queerlit.dh.gu.se/qlit/v1/cp04io51> <http://purl.org/dc/terms/identifier> "cp04io51" .
 <https://queerlit.dh.gu.se/qlit/v1/cp04io51> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/cp04io51> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -1708,7 +1751,10 @@
 <https://queerlit.dh.gu.se/qlit/v1/cw73qe15> <http://www.w3.org/2004/02/skos/core#altLabel> "Transpersoners mammor" .
 <https://queerlit.dh.gu.se/qlit/v1/cw73qe15> <http://www.w3.org/2004/02/skos/core#altLabel> "Transpersoners mödrar" .
 <https://queerlit.dh.gu.se/qlit/v1/cw73qe15> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/bi56bw40> .
-<https://queerlit.dh.gu.se/qlit/v1/cw73qe15> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> .
+<https://queerlit.dh.gu.se/qlit/v1/cw73qe15> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/co94lt05> .
+<https://queerlit.dh.gu.se/qlit/v1/cw73qe15> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/mammorTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/cw73qe15> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ok80xs64> .
+<https://queerlit.dh.gu.se/qlit/v1/cw73qe15> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/za20tz00> .
 <https://queerlit.dh.gu.se/qlit/v1/cw73qe15> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001025> .
 <https://queerlit.dh.gu.se/qlit/v1/cw73qe15> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/cw73qe15> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mammor till transpersoner" .
@@ -1802,8 +1848,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/db65rd76> <http://www.w3.org/2004/02/skos/core#altLabel> "Mödrar till queera personer" .
 <https://queerlit.dh.gu.se/qlit/v1/db65rd76> <http://www.w3.org/2004/02/skos/core#altLabel> "Queera personers mammor" .
 <https://queerlit.dh.gu.se/qlit/v1/db65rd76> <http://www.w3.org/2004/02/skos/core#altLabel> "Queera personers mödrar" .
+<https://queerlit.dh.gu.se/qlit/v1/db65rd76> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/co94lt05> .
 <https://queerlit.dh.gu.se/qlit/v1/db65rd76> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> .
-<https://queerlit.dh.gu.se/qlit/v1/db65rd76> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> .
+<https://queerlit.dh.gu.se/qlit/v1/db65rd76> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/mammorTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/db65rd76> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ok80xs64> .
+<https://queerlit.dh.gu.se/qlit/v1/db65rd76> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/za20tz00> .
 <https://queerlit.dh.gu.se/qlit/v1/db65rd76> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/db65rd76> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mammor till queera personer" .
 <https://queerlit.dh.gu.se/qlit/v1/db65rd76> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av mammor till queera personer, oavsett mammans egen identitet." .
@@ -2023,15 +2072,14 @@
 <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/barn/Pappor> .
 <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/F%C3%A4der> .
 <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/cm75il46> .
 <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/el38sj28> .
-<https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gz58ku31> .
-<https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/je63sm61> .
+<https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ir13cj74> .
 <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/je73wy14> .
 <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/kz63vs02> .
 <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/mt54dp88> .
-<https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/tm80vg73> .
-<https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/tt22xp58> .
-<https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/yc15ui85> .
+<https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/on26dy46> .
+<https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/papporTillHBTQIPersoner> .
 <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pappor" .
 <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av pappor." .
 <https://queerlit.dh.gu.se/qlit/v1/ds64zm22> <http://purl.org/dc/terms/identifier> "ds64zm22" .
@@ -2383,6 +2431,24 @@
 <https://queerlit.dh.gu.se/qlit/v1/en38lc34> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/um93rl06> .
 <https://queerlit.dh.gu.se/qlit/v1/en38lc34> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där preventivmedel har betydelse för verket." .
 <https://queerlit.dh.gu.se/qlit/v1/en38lc34> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://purl.org/dc/terms/identifier> "en57qx14" .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://purl.org/dc/terms/issued> "2022-06-07T13:22:57"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://purl.org/dc/terms/modified> "2022-06-07T13:22:57"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers föräldrar" .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/bi56bw40> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/fv17pe76> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gp40jp83> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/mammorTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/papporTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/um33qf35> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#prefLabel> "Föräldrar till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ot53zk29> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/rl94ul47> .
+<https://queerlit.dh.gu.se/qlit/v1/en57qx14> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av föräldrar till HBTQI-personer, oavsett biologiskt släktskap." .
 <https://queerlit.dh.gu.se/qlit/v1/eo10gl87> <http://purl.org/dc/terms/identifier> "eo10gl87" .
 <https://queerlit.dh.gu.se/qlit/v1/eo10gl87> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/eo10gl87> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -2628,7 +2694,9 @@
 <https://queerlit.dh.gu.se/qlit/v1/fc56gu03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/fc56gu03> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/he13pb69> .
 <https://queerlit.dh.gu.se/qlit/v1/fc56gu03> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/vn20br71> .
+<https://queerlit.dh.gu.se/qlit/v1/fc56gu03> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85071224> .
 <https://queerlit.dh.gu.se/qlit/v1/fc56gu03> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000685> .
+<https://queerlit.dh.gu.se/qlit/v1/fc56gu03> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Kabuki> .
 <https://queerlit.dh.gu.se/qlit/v1/fc56gu03> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/fc56gu03> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kabuki" .
 <https://queerlit.dh.gu.se/qlit/v1/fc56gu03> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/hb81xa89> .
@@ -2881,6 +2949,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/fv02uf39> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ft03mv01> .
 <https://queerlit.dh.gu.se/qlit/v1/fv02uf39> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85143788> .
 <https://queerlit.dh.gu.se/qlit/v1/fv02uf39> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001493> .
+<https://queerlit.dh.gu.se/qlit/v1/fv02uf39> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Oskuld> .
 <https://queerlit.dh.gu.se/qlit/v1/fv02uf39> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/fv02uf39> <http://www.w3.org/2004/02/skos/core#prefLabel> "Oskuld" .
 <https://queerlit.dh.gu.se/qlit/v1/fv02uf39> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/bw78bx64> .
@@ -2891,7 +2960,10 @@
 <https://queerlit.dh.gu.se/qlit/v1/fv17pe76> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/fv17pe76> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/fv17pe76> <http://www.w3.org/2004/02/skos/core#altLabel> "Homosexuellas föräldrar" .
-<https://queerlit.dh.gu.se/qlit/v1/fv17pe76> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> .
+<https://queerlit.dh.gu.se/qlit/v1/fv17pe76> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/en57qx14> .
+<https://queerlit.dh.gu.se/qlit/v1/fv17pe76> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/fv17pe76> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ka03eo05> .
+<https://queerlit.dh.gu.se/qlit/v1/fv17pe76> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ry47im63> .
 <https://queerlit.dh.gu.se/qlit/v1/fv17pe76> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/F%C3%B6r%C3%A4ldrar%20till%20homosexuella> .
 <https://queerlit.dh.gu.se/qlit/v1/fv17pe76> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/fv17pe76> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/fh64du23> .
@@ -3128,7 +3200,10 @@
 <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> <http://www.w3.org/2004/02/skos/core#altLabel> "Queera personers föräldrar" .
-<https://queerlit.dh.gu.se/qlit/v1/gf03gn85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> .
+<https://queerlit.dh.gu.se/qlit/v1/gf03gn85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/en57qx14> .
+<https://queerlit.dh.gu.se/qlit/v1/gf03gn85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/gf03gn85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ka03eo05> .
+<https://queerlit.dh.gu.se/qlit/v1/gf03gn85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ry47im63> .
 <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001077> .
 <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/db65rd76> .
@@ -3143,6 +3218,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ba46pk33> .
 <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000362> .
+<https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Samboende> .
 <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/2004/02/skos/core#prefLabel> "Samboförhållanden" .
 <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ar69hs67> .
@@ -3194,6 +3270,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/gh93af20> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/aq42lk11> .
 <https://queerlit.dh.gu.se/qlit/v1/gh93af20> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/he13pb69> .
 <https://queerlit.dh.gu.se/qlit/v1/gh93af20> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000047> .
+<https://queerlit.dh.gu.se/qlit/v1/gh93af20> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Androgyni> .
 <https://queerlit.dh.gu.se/qlit/v1/gh93af20> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/gh93af20> <http://www.w3.org/2004/02/skos/core#prefLabel> "Androgynitet" .
 <https://queerlit.dh.gu.se/qlit/v1/gh93af20> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/cm18bw55> .
@@ -3209,6 +3286,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/gi07re10> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/nk19mk45> .
 <https://queerlit.dh.gu.se/qlit/v1/gi07re10> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85098541> .
 <https://queerlit.dh.gu.se/qlit/v1/gi07re10> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001092> .
+<https://queerlit.dh.gu.se/qlit/v1/gi07re10> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Pass%20%28legitimationshandling%29> .
 <https://queerlit.dh.gu.se/qlit/v1/gi07re10> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/gi07re10> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pass" .
 <https://queerlit.dh.gu.se/qlit/v1/gi07re10> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/aa40zb14> .
@@ -3280,7 +3358,10 @@
 <https://queerlit.dh.gu.se/qlit/v1/gp40jp83> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/gp40jp83> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/gp40jp83> <http://www.w3.org/2004/02/skos/core#altLabel> "Bisexuellas föräldrar" .
-<https://queerlit.dh.gu.se/qlit/v1/gp40jp83> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> .
+<https://queerlit.dh.gu.se/qlit/v1/gp40jp83> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/en57qx14> .
+<https://queerlit.dh.gu.se/qlit/v1/gp40jp83> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/gp40jp83> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ka03eo05> .
+<https://queerlit.dh.gu.se/qlit/v1/gp40jp83> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ry47im63> .
 <https://queerlit.dh.gu.se/qlit/v1/gp40jp83> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000173> .
 <https://queerlit.dh.gu.se/qlit/v1/gp40jp83> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/gp40jp83> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/at95bg04> .
@@ -3378,6 +3459,8 @@
 <https://queerlit.dh.gu.se/qlit/v1/gx43ps05> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> .
 <https://queerlit.dh.gu.se/qlit/v1/gx43ps05> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85047905> .
 <https://queerlit.dh.gu.se/qlit/v1/gx43ps05> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000659> .
+<https://queerlit.dh.gu.se/qlit/v1/gx43ps05> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/barn/Provr%C3%B6rsbefruktning> .
+<https://queerlit.dh.gu.se/qlit/v1/gx43ps05> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Provr%C3%B6rsbefruktning> .
 <https://queerlit.dh.gu.se/qlit/v1/gx43ps05> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/gx43ps05> <http://www.w3.org/2004/02/skos/core#prefLabel> "IVF" .
 <https://queerlit.dh.gu.se/qlit/v1/gx43ps05> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av assisterad befruktning utanför kroppen." .
@@ -3417,12 +3500,13 @@
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://www.w3.org/2004/02/skos/core#altLabel> "Amazoner" .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/la83kc00> .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://id.loc.gov/authorities/subjects/sh85004138> .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://id.kb.se/term/sao/Amasoner> .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000040> .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
-<https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://www.w3.org/2004/02/skos/core#prefLabel> "Amazoner" .
+<https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://www.w3.org/2004/02/skos/core#prefLabel> "Amasoner" .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/lj67gb57> .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ml83ih14> .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av kvinnliga krigare i antik grekisk mytologi och för skildringar där begreppet använts generellt för kvinnliga krigare och/eller som en kulturell symbol i lesbiska sammanhang." .
@@ -3447,8 +3531,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/gz58ku31> <http://www.w3.org/2004/02/skos/core#altLabel> "Bisexuellas fäder" .
 <https://queerlit.dh.gu.se/qlit/v1/gz58ku31> <http://www.w3.org/2004/02/skos/core#altLabel> "Bisexuellas pappor" .
 <https://queerlit.dh.gu.se/qlit/v1/gz58ku31> <http://www.w3.org/2004/02/skos/core#altLabel> "Fäder till bisexuella" .
-<https://queerlit.dh.gu.se/qlit/v1/gz58ku31> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> .
+<https://queerlit.dh.gu.se/qlit/v1/gz58ku31> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cm75il46> .
 <https://queerlit.dh.gu.se/qlit/v1/gz58ku31> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/gp40jp83> .
+<https://queerlit.dh.gu.se/qlit/v1/gz58ku31> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ir13cj74> .
+<https://queerlit.dh.gu.se/qlit/v1/gz58ku31> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/on26dy46> .
+<https://queerlit.dh.gu.se/qlit/v1/gz58ku31> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/papporTillHBTQIPersoner> .
 <https://queerlit.dh.gu.se/qlit/v1/gz58ku31> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000424> .
 <https://queerlit.dh.gu.se/qlit/v1/gz58ku31> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/gz58ku31> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pappor till bisexuella" .
@@ -4451,6 +4538,23 @@
 <https://queerlit.dh.gu.se/qlit/v1/iq97le56> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/cl13zp51> .
 <https://queerlit.dh.gu.se/qlit/v1/iq97le56> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hemlösa HBTQI-ungdomar" .
 <https://queerlit.dh.gu.se/qlit/v1/iq97le56> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av HBTQI-ungdomar som lever i hemlöshet. Hemlöshet innebär att personen saknar en fast bostad i en kultur där fast bostad är norm." .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://purl.org/dc/terms/identifier> "ir13cj74" .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#altLabel> "Fäder till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers fäder" .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers pappor" .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gz58ku31> .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/je63sm61> .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/tm80vg73> .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/tt22xp58> .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/yc15ui85> .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pappor till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/ir13cj74> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av pappor till HBTQI-personer, oavsett pappans egen identitet." .
 <https://queerlit.dh.gu.se/qlit/v1/ir89ck62> <http://purl.org/dc/terms/identifier> "ir89ck62" .
 <https://queerlit.dh.gu.se/qlit/v1/ir89ck62> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ir89ck62> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -4657,7 +4761,10 @@
 <https://queerlit.dh.gu.se/qlit/v1/je63sm61> <http://www.w3.org/2004/02/skos/core#altLabel> "Fäder till intersexpersoner" .
 <https://queerlit.dh.gu.se/qlit/v1/je63sm61> <http://www.w3.org/2004/02/skos/core#altLabel> "Intersexpersoners fäder" .
 <https://queerlit.dh.gu.se/qlit/v1/je63sm61> <http://www.w3.org/2004/02/skos/core#altLabel> "Intersexpersoners pappor" .
-<https://queerlit.dh.gu.se/qlit/v1/je63sm61> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> .
+<https://queerlit.dh.gu.se/qlit/v1/je63sm61> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cm75il46> .
+<https://queerlit.dh.gu.se/qlit/v1/je63sm61> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ir13cj74> .
+<https://queerlit.dh.gu.se/qlit/v1/je63sm61> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/on26dy46> .
+<https://queerlit.dh.gu.se/qlit/v1/je63sm61> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/papporTillHBTQIPersoner> .
 <https://queerlit.dh.gu.se/qlit/v1/je63sm61> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/um33qf35> .
 <https://queerlit.dh.gu.se/qlit/v1/je63sm61> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/je63sm61> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pappor till intersexpersoner" .
@@ -4808,6 +4915,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/ji09iu69> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/ji09iu69> <http://www.w3.org/2004/02/skos/core#altLabel> "Insemination" .
 <https://queerlit.dh.gu.se/qlit/v1/ji09iu69> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> .
+<https://queerlit.dh.gu.se/qlit/v1/ji09iu69> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85008176> .
 <https://queerlit.dh.gu.se/qlit/v1/ji09iu69> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000069> .
 <https://queerlit.dh.gu.se/qlit/v1/ji09iu69> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Insemination> .
 <https://queerlit.dh.gu.se/qlit/v1/ji09iu69> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
@@ -5298,6 +5406,24 @@
 <https://queerlit.dh.gu.se/qlit/v1/jz77my04> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/jz77my04> <http://www.w3.org/2004/02/skos/core#prefLabel> "HBTQI-personer med intellektuella funktionsnedsättningar – perifert" .
 <https://queerlit.dh.gu.se/qlit/v1/jz77my04> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där HBTQI-personer med intellektuella funktionsnedsättningar har en perifer betydelse för verket." .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://purl.org/dc/terms/identifier> "ka03eo05" .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers föräldrar" .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/bi56bw40> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/fv17pe76> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gp40jp83> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/mammorTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/papporTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/um33qf35> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#prefLabel> "Föräldrar till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ot53zk29> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/rl94ul47> .
+<https://queerlit.dh.gu.se/qlit/v1/ka03eo05> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av föräldrar till HBTQI-personer, oavsett biologiskt släktskap." .
 <https://queerlit.dh.gu.se/qlit/v1/ka49ic33> <http://purl.org/dc/terms/identifier> "ka49ic33" .
 <https://queerlit.dh.gu.se/qlit/v1/ka49ic33> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ka49ic33> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -5832,6 +5958,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/la19ou04> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/nx46rw80> .
 <https://queerlit.dh.gu.se/qlit/v1/la19ou04> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85064634> .
 <https://queerlit.dh.gu.se/qlit/v1/la19ou04> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000375> .
+<https://queerlit.dh.gu.se/qlit/v1/la19ou04> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Dragqueens> .
 <https://queerlit.dh.gu.se/qlit/v1/la19ou04> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/la19ou04> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/kp64ff95> .
 <https://queerlit.dh.gu.se/qlit/v1/la19ou04> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/sh16ni93> .
@@ -5842,7 +5969,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/la19ou04> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/rh61yd98> .
 <https://queerlit.dh.gu.se/qlit/v1/la19ou04> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/vg78hx15> .
 <https://queerlit.dh.gu.se/qlit/v1/la19ou04> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/vu62yz77> .
-<https://queerlit.dh.gu.se/qlit/v1/la19ou04> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som ikläder sig kvinnligt kodade attribut, ofta i överdriven tappning, i underhållningssyfte." .
+<https://queerlit.dh.gu.se/qlit/v1/la19ou04> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som ikläder sig kvinnligt kodade attribut, ofta i överdriven tappning, i underhållningssyfte och/eller som uttryck för en subkultur präglad av experimentella eller parodierande könsuttryck." .
 <https://queerlit.dh.gu.se/qlit/v1/la83kc00> <http://purl.org/dc/terms/identifier> "la83kc00" .
 <https://queerlit.dh.gu.se/qlit/v1/la83kc00> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/la83kc00> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -5976,6 +6103,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#altLabel> "Kemiskt beroende" .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85129539> .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000251> .
+<https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Drogmissbruk> .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/bk48ga51> .
@@ -6191,8 +6319,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/lw04vi58> <http://www.w3.org/2004/02/skos/core#altLabel> "Homosexuellas mammor" .
 <https://queerlit.dh.gu.se/qlit/v1/lw04vi58> <http://www.w3.org/2004/02/skos/core#altLabel> "Homosexuellas mödrar" .
 <https://queerlit.dh.gu.se/qlit/v1/lw04vi58> <http://www.w3.org/2004/02/skos/core#altLabel> "Mödrar till homosexuella" .
+<https://queerlit.dh.gu.se/qlit/v1/lw04vi58> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/co94lt05> .
 <https://queerlit.dh.gu.se/qlit/v1/lw04vi58> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/fv17pe76> .
-<https://queerlit.dh.gu.se/qlit/v1/lw04vi58> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> .
+<https://queerlit.dh.gu.se/qlit/v1/lw04vi58> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/mammorTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/lw04vi58> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ok80xs64> .
+<https://queerlit.dh.gu.se/qlit/v1/lw04vi58> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/za20tz00> .
 <https://queerlit.dh.gu.se/qlit/v1/lw04vi58> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/lw04vi58> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/du81jk20> .
 <https://queerlit.dh.gu.se/qlit/v1/lw04vi58> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ie06xm16> .
@@ -6239,6 +6370,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/ly14nd30> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ci78xa22> .
 <https://queerlit.dh.gu.se/qlit/v1/ly14nd30> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh97004057> .
 <https://queerlit.dh.gu.se/qlit/v1/ly14nd30> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000665> .
+<https://queerlit.dh.gu.se/qlit/v1/ly14nd30> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Elektroniska%20diskussionsgrupper> .
 <https://queerlit.dh.gu.se/qlit/v1/ly14nd30> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/ly14nd30> <http://www.w3.org/2004/02/skos/core#prefLabel> "Internetforum" .
 <https://queerlit.dh.gu.se/qlit/v1/ly14nd30> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där webbaserade diskussionsforum på internet har betydelse för verket." .
@@ -6400,7 +6532,8 @@
 <https://queerlit.dh.gu.se/qlit/v1/mi66sk40> <http://www.w3.org/2004/02/skos/core#altLabel> "Intergenerationella förhållanden" .
 <https://queerlit.dh.gu.se/qlit/v1/mi66sk40> <http://www.w3.org/2004/02/skos/core#altLabel> "Relationer över generationsgränser" .
 <https://queerlit.dh.gu.se/qlit/v1/mi66sk40> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/lm49rl65> .
-<https://queerlit.dh.gu.se/qlit/v1/mi66sk40> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85067264> .
+<https://queerlit.dh.gu.se/qlit/v1/mi66sk40> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://id.loc.gov/authorities/subjects/sh85067264> .
+<https://queerlit.dh.gu.se/qlit/v1/mi66sk40> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://id.kb.se/term/sao/Relationer%20mellan%20generationer> .
 <https://queerlit.dh.gu.se/qlit/v1/mi66sk40> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000663> .
 <https://queerlit.dh.gu.se/qlit/v1/mi66sk40> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/mi66sk40> <http://www.w3.org/2004/02/skos/core#prefLabel> "Intergenerationella relationer" .
@@ -6638,8 +6771,10 @@
 <https://queerlit.dh.gu.se/qlit/v1/mw98ml69> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/mw98ml69> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/mw98ml69> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://queerlit.dh.gu.se/qlit/v1/mw98ml69> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh97007082> .
+<https://queerlit.dh.gu.se/qlit/v1/mw98ml69> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85046572> .
 <https://queerlit.dh.gu.se/qlit/v1/mw98ml69> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000611> .
+<https://queerlit.dh.gu.se/qlit/v1/mw98ml69> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/barn/Utpressning> .
+<https://queerlit.dh.gu.se/qlit/v1/mw98ml69> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Utpressning> .
 <https://queerlit.dh.gu.se/qlit/v1/mw98ml69> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/mw98ml69> <http://www.w3.org/2004/02/skos/core#prefLabel> "Utpressning" .
 <https://queerlit.dh.gu.se/qlit/v1/mw98ml69> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/gd64om76> .
@@ -6698,7 +6833,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/na03ov93> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/na03ov93> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/na03ov93> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://queerlit.dh.gu.se/qlit/v1/na03ov93> <http://www.w3.org/2004/02/skos/core#altLabel> "B & D" .
+<https://queerlit.dh.gu.se/qlit/v1/na03ov93> <http://www.w3.org/2004/02/skos/core#altLabel> "B&D" .
 <https://queerlit.dh.gu.se/qlit/v1/na03ov93> <http://www.w3.org/2004/02/skos/core#altLabel> "Bondage and discipline" .
 <https://queerlit.dh.gu.se/qlit/v1/na03ov93> <http://www.w3.org/2004/02/skos/core#altLabel> "Bondage och disciplin" .
 <https://queerlit.dh.gu.se/qlit/v1/na03ov93> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/of65zl26> .
@@ -6938,19 +7073,20 @@
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#altLabel> "Familjeplanering (HBTQI)" .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://homosaurus.org/v3/homoit0000864> .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gx43ps05> .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ji09iu69> .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/wl28xr24> .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/xf07qh23> .
-<https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#prefLabel> "Familjeplanering (HBTQI)" .
+<https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#prefLabel> "Skaffa barn (HBTQI)" .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/of81kq28> .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/sr56ul39> .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/tz25ps34> .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/xf74zb26> .
-<https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av HBTQI-personer som planerar för skapandet av familj. För skildringar av metoder för att förhindra oönskade graviditeter, se \"Preventivmedel\"." .
+<https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av HBTQI-personer som planerar för att skaffa barn." .
 <https://queerlit.dh.gu.se/qlit/v1/ni09mn87> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/ni43ar58> <http://purl.org/dc/terms/identifier> "ni43ar58" .
 <https://queerlit.dh.gu.se/qlit/v1/ni43ar58> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -7028,7 +7164,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/nk19mk45> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/jp21cy02> .
 <https://queerlit.dh.gu.se/qlit/v1/nk19mk45> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/os76md08> .
 <https://queerlit.dh.gu.se/qlit/v1/nk19mk45> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/vh55tv72> .
-<https://queerlit.dh.gu.se/qlit/v1/nk19mk45> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där dokument och handlingar utfärdade av en juridisk, medicinsk eller på annat viss offentlig instans har betydelse för verket." .
+<https://queerlit.dh.gu.se/qlit/v1/nk19mk45> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där dokument och handlingar utfärdade av en juridisk, medicinsk eller på annat vis offentlig instans har betydelse för verket." .
 <https://queerlit.dh.gu.se/qlit/v1/nl71fq44> <http://purl.org/dc/terms/identifier> "nl71fq44" .
 <https://queerlit.dh.gu.se/qlit/v1/nl71fq44> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/nl71fq44> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -7261,10 +7397,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/nx46rw80> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/nx46rw80> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/nx46rw80> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/nx46rw80> <http://www.w3.org/2004/02/skos/core#altLabel> "Drag" .
+<https://queerlit.dh.gu.se/qlit/v1/nx46rw80> <http://www.w3.org/2004/02/skos/core#altLabel> "Dragshowartister" .
 <https://queerlit.dh.gu.se/qlit/v1/nx46rw80> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/he13pb69> .
 <https://queerlit.dh.gu.se/qlit/v1/nx46rw80> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/of32ux74> .
 <https://queerlit.dh.gu.se/qlit/v1/nx46rw80> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://homosaurus.org/v3/homoit0000367> .
-<https://queerlit.dh.gu.se/qlit/v1/nx46rw80> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://id.kb.se/term/sao/Dragshowartister> .
 <https://queerlit.dh.gu.se/qlit/v1/nx46rw80> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/nx46rw80> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/la19ou04> .
 <https://queerlit.dh.gu.se/qlit/v1/nx46rw80> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/my06tq83> .
@@ -7645,6 +7782,23 @@
 <https://queerlit.dh.gu.se/qlit/v1/ok34rh07> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/uo93cr93> .
 <https://queerlit.dh.gu.se/qlit/v1/ok34rh07> <http://www.w3.org/2004/02/skos/core#prefLabel> "Artister (HBTQI) – perifert" .
 <https://queerlit.dh.gu.se/qlit/v1/ok34rh07> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där HBTQI-personer som är artister har en perifer betydelse för verket." .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://purl.org/dc/terms/identifier> "ok80xs64" .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers mammor" .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers mödrar" .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#altLabel> "Mödrar till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/at95bg04> .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/bp52jf13> .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/cw73qe15> .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/db65rd76> .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/lw04vi58> .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mammor till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/ok80xs64> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av mammor till HBTQI-personer, oavsett mammans egen identitet." .
 <https://queerlit.dh.gu.se/qlit/v1/ok84eb06> <http://purl.org/dc/terms/identifier> "ok84eb06" .
 <https://queerlit.dh.gu.se/qlit/v1/ok84eb06> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ok84eb06> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -7655,6 +7809,23 @@
 <https://queerlit.dh.gu.se/qlit/v1/ok84eb06> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/ok84eb06> <http://www.w3.org/2004/02/skos/core#prefLabel> "Asiater (HBTQI) – perifert" .
 <https://queerlit.dh.gu.se/qlit/v1/ok84eb06> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där HBTQI-personer med eget eller historiskt ursprung i Asien har en perifer betydelse för verket." .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://purl.org/dc/terms/identifier> "on26dy46" .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://purl.org/dc/terms/issued> "2022-06-07T13:22:57"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://purl.org/dc/terms/modified> "2022-06-07T13:22:57"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#altLabel> "Fäder till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers fäder" .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers pappor" .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gz58ku31> .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/je63sm61> .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/tm80vg73> .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/tt22xp58> .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/yc15ui85> .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pappor till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/on26dy46> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av pappor till HBTQI-personer, oavsett pappans egen identitet." .
 <https://queerlit.dh.gu.se/qlit/v1/oo84xg08> <http://purl.org/dc/terms/identifier> "oo84xg08" .
 <https://queerlit.dh.gu.se/qlit/v1/oo84xg08> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/oo84xg08> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -7892,7 +8063,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/ot53zk29> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/yq72vv00> .
 <https://queerlit.dh.gu.se/qlit/v1/ot53zk29> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/zt16av80> .
 <https://queerlit.dh.gu.se/qlit/v1/ot53zk29> <http://www.w3.org/2004/02/skos/core#prefLabel> "HBTQI-personer" .
-<https://queerlit.dh.gu.se/qlit/v1/ot53zk29> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som beskrivs som homosexuella, bisexuella, transpersoner, queera och/eller intersexpersoner, eller som på andra sätt ." .
+<https://queerlit.dh.gu.se/qlit/v1/ot53zk29> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/en57qx14> .
+<https://queerlit.dh.gu.se/qlit/v1/ot53zk29> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/ot53zk29> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ka03eo05> .
+<https://queerlit.dh.gu.se/qlit/v1/ot53zk29> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ry47im63> .
+<https://queerlit.dh.gu.se/qlit/v1/ot53zk29> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som beskrivs som homosexuella, bisexuella, transpersoner, queera och/eller intersexpersoner, eller som på andra sätt genom begär, praktik, identitet och/eller kropp bryter mot hetero- och cisnormer." .
 <https://queerlit.dh.gu.se/qlit/v1/ot53zk29> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/ow68ja39> <http://purl.org/dc/terms/identifier> "ow68ja39" .
 <https://queerlit.dh.gu.se/qlit/v1/ow68ja39> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -7981,6 +8156,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/pd62ad09> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/pd62ad09> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/pd62ad09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/pd62ad09> <http://www.w3.org/2004/02/skos/core#altLabel> "Mobbing" .
 <https://queerlit.dh.gu.se/qlit/v1/pd62ad09> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh89006054> .
 <https://queerlit.dh.gu.se/qlit/v1/pd62ad09> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000228> .
 <https://queerlit.dh.gu.se/qlit/v1/pd62ad09> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/barn/Mobbning> .
@@ -8921,9 +9097,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/qt74hh13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/qt74hh13> <http://www.w3.org/2004/02/skos/core#altLabel> "Ménage à trois" .
 <https://queerlit.dh.gu.se/qlit/v1/qt74hh13> <http://www.w3.org/2004/02/skos/core#altLabel> "Triangeldrama" .
+<https://queerlit.dh.gu.se/qlit/v1/qt74hh13> <http://www.w3.org/2004/02/skos/core#altLabel> "Triangelrelationer" .
 <https://queerlit.dh.gu.se/qlit/v1/qt74hh13> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/td26cb41> .
 <https://queerlit.dh.gu.se/qlit/v1/qt74hh13> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh96008285> .
 <https://queerlit.dh.gu.se/qlit/v1/qt74hh13> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000976> .
+<https://queerlit.dh.gu.se/qlit/v1/qt74hh13> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Triangeldramer> .
 <https://queerlit.dh.gu.se/qlit/v1/qt74hh13> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/qt74hh13> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kärlekstrianglar" .
 <https://queerlit.dh.gu.se/qlit/v1/qt74hh13> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/cb49gf75> .
@@ -9063,6 +9241,8 @@
 <https://queerlit.dh.gu.se/qlit/v1/rb83rq15> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/he13pb69> .
 <https://queerlit.dh.gu.se/qlit/v1/rb83rq15> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/tp87vt58> .
 <https://queerlit.dh.gu.se/qlit/v1/rb83rq15> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://homosaurus.org/v3/homoit0000561> .
+<https://queerlit.dh.gu.se/qlit/v1/rb83rq15> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://id.kb.se/term/barn/K%C3%B6nskorrigering> .
+<https://queerlit.dh.gu.se/qlit/v1/rb83rq15> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://id.kb.se/term/sao/K%C3%B6nskorrigering> .
 <https://queerlit.dh.gu.se/qlit/v1/rb83rq15> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/rb83rq15> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ca74me52> .
 <https://queerlit.dh.gu.se/qlit/v1/rb83rq15> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/hj31eb45> .
@@ -9198,9 +9378,9 @@
 <https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#altLabel> "Drag-kungar" .
 <https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#altLabel> "Dragkungar" .
 <https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/nx46rw80> .
-<https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://id.kb.se/term/sao/Kvinnor%20i%20manskl%C3%A4der%20p%C3%A5%20scenen> .
 <https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh2021001446> .
 <https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000373> .
+<https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Dragkings> .
 <https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/kp64ff95> .
 <https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/sh16ni93> .
@@ -9211,7 +9391,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/jf44kn92> .
 <https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/la19ou04> .
 <https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/vu62yz77> .
-<https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som ikläder sig manligt kodade attribut, ofta i överdriven tappning, i underhållningssyfte." .
+<https://queerlit.dh.gu.se/qlit/v1/rh61yd98> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som ikläder sig manligt kodade attribut, ofta i överdriven tappning, i underhållningssyfte och/eller som uttryck för en subkultur präglad av experimentella eller parodierande könsuttryck." .
 <https://queerlit.dh.gu.se/qlit/v1/rh94xr73> <http://purl.org/dc/terms/identifier> "rh94xr73" .
 <https://queerlit.dh.gu.se/qlit/v1/rh94xr73> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/rh94xr73> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -9326,6 +9506,10 @@
 <https://queerlit.dh.gu.se/qlit/v1/rl94ul47> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/tp88nx27> .
 <https://queerlit.dh.gu.se/qlit/v1/rl94ul47> <http://www.w3.org/2004/02/skos/core#prefLabel> "HBTQI-barn" .
 <https://queerlit.dh.gu.se/qlit/v1/rl94ul47> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> .
+<https://queerlit.dh.gu.se/qlit/v1/rl94ul47> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/en57qx14> .
+<https://queerlit.dh.gu.se/qlit/v1/rl94ul47> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/rl94ul47> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ka03eo05> .
+<https://queerlit.dh.gu.se/qlit/v1/rl94ul47> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ry47im63> .
 <https://queerlit.dh.gu.se/qlit/v1/rl94ul47> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av barn som beskrivs som homosexuella, bisexuella, transpersoner, queera och/eller intersexpersoner." .
 <https://queerlit.dh.gu.se/qlit/v1/rm77zj74> <http://purl.org/dc/terms/identifier> "rm77zj74" .
 <https://queerlit.dh.gu.se/qlit/v1/rm77zj74> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -9429,9 +9613,12 @@
 <https://queerlit.dh.gu.se/qlit/v1/rr69vp38> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/rr69vp38> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/rr69vp38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/rr69vp38> <http://www.w3.org/2004/02/skos/core#altLabel> "Identitetshandlingar" .
+<https://queerlit.dh.gu.se/qlit/v1/rr69vp38> <http://www.w3.org/2004/02/skos/core#altLabel> "Identitetskort" .
 <https://queerlit.dh.gu.se/qlit/v1/rr69vp38> <http://www.w3.org/2004/02/skos/core#altLabel> "Legitimationer" .
 <https://queerlit.dh.gu.se/qlit/v1/rr69vp38> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/nk19mk45> .
 <https://queerlit.dh.gu.se/qlit/v1/rr69vp38> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://homosaurus.org/v3/homoit0001324> .
+<https://queerlit.dh.gu.se/qlit/v1/rr69vp38> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Identitetskort> .
 <https://queerlit.dh.gu.se/qlit/v1/rr69vp38> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/rr69vp38> <http://www.w3.org/2004/02/skos/core#prefLabel> "Id-kort" .
 <https://queerlit.dh.gu.se/qlit/v1/rr69vp38> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ff45ka28> .
@@ -9570,6 +9757,24 @@
 <https://queerlit.dh.gu.se/qlit/v1/ry45qm92> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/ry45qm92> <http://www.w3.org/2004/02/skos/core#prefLabel> "Transpar – perifert" .
 <https://queerlit.dh.gu.se/qlit/v1/ry45qm92> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där transpar har en perifer betydelse för verket." .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://purl.org/dc/terms/identifier> "ry47im63" .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://purl.org/dc/terms/issued> "2022-06-07T13:46:08"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://purl.org/dc/terms/modified> "2022-06-07T13:46:08"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers föräldrar" .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/bi56bw40> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/fv17pe76> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/gp40jp83> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/mammorTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/papporTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/um33qf35> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#prefLabel> "Föräldrar till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ot53zk29> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/rl94ul47> .
+<https://queerlit.dh.gu.se/qlit/v1/ry47im63> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av föräldrar till HBTQI-personer, oavsett biologiskt släktskap." .
 <https://queerlit.dh.gu.se/qlit/v1/sb19ql51> <http://purl.org/dc/terms/identifier> "sb19ql51" .
 <https://queerlit.dh.gu.se/qlit/v1/sb19ql51> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/sb19ql51> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -9601,6 +9806,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/sd59fm82> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001490> .
 <https://queerlit.dh.gu.se/qlit/v1/sd59fm82> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/sd59fm82> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vaginoplastik" .
+<https://queerlit.dh.gu.se/qlit/v1/sd59fm82> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/af08vn83> .
 <https://queerlit.dh.gu.se/qlit/v1/sd59fm82> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av könsbekräftande operationer med syfte att konstruera vulvor och vaginor." .
 <https://queerlit.dh.gu.se/qlit/v1/se35jv42> <http://purl.org/dc/terms/identifier> "se35jv42" .
 <https://queerlit.dh.gu.se/qlit/v1/se35jv42> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -9647,6 +9853,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/sf56xe20> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/aq42lk11> .
 <https://queerlit.dh.gu.se/qlit/v1/sf56xe20> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85047739> .
 <https://queerlit.dh.gu.se/qlit/v1/sf56xe20> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000389> .
+<https://queerlit.dh.gu.se/qlit/v1/sf56xe20> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Kvinnlighet> .
 <https://queerlit.dh.gu.se/qlit/v1/sf56xe20> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/sf56xe20> <http://www.w3.org/2004/02/skos/core#prefLabel> "Femininitet" .
 <https://queerlit.dh.gu.se/qlit/v1/sf56xe20> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/cm18bw55> .
@@ -10264,8 +10471,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/tm80vg73> <http://www.w3.org/2004/02/skos/core#altLabel> "Fäder till homosexuella" .
 <https://queerlit.dh.gu.se/qlit/v1/tm80vg73> <http://www.w3.org/2004/02/skos/core#altLabel> "Homosexuellas fäder" .
 <https://queerlit.dh.gu.se/qlit/v1/tm80vg73> <http://www.w3.org/2004/02/skos/core#altLabel> "Homosexuellas pappor" .
-<https://queerlit.dh.gu.se/qlit/v1/tm80vg73> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> .
+<https://queerlit.dh.gu.se/qlit/v1/tm80vg73> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cm75il46> .
 <https://queerlit.dh.gu.se/qlit/v1/tm80vg73> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/fv17pe76> .
+<https://queerlit.dh.gu.se/qlit/v1/tm80vg73> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ir13cj74> .
+<https://queerlit.dh.gu.se/qlit/v1/tm80vg73> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/on26dy46> .
+<https://queerlit.dh.gu.se/qlit/v1/tm80vg73> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/papporTillHBTQIPersoner> .
 <https://queerlit.dh.gu.se/qlit/v1/tm80vg73> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/tm80vg73> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/tq99vz71> .
 <https://queerlit.dh.gu.se/qlit/v1/tm80vg73> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/wv30pq25> .
@@ -10386,7 +10596,10 @@
 <https://queerlit.dh.gu.se/qlit/v1/tt22xp58> <http://www.w3.org/2004/02/skos/core#altLabel> "Transpersoners fäder" .
 <https://queerlit.dh.gu.se/qlit/v1/tt22xp58> <http://www.w3.org/2004/02/skos/core#altLabel> "Transpersoners pappor" .
 <https://queerlit.dh.gu.se/qlit/v1/tt22xp58> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/bi56bw40> .
-<https://queerlit.dh.gu.se/qlit/v1/tt22xp58> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> .
+<https://queerlit.dh.gu.se/qlit/v1/tt22xp58> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cm75il46> .
+<https://queerlit.dh.gu.se/qlit/v1/tt22xp58> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ir13cj74> .
+<https://queerlit.dh.gu.se/qlit/v1/tt22xp58> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/on26dy46> .
+<https://queerlit.dh.gu.se/qlit/v1/tt22xp58> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/papporTillHBTQIPersoner> .
 <https://queerlit.dh.gu.se/qlit/v1/tt22xp58> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000428> .
 <https://queerlit.dh.gu.se/qlit/v1/tt22xp58> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/tt22xp58> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pappor till transpersoner" .
@@ -10455,15 +10668,14 @@
 <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/barn/Mammor> .
 <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/M%C3%B6drar> .
 <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
-<https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/at95bg04> .
-<https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/bp52jf13> .
-<https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/cw73qe15> .
-<https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/db65rd76> .
-<https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/lw04vi58> .
+<https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/co94lt05> .
+<https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/mammorTillHBTQIPersoner> .
 <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/nc14hs94> .
+<https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ok80xs64> .
 <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/rk79wi90> .
 <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/tl61ll06> .
 <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/wf16vk19> .
+<https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/za20tz00> .
 <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mammor" .
 <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av mammor." .
 <https://queerlit.dh.gu.se/qlit/v1/tz25ps34> <http://purl.org/dc/terms/identifier> "tz25ps34" .
@@ -10711,6 +10923,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/ul59qe23> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/sw59hr91> .
 <https://queerlit.dh.gu.se/qlit/v1/ul59qe23> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh92002382> .
 <https://queerlit.dh.gu.se/qlit/v1/ul59qe23> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001010> .
+<https://queerlit.dh.gu.se/qlit/v1/ul59qe23> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Mansr%C3%B6relsen> .
 <https://queerlit.dh.gu.se/qlit/v1/ul59qe23> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/ul59qe23> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mansrörelser" .
 <https://queerlit.dh.gu.se/qlit/v1/ul59qe23> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av sociala rörelser som engagerar män och som verkar för mäns intressen." .
@@ -10728,7 +10941,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/um33qf35> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/um33qf35> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/um33qf35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://queerlit.dh.gu.se/qlit/v1/um33qf35> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cb60ry21> .
+<https://queerlit.dh.gu.se/qlit/v1/um33qf35> <http://www.w3.org/2004/02/skos/core#altLabel> "Intersexpersoners föräldrar" .
+<https://queerlit.dh.gu.se/qlit/v1/um33qf35> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/en57qx14> .
+<https://queerlit.dh.gu.se/qlit/v1/um33qf35> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/um33qf35> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ka03eo05> .
+<https://queerlit.dh.gu.se/qlit/v1/um33qf35> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ry47im63> .
 <https://queerlit.dh.gu.se/qlit/v1/um33qf35> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/um33qf35> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/bp52jf13> .
 <https://queerlit.dh.gu.se/qlit/v1/um33qf35> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/je63sm61> .
@@ -10869,7 +11086,9 @@
 <https://queerlit.dh.gu.se/qlit/v1/up80qv89> <http://www.w3.org/2004/02/skos/core#altLabel> "Snoppar" .
 <https://queerlit.dh.gu.se/qlit/v1/up80qv89> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cc01go96> .
 <https://queerlit.dh.gu.se/qlit/v1/up80qv89> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/nw90qo62> .
+<https://queerlit.dh.gu.se/qlit/v1/up80qv89> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85099480> .
 <https://queerlit.dh.gu.se/qlit/v1/up80qv89> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001099> .
+<https://queerlit.dh.gu.se/qlit/v1/up80qv89> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Penis> .
 <https://queerlit.dh.gu.se/qlit/v1/up80qv89> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/up80qv89> <http://www.w3.org/2004/02/skos/core#prefLabel> "Penisar" .
 <https://queerlit.dh.gu.se/qlit/v1/up80qv89> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/co90rk32> .
@@ -11190,6 +11409,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/vi05is98> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/xv86md55> .
 <https://queerlit.dh.gu.se/qlit/v1/vi05is98> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh96004236> .
 <https://queerlit.dh.gu.se/qlit/v1/vi05is98> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000429> .
+<https://queerlit.dh.gu.se/qlit/v1/vi05is98> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Kvinnlig%20v%C3%A4nskap> .
 <https://queerlit.dh.gu.se/qlit/v1/vi05is98> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/vi05is98> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kvinnors vänskap" .
 <https://queerlit.dh.gu.se/qlit/v1/vi05is98> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av vänskap mellan kvinnor." .
@@ -12287,6 +12507,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/xr59sg26> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/vn20br71> .
 <https://queerlit.dh.gu.se/qlit/v1/xr59sg26> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85099809> .
 <https://queerlit.dh.gu.se/qlit/v1/xr59sg26> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001102> .
+<https://queerlit.dh.gu.se/qlit/v1/xr59sg26> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Performance> .
 <https://queerlit.dh.gu.se/qlit/v1/xr59sg26> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/xr59sg26> <http://www.w3.org/2004/02/skos/core#prefLabel> "Performancekonst" .
 <https://queerlit.dh.gu.se/qlit/v1/xr59sg26> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av performancekonst - en konstnärlig praktik som präglas av fysisk gestaltning där själva handlandet, och ofta relationen mellan konstnär och publik, utgör verket." .
@@ -12489,6 +12710,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/xy93px60> <http://www.w3.org/2004/02/skos/core#altLabel> "Kvinnorörelsen" .
 <https://queerlit.dh.gu.se/qlit/v1/xy93px60> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/sw59hr91> .
 <https://queerlit.dh.gu.se/qlit/v1/xy93px60> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000438> .
+<https://queerlit.dh.gu.se/qlit/v1/xy93px60> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Kvinnor%C3%B6relsen> .
 <https://queerlit.dh.gu.se/qlit/v1/xy93px60> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/xy93px60> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kvinnorörelser" .
 <https://queerlit.dh.gu.se/qlit/v1/xy93px60> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/kb69pe59> .
@@ -12549,8 +12771,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/yc15ui85> <http://www.w3.org/2004/02/skos/core#altLabel> "Fäder till queera personer" .
 <https://queerlit.dh.gu.se/qlit/v1/yc15ui85> <http://www.w3.org/2004/02/skos/core#altLabel> "Queera personers fäder" .
 <https://queerlit.dh.gu.se/qlit/v1/yc15ui85> <http://www.w3.org/2004/02/skos/core#altLabel> "Queera personers pappor" .
-<https://queerlit.dh.gu.se/qlit/v1/yc15ui85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ds06gp49> .
+<https://queerlit.dh.gu.se/qlit/v1/yc15ui85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cm75il46> .
 <https://queerlit.dh.gu.se/qlit/v1/yc15ui85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> .
+<https://queerlit.dh.gu.se/qlit/v1/yc15ui85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ir13cj74> .
+<https://queerlit.dh.gu.se/qlit/v1/yc15ui85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/on26dy46> .
+<https://queerlit.dh.gu.se/qlit/v1/yc15ui85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/papporTillHBTQIPersoner> .
 <https://queerlit.dh.gu.se/qlit/v1/yc15ui85> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000427> .
 <https://queerlit.dh.gu.se/qlit/v1/yc15ui85> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/yc15ui85> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pappor till queera personer" .
@@ -12907,6 +13132,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/yp38jg66> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> .
 <https://queerlit.dh.gu.se/qlit/v1/yp38jg66> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/xx41vk00> .
 <https://queerlit.dh.gu.se/qlit/v1/yp38jg66> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000468> .
+<https://queerlit.dh.gu.se/qlit/v1/yp38jg66> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Homosexuella%20ungdomar> .
 <https://queerlit.dh.gu.se/qlit/v1/yp38jg66> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/yp38jg66> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/fy67zd15> .
 <https://queerlit.dh.gu.se/qlit/v1/yp38jg66> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/hh85bk61> .
@@ -12949,7 +13175,9 @@
 <https://queerlit.dh.gu.se/qlit/v1/ys42op85> <http://www.w3.org/2004/02/skos/core#altLabel> "Vänskap mellan män" .
 <https://queerlit.dh.gu.se/qlit/v1/ys42op85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/jx05kp14> .
 <https://queerlit.dh.gu.se/qlit/v1/ys42op85> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/xv86md55> .
+<https://queerlit.dh.gu.se/qlit/v1/ys42op85> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh93005650> .
 <https://queerlit.dh.gu.se/qlit/v1/ys42op85> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000982> .
+<https://queerlit.dh.gu.se/qlit/v1/ys42op85> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Manlig%20v%C3%A4nskap> .
 <https://queerlit.dh.gu.se/qlit/v1/ys42op85> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/ys42op85> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mäns vänskap" .
 <https://queerlit.dh.gu.se/qlit/v1/ys42op85> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av vänskap mellan män." .
@@ -13039,6 +13267,23 @@
 <https://queerlit.dh.gu.se/qlit/v1/yz49jc80> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/jy58jm84> .
 <https://queerlit.dh.gu.se/qlit/v1/yz49jc80> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/sq10os38> .
 <https://queerlit.dh.gu.se/qlit/v1/yz49jc80> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där sexuell utlösning och urladdning har betydelse för verket." .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://purl.org/dc/terms/identifier> "za20tz00" .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://purl.org/dc/terms/issued> "2022-06-07T13:22:57"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://purl.org/dc/terms/modified> "2022-06-07T13:22:57"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers mammor" .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personers mödrar" .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#altLabel> "Mödrar till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/föräldrarTillHBTQIPersoner> .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/tz07oe16> .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/at95bg04> .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/bp52jf13> .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/cw73qe15> .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/db65rd76> .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/lw04vi58> .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mammor till HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/za20tz00> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av mammor till HBTQI-personer, oavsett mammans egen identitet." .
 <https://queerlit.dh.gu.se/qlit/v1/zc56xf18> <http://purl.org/dc/terms/identifier> "zc56xf18" .
 <https://queerlit.dh.gu.se/qlit/v1/zc56xf18> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/zc56xf18> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
