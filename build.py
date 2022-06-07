@@ -1,11 +1,12 @@
 from datetime import datetime
+from itertools import filterfalse
 import os
 from os.path import join
 import sys
 from dotenv import load_dotenv
 from rdflib import DCTERMS, SKOS, XSD, Literal, URIRef
 from qlit.identifier import generate_identifier, validate_identifier
-from qlit.simple import name_to_ref
+from qlit.simple import name_to_ref, ref_to_name
 from qlit.thesaurus import BASE, Termset, Thesaurus
 
 load_dotenv()
@@ -24,8 +25,7 @@ rdf_now = Literal(
 
 
 
-def update_term(thesaurus: Thesaurus, termset: Termset):
-    # TODO: Don't randomize new ids until after parsing all ttls (they are in values too)
+def update_or_create_term(thesaurus: Thesaurus, termset: Termset):
     # TODO: Update modified in complete_relations() too
     term_uri = termset.refs()[0]
     identifier = termset.value(term_uri, DCTERMS.identifier)
@@ -35,42 +35,56 @@ def update_term(thesaurus: Thesaurus, termset: Termset):
     if len(existing_terms) > 1:
         raise ValueError(f'Multiple terms with id "{identifier}"')
     if existing_terms:
-        if has_term_changed(thesaurus, termset):
-            print(f'Updating term {identifier}')
-            thesaurus.remove((term_uri, None, None))
-            thesaurus += termset
-            termset.set((term_uri, DCTERMS.modified, rdf_now))
+        update_term(thesaurus, termset)
     else:
         print(f'Adding new term {identifier}')
         termset.set((term_uri, DCTERMS.issued, rdf_now))
         termset.set((term_uri, DCTERMS.modified, rdf_now))
-        if not validate_identifier(identifier):
-            old_identifier = identifier
-            identifier = generate_identifier()
-            print(f'- Replacing id {old_identifier} with {identifier}')
-            replace_identifier(termset, old_identifier, identifier)
         thesaurus += termset
 
-def replace_identifier(termset: Termset, old: str, new: str):
-    old_uri = name_to_ref(old)
-    new_uri = name_to_ref(new)
-    for p, o in termset.predicate_objects(old_uri):
-        if p == DCTERMS.identifier:
-            termset.add((new_uri, p, Literal(new)))
-        else:
-            termset.add((new_uri, p, o))
-    termset.remove((old_uri, None, None))
-
-def has_term_changed(thesaurus: Thesaurus, termset: Termset):
+def update_term(thesaurus: Thesaurus, termset: Termset):
     term_uri = termset.refs()[0]
     old_termset = thesaurus.terms_if(lambda term: term == term_uri)
-    ps = [SKOS.altLabel, SKOS.broader, SKOS.broadMatch, SKOS.exactMatch, SKOS.narrower, SKOS.prefLabel, SKOS.scopeNote]
+    # ps = [SKOS.altLabel, SKOS.broader, SKOS.broadMatch, SKOS.exactMatch, SKOS.narrower, SKOS.prefLabel, SKOS.scopeNote]
+    ps = [SKOS.altLabel, SKOS.broadMatch, SKOS.exactMatch, SKOS.prefLabel, SKOS.scopeNote]
     has_changed = False
     for p in ps:
         if list(termset.objects(term_uri, p)) != list(old_termset.objects(term_uri, p)):
+            if not has_changed:
+                print(f'Updating term {ref_to_name(term_uri)}')
             print(f'- Change in {p}')
+            thesaurus.remove((term_uri, p, None))
+            thesaurus += termset.triples((term_uri, p, None))
+            thesaurus.set((term_uri, DCTERMS.modified, rdf_now))
             has_changed = True
     return has_changed
+
+def randomize_ids(thesaurus: Thesaurus):
+    """Replace all non-randomized ids with new, randomized ids."""
+    uris = thesaurus.refs()
+    ids = [thesaurus.value(uri, DCTERMS.identifier) for uri in uris]
+    bad_ids = filterfalse(validate_identifier, ids)
+    for bad_id in bad_ids:
+        new_id = generate_identifier(ids)
+        print(f'New id {new_id} for {bad_id}')
+        replace_identifier(thesaurus, bad_id, new_id)
+
+def replace_identifier(thesaurus: Thesaurus, old_id: str, new_id: str):
+    """Replace all statements about the term `old_id` with statements about `new_id`"""
+    old_ref = name_to_ref(old_id)
+    new_ref = name_to_ref(new_id)
+    # Update outgoing statements
+    for p, o in thesaurus.predicate_objects(old_ref):
+        thesaurus.remove((old_ref, p, o))
+        thesaurus.add((new_ref, p, o))
+    # Update incoming relations
+    for s, p in thesaurus.subject_predicates(old_ref):
+        thesaurus.remove((s, p, old_ref))
+        thesaurus.add((s, p, new_ref))
+    # Update identifier literal
+    thesaurus.set((new_ref, DCTERMS.identifier, Literal(new_id)))
+
+
 
 if __name__ == '__main__':
     # Load current state.
@@ -91,7 +105,7 @@ if __name__ == '__main__':
             for s, p, o in termset:
                 if p.endswith(':'):
                     raise SyntaxError(f'Predicate ends with colon: {p}')
-            update_term(thesaurus, termset)
+            update_or_create_term(thesaurus, termset)
         except Exception as err:
             # Report error and skip this input file.
             print(f'{fn}: {type(err)} {err}')
@@ -101,6 +115,10 @@ if __name__ == '__main__':
     if skipped:
         print(f'WARNING: Skipped {len(skipped)} files')
     print(f'Parsed {len(fns) - len(skipped)} files')
+
+    # Randomize new ids
+    print('Creating new identifiers...')
+    randomize_ids(thesaurus)
 
     # Complete relations
     print('Completing relations...')
