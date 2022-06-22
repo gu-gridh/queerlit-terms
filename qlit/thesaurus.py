@@ -25,6 +25,7 @@ class Thesaurus(Termset):
         self.scheme = URIRef(self.base.rstrip('/'))
         self.add((self.scheme, RDF.type, SKOS.ConceptScheme))
         self.add((self.scheme, SKOS.prefLabel, Literal("Queerlit")))
+        self.add((self.scheme, SKOS.notation, Literal("qlit")))
 
     def complete_relations(self) -> "Thesaurus":
         """Add triples to ensure that all term-term relations are two-way."""

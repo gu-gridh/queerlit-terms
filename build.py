@@ -23,6 +23,7 @@ rdf_now = Literal(
     datetime.utcnow().isoformat().split('.')[0],
     datatype=XSD.dateTime)
 
+P_TRACKED = [SKOS.altLabel, SKOS.broader, SKOS.broadMatch, SKOS.exactMatch, SKOS.narrower, SKOS.prefLabel, SKOS.related, SKOS.scopeNote]
 
 def randomize_ids(thesaurus: Thesaurus):
     """Replace all non-randomized ids with new, randomized ids."""
@@ -51,8 +52,6 @@ def replace_identifier(thesaurus: Thesaurus, old_id: str, new_id: str):
 
 
 def check_changes(thesaurus: Thesaurus, thesaurus_prev: Thesaurus):
-    ps = [SKOS.altLabel, SKOS.broader, SKOS.broadMatch, SKOS.exactMatch, SKOS.narrower, SKOS.prefLabel, SKOS.scopeNote]
-    
     uris = thesaurus.refs()
     uris_prev = thesaurus_prev.refs()
     
@@ -69,20 +68,21 @@ def check_changes(thesaurus: Thesaurus, thesaurus_prev: Thesaurus):
         else:
             # Are there any changes in the term?
             changed_ps = []
-            for p in ps:
+            for p in P_TRACKED:
                 a = sorted(thesaurus.objects(term_uri, p))
                 b = sorted(thesaurus_prev.objects(term_uri, p))
                 if a != b:
                     changed_ps.append(p)
-                    # print(p)
-                    # print(a)
-                    # print(b)
             if (changed_ps):
                 # The term has changes.
                 p_names = [re.sub(r'.*[/#]', '', p) for p in changed_ps]
                 print(f'Changes for {ref_to_name(term_uri)} in {", ".join(p_names)}')
                 thesaurus.set((term_uri, DCTERMS.modified, rdf_now))
                 count_changed += 1
+            else:
+                # No changes. Copy old dates.
+                thesaurus.set((term_uri, DCTERMS.issued, thesaurus_prev.value(term_uri, DCTERMS.issued)))
+                thesaurus.set((term_uri, DCTERMS.modified, thesaurus_prev.value(term_uri, DCTERMS.modified)))
     return count_changed, count_new, count_removed
 
 
@@ -106,7 +106,6 @@ if __name__ == '__main__':
                 if p.endswith(':'):
                     raise SyntaxError(f'Predicate ends with colon: {p}')
             term_uri = termset.refs()[0]
-            thesaurus.remove((term_uri, None, None))
             thesaurus += termset
         except Exception as err:
             # Report error and skip this input file.
