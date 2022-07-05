@@ -26,12 +26,16 @@ class SimpleTerm(dict):
             prefLabel=termset.value(subject, SKOS.prefLabel),
             altLabels=list(termset.objects(subject, SKOS.altLabel)),
             scopeNote=termset.value(subject, SKOS.scopeNote),
+            # Relations to QLIT terms
             broader=[ref_to_name(ref)
                      for ref in termset.objects(subject, SKOS.broader)],
             narrower=[ref_to_name(ref)
                       for ref in termset.objects(subject, SKOS.narrower)],
             related=[ref_to_name(ref)
-                     for ref in termset.objects(subject, SKOS.related)]
+                     for ref in termset.objects(subject, SKOS.related)],
+            # Relations to external terms
+            exactMatch=[ref for ref in termset.objects(subject, SKOS.exactMatch)],
+            closeMatch=[ref for ref in termset.objects(subject, SKOS.closeMatch)],
         )
 
     @staticmethod
