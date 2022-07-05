@@ -7,12 +7,33 @@ from rdflib import SKOS, URIRef
 from qlit.thesaurus import BASE, Termset, Thesaurus
 
 
+HOMOSAURUS = Thesaurus().parse('homosaurus.ttl')
+
+
 def name_to_ref(name: str) -> URIRef:
     return URIRef(BASE + name)
 
 
 def ref_to_name(ref: URIRef) -> str:
     return basename(ref)
+
+
+def resolve_external_term(ref):
+    if ref.startswith('https://homosaurus.org/v3/'):
+        return resolve_homosaurus_term(ref)
+    return {
+        'uri': str(ref),
+    }
+
+
+def resolve_homosaurus_term(ref):
+    prefLabel = HOMOSAURUS.value(ref, SKOS.prefLabel)
+    altLabels = list(HOMOSAURUS.objects(ref, SKOS.altLabel))
+    return {
+        'uri': str(ref),
+        'prefLabel': prefLabel,
+        'altLabels': altLabels,
+    }
 
 
 class SimpleTerm(dict):
@@ -34,8 +55,8 @@ class SimpleTerm(dict):
             related=[ref_to_name(ref)
                      for ref in termset.objects(subject, SKOS.related)],
             # Relations to external terms
-            exactMatch=[ref for ref in termset.objects(subject, SKOS.exactMatch)],
-            closeMatch=[ref for ref in termset.objects(subject, SKOS.closeMatch)],
+            exactMatch=[resolve_external_term(ref) for ref in termset.objects(subject, SKOS.exactMatch)],
+            closeMatch=[resolve_external_term(ref) for ref in termset.objects(subject, SKOS.closeMatch)],
         )
 
     @staticmethod

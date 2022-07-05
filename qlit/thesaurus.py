@@ -1,8 +1,6 @@
 from os.path import basename
-from datetime import datetime
-from itertools import chain
 import re
-from rdflib import DCTERMS, RDF, SKOS, XSD, Graph, Literal, URIRef
+from rdflib import DCTERMS, RDF, SKOS, Graph, Literal, URIRef
 
 BASE = 'https://queerlit.dh.gu.se/qlit/v1/'
 
@@ -17,7 +15,6 @@ class Termset(Graph):
 
 class Thesaurus(Termset):
     """An RDF graph indended to contain a full thesaurus."""
-    # TODO Source files use "dc" for "dcterms", resulting in a conflict which results in "dc1" in the output. Is that ok?
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
