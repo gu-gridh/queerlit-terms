@@ -1053,12 +1053,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/cb49gf75> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av känslospektrum som präglas av ömhet, tillgivenhet, samhörighet och njutning och som involverar HBTQI-personer som objekt och/eller subjekt." .
 <https://queerlit.dh.gu.se/qlit/v1/cb57oh89> <http://purl.org/dc/terms/identifier> "cb57oh89" .
 <https://queerlit.dh.gu.se/qlit/v1/cb57oh89> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/cb57oh89> <http://purl.org/dc/terms/modified> "2022-08-16T12:51:11"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/cb57oh89> <http://purl.org/dc/terms/modified> "2022-08-16T18:10:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/cb57oh89> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/cb57oh89> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://homosaurus.org/v3/homoit0000920> .
 <https://queerlit.dh.gu.se/qlit/v1/cb57oh89> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/cb57oh89> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/iq68sd16> .
-<https://queerlit.dh.gu.se/qlit/v1/cb57oh89> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/jg76es99> .
 <https://queerlit.dh.gu.se/qlit/v1/cb57oh89> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/kq50iu67> .
 <https://queerlit.dh.gu.se/qlit/v1/cb57oh89> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/kx09ve81> .
 <https://queerlit.dh.gu.se/qlit/v1/cb57oh89> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/qy65je42> .
@@ -4110,11 +4109,10 @@
 <https://queerlit.dh.gu.se/qlit/v1/jf73ax07> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av kränkande behandling eller bemötande av sexuell natur, som kränker den utsattas värdighet och/eller personliga integritet." .
 <https://queerlit.dh.gu.se/qlit/v1/jg76es99> <http://purl.org/dc/terms/identifier> "jg76es99" .
 <https://queerlit.dh.gu.se/qlit/v1/jg76es99> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/jg76es99> <http://purl.org/dc/terms/modified> "2022-08-16T12:51:11"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/jg76es99> <http://purl.org/dc/terms/modified> "2022-08-16T18:10:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/jg76es99> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/jg76es99> <http://www.w3.org/2004/02/skos/core#altLabel> "Internaliserad HBTQI-fobi" .
 <https://queerlit.dh.gu.se/qlit/v1/jg76es99> <http://www.w3.org/2004/02/skos/core#altLabel> "Internaliserat förtryck (HBTQI)" .
-<https://queerlit.dh.gu.se/qlit/v1/jg76es99> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cb57oh89> .
 <https://queerlit.dh.gu.se/qlit/v1/jg76es99> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://homosaurus.org/v3/homoit0000936> .
 <https://queerlit.dh.gu.se/qlit/v1/jg76es99> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/jg76es99> <http://www.w3.org/2004/02/skos/core#prefLabel> "Självförtryck (HBTQI)" .
