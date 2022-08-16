@@ -41,6 +41,7 @@ class SimpleTerm(dict):
     @staticmethod
     def from_subject(termset: Termset, subject: URIRef) -> "SimpleTerm":
         """Make a simple dict with the predicate-objects of a term in the thesaurus."""
+        termset.assert_term_exists(subject)
         return SimpleTerm(
             name=ref_to_name(subject),
             uri=str(subject),

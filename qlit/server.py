@@ -1,6 +1,6 @@
 from flask import Flask, Response, jsonify, make_response, request
 from flask_cors import CORS
-from qlit.thesaurus import Termset, Thesaurus
+from qlit.thesaurus import TermNotFoundError, Termset, Thesaurus
 from qlit.simple import SimpleThesaurus, name_to_ref
 
 app = Flask(__name__)
@@ -45,6 +45,7 @@ def termset_response(termset: Termset) -> Response:
 
     return make_response(data, 200, {'Content-Type': mimetype})
 
+
 # "Rdf" routes are in RDF space.
 
 
@@ -69,7 +70,6 @@ def api_all():
 
 @app.route("/api/term/<name>")
 def api_one(name):
-    # TODO Handle 404
     return jsonify(THESAURUS_SIMPLE.get(name))
 
 
@@ -88,7 +88,6 @@ def api_roots():
 @app.route("/api/children")
 def api_children():
     # TODO Handle missing/bad arg
-    # TODO Distinguish 404 from leaf
     parent = request.args.get('parent')
     return jsonify(THESAURUS_SIMPLE.get_children(parent))
 
@@ -96,13 +95,19 @@ def api_children():
 @app.route("/api/parents")
 def api_parents():
     # TODO Handle missing/bad arg
-    # TODO Distinguish 404 from root
     child = request.args.get('child')
     return jsonify(THESAURUS_SIMPLE.get_parents(child))
 
 @app.route("/api/related")
 def api_related():
     # TODO Handle missing/bad arg
-    # TODO Distinguish 404 from root
     other = request.args.get('other')
     return jsonify(THESAURUS_SIMPLE.get_related(other))
+
+
+@app.errorhandler(TermNotFoundError)
+def handle_term_not_found(e):
+    return make_response(jsonify({
+        'status': 'error',
+        'message': str(e),
+    }), 404)

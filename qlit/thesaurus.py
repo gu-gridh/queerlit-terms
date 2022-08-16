@@ -12,6 +12,10 @@ class Termset(Graph):
         """The URIRefs of the included terms."""
         return list(self.subjects(RDF.type, SKOS.Concept))
 
+    def assert_term_exists(self, ref):
+        if not ref in self.refs():
+            raise TermNotFoundError(ref)
+        return True
 
 class Thesaurus(Termset):
     """An RDF graph indended to contain a full thesaurus."""
@@ -79,6 +83,7 @@ class Thesaurus(Termset):
 
     def get(self, ref: URIRef) -> Termset:
         """Get the triples of a single term."""
+        self.assert_term_exists(ref)
         return self.terms_if(lambda term: term == ref)
 
     def get_roots(self) -> Termset:
@@ -87,14 +92,17 @@ class Thesaurus(Termset):
 
     def get_children(self, parent: URIRef) -> Termset:
         """Find terms that are directly narrower than a given term."""
+        self.assert_term_exists(parent)
         return self.terms_if(lambda term: (term, SKOS.broader, parent) in self)
 
     def get_parents(self, child: URIRef) -> Termset:
         """Find terms that are directly broader than a given term."""
+        self.assert_term_exists(child)
         return self.terms_if(lambda term: (child, SKOS.broader, term) in self)
 
     def get_related(self, other: URIRef) -> Termset:
         """Find terms that are related to a given term."""
+        self.assert_term_exists(other)
         return self.terms_if(lambda term: (term, SKOS.related, other) in self)
 
     def autocomplete(self, s: str) -> Termset:
@@ -113,3 +121,10 @@ class Thesaurus(Termset):
             )
 
         return self.terms_if(is_match)
+
+class TermNotFoundError(KeyError):
+    def __init__(self, term_uri, *args):
+        self.term_uri = term_uri
+
+    def __str__(self):
+        return f'Term not found: {self.term_uri}'
