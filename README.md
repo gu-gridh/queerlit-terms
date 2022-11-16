@@ -33,6 +33,16 @@ The [simple.py](qlit/simple.py) module redefines this slightly, in order to prov
 
 See [build.py](build.py) and [Thesaurus.complete_relations()](qlit/thesaurus.py#L29).
 
+### Persistence for new identifiers
+
+When there are new terms in the source directory, these will be provided with new canonical ids and reported like:
+
+> Creating new identifiers...
+> New id gb58ld43 for stockholmareHBTQI
+> New id om71eq87 for sånaHBTQI
+
+The new ids are saved to `qlit.nt` but not in the source files, so the next run will generate new ids again. **You must** manually edit the source files and replace temporary ids with the new canonical ones.
+
 ## HTTP server
 
 1. Add to `.env` file: `FLASK_ENV=development`
