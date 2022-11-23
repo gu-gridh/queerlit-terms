@@ -3281,7 +3281,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/hc77dd42> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av subkulturen ballroom som uppstod i New York på 1970-talet och som kretsar kring tävlingar i t.ex. dans (främst voguing) och drag." .
 <https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://purl.org/dc/terms/identifier> "he13pb69" .
 <https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://purl.org/dc/terms/modified> "2022-11-23T07:47:36"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://purl.org/dc/terms/modified> "2022-11-23T07:52:04"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/bt16zp60> .
@@ -3312,6 +3312,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/sh97pd06> .
 <https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ua71em06> .
 <https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/un13ce14> .
+<https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ux60ib70> .
 <https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/vg78hx15> .
 <https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/vr41yw40> .
 <https://queerlit.dh.gu.se/qlit/v1/he13pb69> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/vr86mj99> .
@@ -7011,7 +7012,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/oo84xg08> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av äldre personer som beskrivs som heterosexuella." .
 <https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://purl.org/dc/terms/identifier> "op23ar73" .
 <https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://purl.org/dc/terms/modified> "2022-11-23T07:47:36"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://purl.org/dc/terms/modified> "2022-11-23T07:52:04"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ss55ax39> .
 <https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh91003756> .
@@ -7022,6 +7023,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/kx86go78> .
 <https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/la83kc00> .
 <https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> .
+<https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ux60ib70> .
 <https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/vh80ls37> .
 <https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/wj27lv47> .
 <https://queerlit.dh.gu.se/qlit/v1/op23ar73> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/wj35lq02> .
@@ -8496,30 +8498,22 @@
 <https://queerlit.dh.gu.se/qlit/v1/rj61bd65> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av HBTQI-personer som är schamaner. Används även för skildringar av andra schamaners förhållningssätt till HBTQI. Schamanism kan förstås som en animistisk världsåskådning." .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://purl.org/dc/terms/identifier> "rj97ul15" .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://purl.org/dc/terms/modified> "2022-11-23T07:47:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://purl.org/dc/terms/modified> "2022-11-23T07:52:04"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#altLabel> "Hijra" .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#altLabel> "Hijras" .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#altLabel> "Jagappa" .
-<https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#altLabel> "Kathoey" .
-<https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#altLabel> "Kathoy" .
-<https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#altLabel> "Katoy" .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#altLabel> "Khawaja sira" .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#altLabel> "Khwaja sira" .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#altLabel> "Kinnar" .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#altLabel> "Kinner" .
-<https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#altLabel> "Ladyboy" .
-<https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#altLabel> "Ladyboys" .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/he13pb69> .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/op23ar73> .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000632> .
-<https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000687> .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hijre" .
-<https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#prefLabel> "Katoey" .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ye64kb30> .
 <https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som beskrivs som hijre. Begreppet används i södra Asien för att beskriva ett tredje kön, och kan innefatta intersexpersoner, eunucker och transpersoner (vanligtvis med \"kvinnligt\" könsuttryck)." .
-<https://queerlit.dh.gu.se/qlit/v1/rj97ul15> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som beskrivs som katoey. Begreppet används framförallt i Thailand för att beskriva transpersoner (eller i vissa fall bögar) med feminina könsuttryck, som ibland betraktas som ett tredje kön." .
 <https://queerlit.dh.gu.se/qlit/v1/rk79wi90> <http://purl.org/dc/terms/identifier> "rk79wi90" .
 <https://queerlit.dh.gu.se/qlit/v1/rk79wi90> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/rk79wi90> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -10176,6 +10170,21 @@
 <https://queerlit.dh.gu.se/qlit/v1/ux32oc19> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/rq22xv55> .
 <https://queerlit.dh.gu.se/qlit/v1/ux32oc19> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av frivillig ideologisk, social, kulturell och ibland fysisk separation av HBTQI-personer från heterosexuella och/eller cispersoner." .
 <https://queerlit.dh.gu.se/qlit/v1/ux32oc19> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://purl.org/dc/terms/identifier> "ux60ib70" .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://purl.org/dc/terms/issued> "2022-11-23T07:52:04"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://purl.org/dc/terms/modified> "2022-11-23T07:52:04"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://www.w3.org/2004/02/skos/core#altLabel> "Kathoey" .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://www.w3.org/2004/02/skos/core#altLabel> "Kathoy" .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://www.w3.org/2004/02/skos/core#altLabel> "Katoy" .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://www.w3.org/2004/02/skos/core#altLabel> "Ladyboy" .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://www.w3.org/2004/02/skos/core#altLabel> "Ladyboys" .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/he13pb69> .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/op23ar73> .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000687> .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://www.w3.org/2004/02/skos/core#prefLabel> "Katoey" .
+<https://queerlit.dh.gu.se/qlit/v1/ux60ib70> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som beskrivs som katoey. Begreppet används framförallt i Thailand för att beskriva transpersoner (eller i vissa fall bögar) med feminina könsuttryck, som ibland betraktas som ett tredje kön." .
 <https://queerlit.dh.gu.se/qlit/v1/uy59sk22> <http://purl.org/dc/terms/identifier> "uy59sk22" .
 <https://queerlit.dh.gu.se/qlit/v1/uy59sk22> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/uy59sk22> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
