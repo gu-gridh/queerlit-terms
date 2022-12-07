@@ -6296,7 +6296,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/ne86gx34> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av onani som involverar strypning eller kvävning." .
 <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://purl.org/dc/terms/identifier> "nf03ub67" .
 <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://purl.org/dc/terms/modified> "2022-12-07T08:49:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://purl.org/dc/terms/modified> "2022-12-07T09:11:01"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ot53zk29> .
 <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Homosexuella> .
@@ -6317,7 +6317,6 @@
 <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/gb58ld43> .
 <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/kq50iu67> .
 <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/om71eq87> .
-<https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ow11wy91> .
 <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/rn48mo22> .
 <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/up78ob03> .
 <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/vu78ao12> .

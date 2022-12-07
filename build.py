@@ -86,12 +86,16 @@ def check_changes(thesaurus: Thesaurus, thesaurus_prev: Thesaurus):
     return count_changed, count_new, count_removed
 
 
+def is_infile(fn):
+    return re.match(r'[^-_.]+\.ttl', fn, re.IGNORECASE)
+
+
 if __name__ == '__main__':
     # Load current state.
     thesaurus = Thesaurus()
 
     # Prepare parsing.
-    fns = [fn for fn in os.listdir(INDIR) if not fn.startswith('.')]
+    fns = [fn for fn in os.listdir(INDIR) if is_infile(fn)]
     print(f'Parsing {len(fns)} files...')
     skipped = []
 
