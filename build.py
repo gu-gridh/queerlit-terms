@@ -95,21 +95,20 @@ if __name__ == '__main__':
     thesaurus = Thesaurus()
 
     # Prepare parsing.
-    fns = [fn for fn in os.listdir(INDIR) if is_infile(fn)]
+    fns = [join(indir, fn) for indir in INDIR.split(':') for fn in os.listdir(indir) if is_infile(fn)]
     print(f'Parsing {len(fns)} files...')
     skipped = []
 
     # Parse input files.
     for fn in fns:
         try:
-            with open(join(INDIR, fn)) as f:
+            with open(fn) as f:
                 data = f.read()
             termset = Termset().parse(data=data)
             # Catch common syntax mistake
             for s, p, o in termset:
                 if p.endswith(':'):
                     raise SyntaxError(f'Predicate ends with colon: {p}')
-            term_uri = termset.refs()[0]
             thesaurus += termset
         except Exception as err:
             # Report error and skip this input file.

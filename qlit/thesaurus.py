@@ -11,7 +11,15 @@ class Termset(Graph):
 
     def refs(self) -> list[URIRef]:
         """The URIRefs of the included terms."""
+        return [s for (s, p, o) in self if p == RDF.type and o in (SKOS.Concept, SKOS.Collection)]
+
+    def concepts(self) -> list[URIRef]:
+        """The URIRefs of the included terms."""
         return list(self.subjects(RDF.type, SKOS.Concept))
+
+    def collections(self) -> list[URIRef]:
+        """The URIRefs of the included collections."""
+        return list(self.subjects(RDF.type, SKOS.Collection))
 
     def assert_term_exists(self, ref):
         if not ref in self.refs():
@@ -35,44 +43,47 @@ class Thesaurus(Termset):
         def exists_or_warn(s_term, p_label, o_term):
             s = s_term.split('/')[-1]
             o = o_term.split('/')[-1]
-            if o_term not in self.refs():
+            if not self[o_term::]:
                 print(f'WARNING: Missing {o} ({p_label} in {s})')
                 return False
             return True
 
         for term in self.refs():
-            # broader <-> narrower
-            for parent in self.objects(term, SKOS.broader):
-                if exists_or_warn(term, 'broader', parent):
-                    self.add((parent, SKOS.narrower, term))
-
-            for child in self.objects(term, SKOS.narrower):
-                if exists_or_warn(term, 'narrower', child):
-                    self.add((child, SKOS.broader, term))
-
-            # related <-> related
-            for relatee in self.objects(term, SKOS.related):
-                if exists_or_warn(term, 'related', relatee):
-                    self.add((relatee, SKOS.related, term))
-
-            # set inScheme
-            self.set((term, SKOS.inScheme, self.scheme))
-
-            # adjust topConceptOf
-            # topConceptOf <-> hasTopConcept
-            self.remove((term, SKOS.topConceptOf, None))
-            if list(self.objects(term, SKOS.hasTopConcept)):
-                print(f'WARNING: Term {term} must not use hasTopConcept')
-                self.remove((term, SKOS.hasTopConcept, None))
-            if not list(self.objects(term, SKOS.broader)):
-                self.set((term, SKOS.topConceptOf, self.scheme))
-                self.add((self.scheme, SKOS.hasTopConcept, term))
 
             # validate identifiers
             name = basename(term)
             identifier = str(self.value(term, DCTERMS.identifier))
             if name != identifier:
                 print(f'Identifier "{identifier}" != URI basename "{name}"')
+
+            # set inScheme
+            self.set((term, SKOS.inScheme, self.scheme))
+
+            if self[term : RDF.type : SKOS.Concept]:
+                # broader <-> narrower
+                for parent in self.objects(term, SKOS.broader):
+                    if exists_or_warn(term, 'broader', parent):
+                        self.add((parent, SKOS.narrower, term))
+
+                for child in self.objects(term, SKOS.narrower):
+                    if exists_or_warn(term, 'narrower', child):
+                        self.add((child, SKOS.broader, term))
+
+                # related <-> related
+                for relatee in self.objects(term, SKOS.related):
+                    if exists_or_warn(term, 'related', relatee):
+                        self.add((relatee, SKOS.related, term))
+
+                # adjust topConceptOf
+                # topConceptOf <-> hasTopConcept
+                self.remove((term, SKOS.topConceptOf, None))
+                if list(self.objects(term, SKOS.hasTopConcept)):
+                    print(f'WARNING: Term {term} must not use hasTopConcept')
+                    self.remove((term, SKOS.hasTopConcept, None))
+                if not list(self.objects(term, SKOS.broader)):
+                    self.set((term, SKOS.topConceptOf, self.scheme))
+                    self.add((self.scheme, SKOS.hasTopConcept, term))
+
 
     def terms_if(self, f) -> Termset:
         """Creates a subset with terms matching some condition."""
@@ -87,24 +98,28 @@ class Thesaurus(Termset):
         self.assert_term_exists(ref)
         return self.terms_if(lambda term: term == ref)
 
+    def get_collections(self) -> Termset:
+        """Find all collections."""
+        return self.terms_if(lambda term: self[term:RDF.type:SKOS.Collection])
+
     def get_roots(self) -> Termset:
         """Find all terms without parents."""
-        return self.terms_if(lambda term: (term, SKOS.broader, None) not in self)
+        return self.terms_if(lambda term: self[term:RDF.type:SKOS.Concept] and not self.value(term, SKOS.broader))
 
     def get_children(self, parent: URIRef) -> Termset:
         """Find terms that are directly narrower than a given term."""
         self.assert_term_exists(parent)
-        return self.terms_if(lambda term: (term, SKOS.broader, parent) in self)
+        return self.terms_if(lambda term: self[term:SKOS.broader:parent])
 
     def get_parents(self, child: URIRef) -> Termset:
         """Find terms that are directly broader than a given term."""
         self.assert_term_exists(child)
-        return self.terms_if(lambda term: (child, SKOS.broader, term) in self)
+        return self.terms_if(lambda term: self[child:SKOS.broader:term])
 
     def get_related(self, other: URIRef) -> Termset:
         """Find terms that are related to a given term."""
         self.assert_term_exists(other)
-        return self.terms_if(lambda term: (term, SKOS.related, other) in self)
+        return self.terms_if(lambda term: self[term:SKOS.related:other])
 
     def autocomplete(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
@@ -129,7 +144,7 @@ class Thesaurus(Termset):
                     for term_word in split_label(label))
                 for search_word in search_words)
 
-        return self.terms_if(is_match)
+        return self.terms_if(lambda term: self[term:RDF.type:SKOS.Concept] and is_match(term))
 
 class TermNotFoundError(KeyError):
     def __init__(self, term_uri, *args):
