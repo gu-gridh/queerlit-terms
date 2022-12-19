@@ -31,7 +31,7 @@ The [simple.py](qlit/simple.py) module redefines this slightly, in order to prov
 1. Add to `.env` file: `INDIR="/path/to/ttls"`
 2. Run `python3 build.py`
 
-See [build.py](build.py) and [Thesaurus.complete_relations()](qlit/thesaurus.py#L29).
+See [build.py](build.py) and [skos.py](qlit/skos.py).
 
 ### Persistence for new identifiers
 
