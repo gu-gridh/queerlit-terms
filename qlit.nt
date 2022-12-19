@@ -3140,18 +3140,23 @@
 <https://queerlit.dh.gu.se/qlit/v1/gy22fm97> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/up70lp68> .
 <https://queerlit.dh.gu.se/qlit/v1/gy22fm97> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där domar och beslut från domstolar har betydelse för verket." .
 <https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://purl.org/dc/terms/identifier> "gy32il97" .
-<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://purl.org/dc/terms/issued> "2022-12-07T08:49:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://purl.org/dc/terms/modified> "2022-12-07T08:49:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://purl.org/dc/terms/modified> "2022-12-19T10:09:02"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#altLabel> "Feminin manlighet" .
+<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#altLabel> "Feminin maskulinitet" .
 <https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#altLabel> "Kvinnlig manlighet" .
 <https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#altLabel> "Kvinnlig maskulinitet" .
+<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#altLabel> "Kvinnors manlighet" .
+<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#altLabel> "Manliga kvinnor" .
+<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#altLabel> "Maskulina kvinnor" .
 <https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cm18bw55> .
 <https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000432> .
 <https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
-<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#prefLabel> "Feminin maskulinitet" .
+<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kvinnors maskulinitet" .
 <https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/qw72dw59> .
 <https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/tx04hr81> .
-<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av kvinnor som använder attribut, beteenden eller roller som i allmänhet förknippas med män." .
+<https://queerlit.dh.gu.se/qlit/v1/gy32il97> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som beskrivs som kvinnor och som använder attribut, beteenden eller roller som i allmänhet förknippas med män." .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://purl.org/dc/terms/identifier> "gz04zi19" .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/gz04zi19> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -7497,16 +7502,21 @@
 <https://queerlit.dh.gu.se/qlit/v1/pk92nl65> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/wm72qx84> .
 <https://queerlit.dh.gu.se/qlit/v1/pk92nl65> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som beskrivs som pojkar - i regel personer under 15 år." .
 <https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://purl.org/dc/terms/identifier> "pm44fs90" .
-<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://purl.org/dc/terms/issued> "2022-12-07T08:49:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://purl.org/dc/terms/modified> "2022-12-07T08:49:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://purl.org/dc/terms/modified> "2022-12-19T10:09:02"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#altLabel> "Feminina män" .
+<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#altLabel> "Kvinnliga män" .
 <https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#altLabel> "Manlig femininitet" .
 <https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#altLabel> "Manlig kvinnlighet" .
+<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#altLabel> "Maskulin femininitet" .
+<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#altLabel> "Maskulin kvinnlighet" .
+<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#altLabel> "Mäns kvinnlighet" .
 <https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/sf56xe20> .
 <https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
-<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maskulin femininitet" .
+<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mäns femininitet" .
 <https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/dz11mk54> .
-<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av män som använder attribut, beteenden och roller som i allmänhet förknippas med kvinnor." .
+<https://queerlit.dh.gu.se/qlit/v1/pm44fs90> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som beskrivs som män och som använder attribut, beteenden och roller som i allmänhet förknippas med kvinnor." .
 <https://queerlit.dh.gu.se/qlit/v1/pm55yu20> <http://purl.org/dc/terms/identifier> "pm55yu20" .
 <https://queerlit.dh.gu.se/qlit/v1/pm55yu20> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/pm55yu20> <http://purl.org/dc/terms/modified> "2022-06-07T15:09:28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -9028,8 +9038,9 @@
 <https://queerlit.dh.gu.se/qlit/v1/si96fc99> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer och grupper som beskrivs som faeries - ett löst sammansatt nätverk av personer som genom motkultur och andlighet vill omdefiniera HBTQI-identiteter." .
 <https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://purl.org/dc/terms/identifier> "sj00sx82" .
 <https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://purl.org/dc/terms/modified> "2022-12-19T10:09:02"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://www.w3.org/2004/02/skos/core#altLabel> "Porrklubbar" .
 <https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/hi88il01> .
 <https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ij02nz52> .
 <https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/qs69pq40> .
@@ -9040,7 +9051,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/tm21us57> .
 <https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ts00ew43> .
 <https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/xp40ps97> .
-<https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av organiserade sammankomster, både självorganiserade och kommersiella och ofta i särskilt anpassade lokaler, där besökarna har möjlighet att och förväntas ha sex med varandra." .
+<https://queerlit.dh.gu.se/qlit/v1/sj00sx82> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av organiserade sammankomster, både självorganiserade och kommersiella och ofta i särskilt anpassade lokaler, där besökarna har möjlighet att och förväntas ha sex med varandra, eller se på när andra har sex eller uppträder med exempelvis striptease." .
 <https://queerlit.dh.gu.se/qlit/v1/sj39nw12> <http://purl.org/dc/terms/identifier> "sj39nw12" .
 <https://queerlit.dh.gu.se/qlit/v1/sj39nw12> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/sj39nw12> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
