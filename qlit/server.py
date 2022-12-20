@@ -56,7 +56,6 @@ def rdf_all():
 
 @app.route('/<name>')
 def rdf_one(name):
-    # TODO Handle 404
     ref = name_to_ref(name)
     return termset_response(THESAURUS.get(ref))
 
