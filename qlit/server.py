@@ -8,6 +8,7 @@ CORS(app)
 
 THESAURUS = Thesaurus().parse('qlit.nt')
 THESAURUS_SIMPLE = SimpleThesaurus() + THESAURUS
+THESAURUS_SIMPLE.rebuild()
 
 print(f'Loaded thesaurus with {len(THESAURUS.refs())} terms')
 
@@ -56,7 +57,6 @@ def rdf_all():
 
 @app.route('/<name>')
 def rdf_one(name):
-    # TODO Handle 404
     ref = name_to_ref(name)
     return termset_response(THESAURUS.get(ref))
 
