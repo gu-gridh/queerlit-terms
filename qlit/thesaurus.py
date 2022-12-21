@@ -1,4 +1,3 @@
-from itertools import chain
 from os.path import basename
 import re
 from rdflib import DCTERMS, RDF, SKOS, Graph, Literal, URIRef
@@ -106,30 +105,6 @@ class Thesaurus(Termset):
         self.assert_term_exists(other)
         return self.terms_if(lambda term: (term, SKOS.related, other) in self)
 
-    def autocomplete(self, s: str) -> Termset:
-        """Find terms matching a user-given incremental (startswith) search string."""
-        ignore_re = re.compile(r'[ -/()]')
-        def split_label(string):
-            return list(filter(bool, ignore_re.split(string)))
-
-        search_words = split_label(s)
-
-        def term_labels(term):
-            label = self.value(term, SKOS.prefLabel)
-            altLabels = self.objects(term, SKOS.altLabel)
-            return [label] + list(altLabels)
-
-        def is_match(term):
-            # Match with all words in the query
-            return all(
-                # Match against any word in the term
-                any(
-                    term_word.lower().startswith(search_word.lower())
-                    for label in term_labels(term)
-                    for term_word in split_label(label))
-                for search_word in search_words)
-
-        return self.terms_if(is_match)
 
 class TermNotFoundError(KeyError):
     def __init__(self, term_uri, *args):

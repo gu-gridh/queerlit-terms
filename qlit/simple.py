@@ -3,11 +3,20 @@ Non-RDF interfaces to the thesaurus.
 """
 
 from os.path import basename
+import re
 from rdflib import SKOS, URIRef
 from qlit.thesaurus import BASE, Termset, Thesaurus
 
 
 HOMOSAURUS = Thesaurus().parse('homosaurus.ttl')
+
+
+class Tokenizer:
+    DELIMITER = re.compile(r'[ -/()]')
+
+    @classmethod
+    def split(cls, phrase):
+        return filter(None, cls.DELIMITER.split(phrase))
 
 
 def name_to_ref(name: str) -> URIRef:
@@ -72,6 +81,14 @@ class SimpleTerm(dict):
 class SimpleThesaurus(Thesaurus):
     """Like Thesaurus but with unqualified names as inputs and dicts as output."""
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.rebuild()
+
+    def rebuild(self):
+        self.build_simple_terms()
+        self.build_search_index()
+
     def terms_if(self, f) -> list[SimpleTerm]:
         return SimpleTerm.from_termset(super().terms_if(f))
 
@@ -90,3 +107,42 @@ class SimpleThesaurus(Thesaurus):
     def get_all(self) -> list[SimpleTerm]:
         """All terms as dicts."""
         return SimpleTerm.from_termset(self)
+
+    def autocomplete(self, s: str) -> Termset:
+        """Find terms matching a user-given incremental (startswith) search string."""
+        search_words = list(Tokenizer.split(s))
+
+        def is_match(term_words):
+            # Match with all words in the query
+            return all(
+                # Match against any word in the term
+                any(term_word.startswith(search_word)
+                    for term_word in term_words)
+                for search_word in search_words)
+
+        return [self.simple_terms[name] for name in self.index if is_match(self.index[name])]
+
+    def build_simple_terms(self):
+        self.simple_terms = dict()
+        for simple_term in SimpleTerm.from_termset(self):
+            self.simple_terms[simple_term['name']] = simple_term
+
+    def build_search_index(self):
+        self.index = dict()
+
+        def term_labels(term):
+            if term.get('prefLabel'):
+                yield term['prefLabel']
+            if term.get('altLabels'):
+                yield from term['altLabels']
+            if 'exactMatch' in term:
+                for match in term['exactMatch']:
+                    yield from term_labels(match)
+
+        for name, term in self.simple_terms.items():
+            self.index[name] = []
+            for label in term_labels(term):
+                for term_word in Tokenizer.split(label):
+                    self.index[name].append(term_word.lower())
+
+        return self.index
