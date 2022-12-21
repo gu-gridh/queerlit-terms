@@ -3,6 +3,7 @@ Non-RDF interfaces to the thesaurus.
 """
 
 from os.path import basename
+import re
 from rdflib import SKOS, URIRef
 from qlit.thesaurus import BASE, Termset, Thesaurus
 
@@ -72,6 +73,10 @@ class SimpleTerm(dict):
 class SimpleThesaurus(Thesaurus):
     """Like Thesaurus but with unqualified names as inputs and dicts as output."""
 
+    def get_simple_terms(self):
+        self.simple_terms = SimpleTerm.from_termset(self)
+        return self.simple_terms
+
     def terms_if(self, f) -> list[SimpleTerm]:
         return SimpleTerm.from_termset(super().terms_if(f))
 
@@ -90,3 +95,32 @@ class SimpleThesaurus(Thesaurus):
     def get_all(self) -> list[SimpleTerm]:
         """All terms as dicts."""
         return SimpleTerm.from_termset(self)
+
+    def autocomplete(self, s: str) -> Termset:
+        """Find terms matching a user-given incremental (startswith) search string."""
+        ignore_re = re.compile(r'[ -/()]')
+        def split_label(string):
+            return list(filter(bool, ignore_re.split(string)))
+
+        search_words = split_label(s)
+
+        def term_labels(term):
+            if term.get('prefLabel'):
+                yield term['prefLabel']
+            if term.get('altLabels'):
+                yield from term['altLabels']
+            if 'exactMatch' in term:
+                for match in term['exactMatch']:
+                    yield from term_labels(match)
+
+        def is_match(term):
+            # Match with all words in the query
+            return all(
+                # Match against any word in the term
+                any(
+                    term_word.lower().startswith(search_word.lower())
+                    for label in term_labels(term)
+                    for term_word in split_label(label))
+                for search_word in search_words)
+
+        return [term for term in self.get_simple_terms() if is_match(term)]
