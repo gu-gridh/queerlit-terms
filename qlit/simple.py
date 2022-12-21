@@ -11,6 +11,14 @@ from qlit.thesaurus import BASE, Termset, Thesaurus
 HOMOSAURUS = Thesaurus().parse('homosaurus.ttl')
 
 
+class Tokenizer:
+    DELIMITER = re.compile(r'[ -/()]')
+
+    @classmethod
+    def split(cls, phrase):
+        return filter(None, cls.DELIMITER.split(phrase))
+
+
 def name_to_ref(name: str) -> URIRef:
     return URIRef(BASE + name)
 
@@ -98,11 +106,7 @@ class SimpleThesaurus(Thesaurus):
 
     def autocomplete(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
-        ignore_re = re.compile(r'[ -/()]')
-        def split_label(string):
-            return list(filter(bool, ignore_re.split(string)))
-
-        search_words = split_label(s)
+        search_words = list(Tokenizer.split(s))
 
         def term_labels(term):
             if term.get('prefLabel'):
@@ -120,7 +124,7 @@ class SimpleThesaurus(Thesaurus):
                 any(
                     term_word.lower().startswith(search_word.lower())
                     for label in term_labels(term)
-                    for term_word in split_label(label))
+                    for term_word in Tokenizer.split(label))
                 for search_word in search_words)
 
         return [term for term in self.get_simple_terms() if is_match(term)]
