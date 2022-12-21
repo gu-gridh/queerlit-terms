@@ -8,6 +8,7 @@ CORS(app)
 
 THESAURUS = Thesaurus().parse('qlit.nt')
 THESAURUS_SIMPLE = SimpleThesaurus() + THESAURUS
+THESAURUS_SIMPLE.rebuild()
 
 print(f'Loaded thesaurus with {len(THESAURUS.refs())} terms')
 

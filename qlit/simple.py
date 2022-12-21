@@ -81,9 +81,13 @@ class SimpleTerm(dict):
 class SimpleThesaurus(Thesaurus):
     """Like Thesaurus but with unqualified names as inputs and dicts as output."""
 
-    def get_simple_terms(self):
-        self.simple_terms = SimpleTerm.from_termset(self)
-        return self.simple_terms
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.rebuild()
+
+    def rebuild(self):
+        self.build_simple_terms()
+        self.build_search_index()
 
     def terms_if(self, f) -> list[SimpleTerm]:
         return SimpleTerm.from_termset(super().terms_if(f))
@@ -108,6 +112,24 @@ class SimpleThesaurus(Thesaurus):
         """Find terms matching a user-given incremental (startswith) search string."""
         search_words = list(Tokenizer.split(s))
 
+        def is_match(term_words):
+            # Match with all words in the query
+            return all(
+                # Match against any word in the term
+                any(term_word.startswith(search_word)
+                    for term_word in term_words)
+                for search_word in search_words)
+
+        return [self.simple_terms[name] for name in self.index if is_match(self.index[name])]
+
+    def build_simple_terms(self):
+        self.simple_terms = dict()
+        for simple_term in SimpleTerm.from_termset(self):
+            self.simple_terms[simple_term['name']] = simple_term
+
+    def build_search_index(self):
+        self.index = dict()
+
         def term_labels(term):
             if term.get('prefLabel'):
                 yield term['prefLabel']
@@ -117,14 +139,10 @@ class SimpleThesaurus(Thesaurus):
                 for match in term['exactMatch']:
                     yield from term_labels(match)
 
-        def is_match(term):
-            # Match with all words in the query
-            return all(
-                # Match against any word in the term
-                any(
-                    term_word.lower().startswith(search_word.lower())
-                    for label in term_labels(term)
-                    for term_word in Tokenizer.split(label))
-                for search_word in search_words)
+        for name, term in self.simple_terms.items():
+            self.index[name] = []
+            for label in term_labels(term):
+                for term_word in Tokenizer.split(label):
+                    self.index[name].append(term_word.lower())
 
-        return [term for term in self.get_simple_terms() if is_match(term)]
+        return self.index
