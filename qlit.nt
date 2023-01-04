@@ -2001,13 +2001,13 @@
 <https://queerlit.dh.gu.se/qlit/v1/ea97yu27> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där kyssar har betydelse för verket." .
 <https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://purl.org/dc/terms/identifier> "eb52qh07" .
 <https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://purl.org/dc/terms/modified> "2023-01-04T14:56:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://www.w3.org/2004/02/skos/core#altLabel> "Konversionsterapi" .
 <https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://www.w3.org/2004/02/skos/core#altLabel> "Sexuell omorientering" .
 <https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://www.w3.org/2004/02/skos/core#altLabel> "Sexuell reorientering" .
 <https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ru33ue70> .
-<https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000303n> .
+<https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000303> .
 <https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sexuell omvändelse" .
 <https://queerlit.dh.gu.se/qlit/v1/eb52qh07> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/cb66jw88> .
@@ -7794,10 +7794,10 @@
 <https://queerlit.dh.gu.se/qlit/v1/px83mo29> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av nära relationer mellan kvinnor, där deras sexuella läggning inte framgår. Kan omfatta aspekter som släktskap, vänskap, sex eller kärlek." .
 <https://queerlit.dh.gu.se/qlit/v1/px93xp25> <http://purl.org/dc/terms/identifier> "px93xp25" .
 <https://queerlit.dh.gu.se/qlit/v1/px93xp25> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/px93xp25> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/px93xp25> <http://purl.org/dc/terms/modified> "2023-01-04T14:56:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/px93xp25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/px93xp25> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85129417> .
-<https://queerlit.dh.gu.se/qlit/v1/px93xp25> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000251> .
+<https://queerlit.dh.gu.se/qlit/v1/px93xp25> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001345> .
 <https://queerlit.dh.gu.se/qlit/v1/px93xp25> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Subkulturer> .
 <https://queerlit.dh.gu.se/qlit/v1/px93xp25> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/px93xp25> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/bz86ef62> .
@@ -8532,7 +8532,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/rh94xr73> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av mord på HBTQI-personer." .
 <https://queerlit.dh.gu.se/qlit/v1/ri47ax86> <http://purl.org/dc/terms/identifier> "ri47ax86" .
 <https://queerlit.dh.gu.se/qlit/v1/ri47ax86> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/ri47ax86> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ri47ax86> <http://purl.org/dc/terms/modified> "2023-01-04T14:56:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ri47ax86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/ri47ax86> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/aq42lk11> .
 <https://queerlit.dh.gu.se/qlit/v1/ri47ax86> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/he13pb69> .
@@ -8540,7 +8540,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/ri47ax86> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/ri47ax86> <http://www.w3.org/2004/02/skos/core#prefLabel> "Packing (fallos)" .
 <https://queerlit.dh.gu.se/qlit/v1/ri47ax86> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/up80qv89> .
-<https://queerlit.dh.gu.se/qlit/v1/ri47ax86> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av att med hjälp av stoppning eller ett fallosformat föremål i kläderna ge intryck av att ha en penis." .
+<https://queerlit.dh.gu.se/qlit/v1/ri47ax86> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av att med hjälp av en packer, stoppning eller annan form av fallosformat föremål i kläderna ge intryck av att ha en penis." .
 <https://queerlit.dh.gu.se/qlit/v1/ri69ha29> <http://purl.org/dc/terms/identifier> "ri69ha29" .
 <https://queerlit.dh.gu.se/qlit/v1/ri69ha29> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ri69ha29> <http://purl.org/dc/terms/modified> "2022-06-07T15:09:28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
