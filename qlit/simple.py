@@ -56,6 +56,7 @@ class SimpleTerm(dict):
             uri=str(subject),
             prefLabel=termset.value(subject, SKOS.prefLabel),
             altLabels=list(termset.objects(subject, SKOS.altLabel)),
+            hiddenLabels=list(termset.objects(subject, SKOS.hiddenLabel)),
             scopeNote=termset.value(subject, SKOS.scopeNote),
             # Relations to QLIT terms
             broader=[ref_to_name(ref)
@@ -135,6 +136,8 @@ class SimpleThesaurus(Thesaurus):
                 yield term['prefLabel']
             if term.get('altLabels'):
                 yield from term['altLabels']
+            if term.get('hiddenLabels'):
+                yield from term['hiddenLabels']
             if 'exactMatch' in term:
                 for match in term['exactMatch']:
                     yield from term_labels(match)
