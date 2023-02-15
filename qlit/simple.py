@@ -111,7 +111,7 @@ class SimpleThesaurus(Thesaurus):
 
     def autocomplete(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
-        search_words = list(Tokenizer.split(s))
+        search_words = [word.lower() for word in Tokenizer.split(s)]
 
         def is_match(term_words):
             # Match with all words in the query
