@@ -61,10 +61,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/ac83ik65> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://purl.org/dc/terms/identifier> "ac93hi68" .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://purl.org/dc/terms/modified> "2023-01-11T08:39:46"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://purl.org/dc/terms/modified> "2023-02-15T09:11:24"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#altLabel> "Drogberoende hos HBTQI-personer" .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#altLabel> "Drogmissbruk hos HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#altLabel> "Drogmissbrukande HBTQI-personer" .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personer med drogberoende" .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personer med drogmissbruk" .
 <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personer som lever i drogberoende" .
@@ -687,10 +688,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/bk45ul19> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som är partners till transpersoner, oavsett partnerns egen identitet." .
 <https://queerlit.dh.gu.se/qlit/v1/bk48ga51> <http://purl.org/dc/terms/identifier> "bk48ga51" .
 <https://queerlit.dh.gu.se/qlit/v1/bk48ga51> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/bk48ga51> <http://purl.org/dc/terms/modified> "2023-01-11T08:47:14"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/bk48ga51> <http://purl.org/dc/terms/modified> "2023-02-15T09:11:24"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/bk48ga51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/bk48ga51> <http://www.w3.org/2004/02/skos/core#altLabel> "Alkoholberoende hos HBTQI-personer" .
 <https://queerlit.dh.gu.se/qlit/v1/bk48ga51> <http://www.w3.org/2004/02/skos/core#altLabel> "Alkoholmissbruk hos HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/bk48ga51> <http://www.w3.org/2004/02/skos/core#altLabel> "Alkoholmissbrukande HBTQI-personer" .
 <https://queerlit.dh.gu.se/qlit/v1/bk48ga51> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personer med alkoholberoende" .
 <https://queerlit.dh.gu.se/qlit/v1/bk48ga51> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personer med alkoholmissbruk" .
 <https://queerlit.dh.gu.se/qlit/v1/bk48ga51> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personer som lever i alkoholberoende" .
@@ -5432,7 +5434,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/lf94dz65> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som är partners till bisexuella, oavsett partnerns egen identitet." .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://purl.org/dc/terms/identifier> "lg15gn10" .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://purl.org/dc/terms/modified> "2023-01-11T08:39:46"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://purl.org/dc/terms/modified> "2023-02-15T09:11:24"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personer med substansberoende" .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personer med substansmissbruk" .
@@ -5442,6 +5444,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#altLabel> "HBTQI-personer som är beroende av substanser" .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#altLabel> "Substansberoende hos HBTQI-personer" .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#altLabel> "Substansmissbruk hos HBTQI-personer" .
+<https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#altLabel> "Substansmissbrukande HBTQI-personer" .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://homosaurus.org/v3/homoit0002226> .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/lg15gn10> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/ac93hi68> .
