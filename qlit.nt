@@ -2895,8 +2895,11 @@
 <https://queerlit.dh.gu.se/qlit/v1/gf03gn85> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av föräldrar till queera personer, oavsett biologiskt släktskap." .
 <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://purl.org/dc/terms/identifier> "gg03fm98" .
 <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://purl.org/dc/terms/modified> "2023-02-22T13:41:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/2004/02/skos/core#altLabel> "Sambos" .
+<https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/2004/02/skos/core#altLabel> "Sambosar" .
+<https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/2004/02/skos/core#altLabel> "Sammanboende" .
 <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ba46pk33> .
 <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000362> .
 <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Samboende> .
@@ -3857,10 +3860,12 @@
 <https://queerlit.dh.gu.se/qlit/v1/ih08ct04> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av offentlig uppmärksamhet kring fall av sexbrott eller vad som uppfattas som sexuell oanständighet." .
 <https://queerlit.dh.gu.se/qlit/v1/ih61bm68> <http://purl.org/dc/terms/identifier> "ih61bm68" .
 <https://queerlit.dh.gu.se/qlit/v1/ih61bm68> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/ih61bm68> <http://purl.org/dc/terms/modified> "2022-12-07T08:49:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/ih61bm68> <http://purl.org/dc/terms/modified> "2023-02-22T13:41:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ih61bm68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/ih61bm68> <http://www.w3.org/2004/02/skos/core#altLabel> "Mojar" .
+<https://queerlit.dh.gu.se/qlit/v1/ih61bm68> <http://www.w3.org/2004/02/skos/core#altLabel> "Pisskurar" .
 <https://queerlit.dh.gu.se/qlit/v1/ih61bm68> <http://www.w3.org/2004/02/skos/core#altLabel> "Pissmojar" .
+<https://queerlit.dh.gu.se/qlit/v1/ih61bm68> <http://www.w3.org/2004/02/skos/core#altLabel> "Pissoarer" .
 <https://queerlit.dh.gu.se/qlit/v1/ih61bm68> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/hi88il01> .
 <https://queerlit.dh.gu.se/qlit/v1/ih61bm68> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/kh49kc43> .
 <https://queerlit.dh.gu.se/qlit/v1/ih61bm68> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://homosaurus.org/v3/homoit0000308> .
@@ -10262,8 +10267,10 @@
 <https://queerlit.dh.gu.se/qlit/v1/uy59sk22> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av föräldrar vars könstillhörighet inte framgår, och där detta har betydelse för verket." .
 <https://queerlit.dh.gu.se/qlit/v1/uy88np80> <http://purl.org/dc/terms/identifier> "uy88np80" .
 <https://queerlit.dh.gu.se/qlit/v1/uy88np80> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/uy88np80> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/uy88np80> <http://purl.org/dc/terms/modified> "2023-02-22T13:41:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/uy88np80> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://queerlit.dh.gu.se/qlit/v1/uy88np80> <http://www.w3.org/2004/02/skos/core#altLabel> "Amant (HBTQI)" .
+<https://queerlit.dh.gu.se/qlit/v1/uy88np80> <http://www.w3.org/2004/02/skos/core#altLabel> "Lovers (HBTQI)" .
 <https://queerlit.dh.gu.se/qlit/v1/uy88np80> <http://www.w3.org/2004/02/skos/core#altLabel> "Älskarinnor (HBTQI)" .
 <https://queerlit.dh.gu.se/qlit/v1/uy88np80> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ot53zk29> .
 <https://queerlit.dh.gu.se/qlit/v1/uy88np80> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://homosaurus.org/v3/homoit0000895> .
