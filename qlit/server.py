@@ -80,6 +80,11 @@ def api_autocomplete():
     return jsonify(THESAURUS_SIMPLE.autocomplete(s))
 
 
+@app.route("/api/collections")
+def api_collections():
+    return jsonify(THESAURUS_SIMPLE.get_collections())
+
+
 @app.route("/api/roots")
 def api_roots():
     return jsonify(THESAURUS_SIMPLE.get_roots())

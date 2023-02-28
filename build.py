@@ -8,6 +8,8 @@ from rdflib import DCTERMS, SKOS, XSD, Literal
 from qlit.identifier import generate_identifier, validate_identifier
 from qlit.simple import name_to_ref, ref_to_name
 from qlit.thesaurus import Termset, Thesaurus
+from qlit.skos import skos_validate_partial, skos_validate_graph, skos_complete_graph
+from qlit.qlit import qlit_validate_partial
 
 load_dotenv()
 
@@ -95,26 +97,29 @@ if __name__ == '__main__':
     thesaurus = Thesaurus()
 
     # Prepare parsing.
-    fns = [fn for fn in os.listdir(INDIR) if is_infile(fn)]
+    fns = [join(indir, fn) for indir in INDIR.split(':') for fn in os.listdir(indir) if is_infile(fn)]
     print(f'Parsing {len(fns)} files...')
     skipped = []
 
     # Parse input files.
     for fn in fns:
         try:
-            with open(join(INDIR, fn)) as f:
+            with open(fn) as f:
                 data = f.read()
             termset = Termset().parse(data=data)
-            # Catch common syntax mistake
-            for s, p, o in termset:
-                if p.endswith(':'):
-                    raise SyntaxError(f'Predicate ends with colon: {p}')
-            term_uri = termset.refs()[0]
+            for error in skos_validate_partial(termset):
+                raise SyntaxError(error)
+            for error in qlit_validate_partial(termset):
+                raise SyntaxError(error)
             thesaurus += termset
         except Exception as err:
             # Report error and skip this input file.
             print(f'{fn}: {type(err)} {err}')
             skipped.append(fn)
+
+    # Check for thesaurus-wide errors.
+    for error in skos_validate_graph(thesaurus):
+        raise SyntaxError(error)
 
     # Done parsing.
     if skipped:
@@ -127,7 +132,7 @@ if __name__ == '__main__':
 
     # Complete relations
     print('Completing relations...')
-    thesaurus.complete_relations()
+    skos_complete_graph(thesaurus)
 
     # Load another copy to track changes.
     print('Checking changes...')
