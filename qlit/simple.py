@@ -4,8 +4,9 @@ Non-RDF interfaces to the thesaurus.
 
 from os.path import basename
 import re
-from rdflib import SKOS, URIRef
+from rdflib import SKOS, URIRef, Literal
 from qlit.thesaurus import BASE, Termset, Thesaurus
+from collections.abc import Generator
 
 
 HOMOSAURUS = Thesaurus().parse('homosaurus.ttl')
@@ -30,19 +31,17 @@ def ref_to_name(ref: URIRef) -> str:
 def resolve_external_term(ref):
     if ref.startswith('https://homosaurus.org/v3/'):
         return resolve_homosaurus_term(ref)
-    return {
-        'uri': str(ref),
-    }
+    return SimpleTerm(uri=str(ref))
 
 
 def resolve_homosaurus_term(ref):
     prefLabel = HOMOSAURUS.value(ref, SKOS.prefLabel)
     altLabels = list(HOMOSAURUS.objects(ref, SKOS.altLabel))
-    return {
-        'uri': str(ref),
-        'prefLabel': prefLabel,
-        'altLabels': altLabels,
-    }
+    return SimpleTerm(
+        uri=str(ref),
+        prefLabel=prefLabel,
+        altLabels=altLabels
+    )
 
 
 class SimpleTerm(dict):
@@ -77,6 +76,28 @@ class SimpleTerm(dict):
             SimpleTerm.from_subject(termset, ref)
             for ref in termset.refs()
         ]
+
+    def get_labels(self) -> Generator[Literal]:
+        """Labels for the term (or for closely related concepts), in relevance order."""
+        match: SimpleTerm
+        if self.get('prefLabel'):
+            yield self['prefLabel']
+        if 'exactMatch' in self:
+            for match in self['exactMatch']:
+                yield from match.get_labels()
+        if self.get('altLabels'):
+            yield from self['altLabels']
+        if self.get('hiddenLabels'):
+            yield from self['hiddenLabels']
+        if 'closeMatch' in self:
+            for match in self['closeMatch']:
+                yield from match.get_labels()
+
+    def get_words(self) -> Generator[str]:
+        """All the labels for this term, tokenized into words and lowercased."""
+        for label in self.get_labels():
+            for word in Tokenizer.split(label):
+                yield word.lower()
 
 
 class SimpleThesaurus(Thesaurus):
@@ -121,34 +142,40 @@ class SimpleThesaurus(Thesaurus):
                     for term_word in term_words)
                 for search_word in search_words)
 
-        return [self.simple_terms[name] for name in self.index if is_match(self.index[name])]
+        # Get subset of terms that matches the query.
+        terms = [self.simple_terms[name] for name in self.index if is_match(self.index[name])]
+
+        def score(term : SimpleTerm) -> float:
+            """Calculate match score."""
+            # Map each word in the term to whether it contributes to the match.
+            term_word_hits = [any(t.startswith(s) for s in search_words) for t in term.get_words()]
+            # Score early matching words more than late ones.
+            score = sum(int(hit) / i for i, hit in enumerate(term_word_hits, start=1))
+            # Add a small bonus for root terms. Not sure if this is motivated.
+            score += 0.1 if len(term['broader']) == 0 else 0
+            return score
+
+        # Calculate match score and add it to the term dict.
+        for term in terms:
+            term['score'] = score(term)
+
+        # Sort alphabetically first.
+        terms.sort(key=lambda term: term['prefLabel'].lower())
+        # More significantly, sort descending by match score.
+        terms.sort(key=lambda term: term['score'], reverse=True)
+        return terms
 
     def build_simple_terms(self):
-        self.simple_terms = dict()
+        self.simple_terms : dict[str, SimpleTerm] = dict()
         for simple_term in SimpleTerm.from_termset(self):
             self.simple_terms[simple_term['name']] = simple_term
 
     def build_search_index(self):
-        self.index = dict()
-
-        def term_labels(term):
-            if term.get('prefLabel'):
-                yield term['prefLabel']
-            if 'exactMatch' in term:
-                for match in term['exactMatch']:
-                    yield from term_labels(match)
-            if term.get('altLabels'):
-                yield from term['altLabels']
-            if term.get('hiddenLabels'):
-                yield from term['hiddenLabels']
-            if 'closeMatch' in term:
-                for match in term['closeMatch']:
-                    yield from term_labels(match)
+        self.index : dict[str, list[str]] = dict()
 
         for name, term in self.simple_terms.items():
             self.index[name] = []
-            for label in term_labels(term):
-                for term_word in Tokenizer.split(label):
-                    self.index[name].append(term_word.lower())
+            for word in term.get_words():
+                self.index[name].append(word)
 
         return self.index

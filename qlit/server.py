@@ -7,10 +7,11 @@ app = Flask(__name__)
 CORS(app)
 
 THESAURUS = Thesaurus().parse('qlit.nt')
+print(f'Loaded thesaurus with {len(THESAURUS.refs())} terms')
+
 THESAURUS_SIMPLE = SimpleThesaurus() + THESAURUS
 THESAURUS_SIMPLE.rebuild()
-
-print(f'Loaded thesaurus with {len(THESAURUS.refs())} terms')
+print('Rebuilt simple thesaurus')
 
 FORMATS = {
     'ttl': 'text/turtle',
