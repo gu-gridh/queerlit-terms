@@ -72,10 +72,9 @@ class SimpleTerm(dict):
     @staticmethod
     def from_termset(termset: Termset) -> list["SimpleTerm"]:
         """Make simple dicts for the given set of terms."""
-        return [
-            SimpleTerm.from_subject(termset, ref)
-            for ref in termset.refs()
-        ]
+        terms = [SimpleTerm.from_subject(termset, ref) for ref in termset.refs()]
+        terms.sort(key=lambda term: term['prefLabel'].lower())
+        return terms
 
     def get_labels(self) -> Generator[Literal]:
         """Labels for the term (or for closely related concepts), in relevance order."""
