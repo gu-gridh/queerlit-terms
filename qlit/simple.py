@@ -134,12 +134,15 @@ class SimpleThesaurus(Thesaurus):
         def term_labels(term):
             if term.get('prefLabel'):
                 yield term['prefLabel']
+            if 'exactMatch' in term:
+                for match in term['exactMatch']:
+                    yield from term_labels(match)
             if term.get('altLabels'):
                 yield from term['altLabels']
             if term.get('hiddenLabels'):
                 yield from term['hiddenLabels']
-            if 'exactMatch' in term:
-                for match in term['exactMatch']:
+            if 'closeMatch' in term:
+                for match in term['closeMatch']:
                     yield from term_labels(match)
 
         for name, term in self.simple_terms.items():
