@@ -154,6 +154,9 @@ class SimpleThesaurus(Thesaurus):
             score += 0.1 if len(term['broader']) == 0 else 0
             return score
 
+        # Clone terms so that changes do not affect the originals.
+        terms = [term.copy() for term in terms]
+
         # Calculate match score and add it to the term dict.
         for term in terms:
             term['score'] = score(term)
