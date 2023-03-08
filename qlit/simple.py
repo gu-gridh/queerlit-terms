@@ -155,7 +155,7 @@ class SimpleThesaurus(Thesaurus):
             return score
 
         # Clone terms so that changes do not affect the originals.
-        terms = [term.copy() for term in terms]
+        terms = [SimpleTerm(**term) for term in terms]
 
         # Calculate match score and add it to the term dict.
         for term in terms:
