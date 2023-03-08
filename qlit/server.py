@@ -74,6 +74,11 @@ def api_one(name):
     return jsonify(THESAURUS_SIMPLE.get(name))
 
 
+@app.route("/api/labels")
+def api_labels():
+    return jsonify(THESAURUS_SIMPLE.get_labels())
+
+
 @app.route("/api/autocomplete")
 def api_autocomplete():
     # TODO Handle missing/bad arg
