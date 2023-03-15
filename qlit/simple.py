@@ -167,6 +167,10 @@ class SimpleThesaurus(Thesaurus):
         terms.sort(key=lambda term: term['score'], reverse=True)
         return terms
 
+    def get_labels(self):
+        """All term labels, keyed by corresponding term identifiers."""
+        return dict((name, term['prefLabel']) for (name, term) in self.simple_terms.items())
+
     def build_simple_terms(self):
         self.simple_terms : dict[str, SimpleTerm] = dict()
         for simple_term in SimpleTerm.from_termset(self):
