@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Changes to data are ignored for the purpose of this changelog.
 
+## [1.2.0] - 2023-03-15
+
+### Added
+
+- `/api/labels` route
+
+### Fixed
+
+- Autocomplete was broken (b2dde71)
+
 ## [1.1.0] - 2023-03-03
 
 ### Added
