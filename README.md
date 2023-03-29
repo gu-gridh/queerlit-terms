@@ -28,7 +28,11 @@ The [simple.py](qlit/simple.py) module redefines this slightly, in order to prov
 
 ## Conversion scripts
 
-1. Add to `.env` file: `INDIR="/path/to/ttls"`
+1. Add to the `.env` file:
+   ```
+   INDIR="/path/to/ttls"
+   THESAURUSFILE=qlit.nt
+   ```
 2. Run `python3 build.py`
 
 See [build.py](build.py) and [skos.py](qlit/skos.py).
@@ -45,7 +49,11 @@ The new ids are saved to `qlit.nt` but not in the source files, so the next run 
 
 ## HTTP server
 
-1. Add to `.env` file: `FLASK_ENV=development`
+1. Add to the `.env` file:
+   ```
+   THESAURUSFILE=qlit.nt
+   FLASK_DEBUG=1
+   ```
 2. Run `flask run`
 
 See [server.py](qlit/server.py).
@@ -58,7 +66,9 @@ See [server.py](qlit/server.py).
 | `/<name>`                     | RDF data for one term (see _Formats_ below) |
 | `/api/`                       | All terms as JSON data                      |
 | `/api/term/<name>`            | One term as JSON                            |
+| `/api/labels`                 | Labels for all terms, keyed by identifiers  |
 | `/api/autocomplete?s=<str>`   | Terms matching a partial label              |
+| `/api/collections`            | All collections                             |
 | `/api/roots`                  | All top-level terms                         |
 | `/api/children?parent=<name>` | Terms narrower than the term `<name>`       |
 | `/api/parents?child=<name>`   | Terms broader than the term `<name>`        |
