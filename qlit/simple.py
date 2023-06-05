@@ -169,12 +169,14 @@ class SimpleThesaurus(Thesaurus):
     
     def get_collections(self):
         g = super().get_collections()
-        return [dict(
+        dicts = [dict(
             name=ref_to_name(ref),
             uri=str(ref),
             prefLabel=g.value(ref, SKOS.prefLabel),
         ) for ref in g.collections()]
-    
+        dicts.sort(key=lambda term: term['prefLabel'].lower())
+        return dicts
+
     def get_collection(self, name):
         ref = name_to_ref(name)
         return self.terms_if(lambda term: self[ref:SKOS.member:term])
