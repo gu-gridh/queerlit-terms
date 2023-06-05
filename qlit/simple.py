@@ -166,7 +166,15 @@ class SimpleThesaurus(Thesaurus):
         # More significantly, sort descending by match score.
         terms.sort(key=lambda term: term['score'], reverse=True)
         return terms
-
+    
+    def get_collections(self):
+        g = super().get_collections()
+        return [dict(
+            name=ref_to_name(ref),
+            uri=str(ref),
+            prefLabel=g.value(ref, SKOS.prefLabel),
+        ) for ref in g.collections()]
+    
     def get_labels(self):
         """All term labels, keyed by corresponding term identifiers."""
         return dict((name, term['prefLabel']) for (name, term) in self.simple_terms.items())
