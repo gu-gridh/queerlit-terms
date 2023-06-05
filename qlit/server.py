@@ -91,6 +91,11 @@ def api_collections():
     return jsonify(THESAURUS_SIMPLE.get_collections())
 
 
+@app.route("/api/collections/<name>")
+def api_collection(name):
+    return jsonify(THESAURUS_SIMPLE.get_collection(name))
+
+
 @app.route("/api/roots")
 def api_roots():
     return jsonify(THESAURUS_SIMPLE.get_roots())

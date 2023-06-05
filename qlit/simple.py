@@ -175,6 +175,10 @@ class SimpleThesaurus(Thesaurus):
             prefLabel=g.value(ref, SKOS.prefLabel),
         ) for ref in g.collections()]
     
+    def get_collection(self, name):
+        ref = name_to_ref(name)
+        return self.terms_if(lambda term: self[ref:SKOS.member:term])
+
     def get_labels(self):
         """All term labels, keyed by corresponding term identifiers."""
         return dict((name, term['prefLabel']) for (name, term) in self.simple_terms.items())
