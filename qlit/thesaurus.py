@@ -51,7 +51,10 @@ class Thesaurus(Termset):
 
     def get_collections(self) -> Termset:
         """Find all collections."""
-        return self.terms_if(lambda term: self[term:RDF.type:SKOS.Collection])
+        g = Termset(base=self.base)
+        for ref in self.collections():
+            g += self.triples((ref, None, None))
+        return g
 
     def get_roots(self) -> Termset:
         """Find all terms without parents."""
