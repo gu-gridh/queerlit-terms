@@ -92,7 +92,8 @@ def api_collections():
 
 @app.route("/api/collections/<name>")
 def api_collection(name):
-    return jsonify(THESAURUS_SIMPLE.get_collection(name))
+    tree = bool(request.args.get('tree'))
+    return jsonify(THESAURUS_SIMPLE.get_collection(name, tree))
 
 
 @app.route("/api/roots")

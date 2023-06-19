@@ -9,6 +9,10 @@ Changes to data are ignored for the purpose of this changelog.
 
 ## [Unreleased]
 
+### Changed
+
+- Terms in a collection (`/api/collections/<name>`) are optionally expanded to full trees
+
 ## [1.3.0] (2023-06-14)
 
 ### Changed

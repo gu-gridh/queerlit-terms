@@ -1,6 +1,4 @@
-from os.path import basename
-import re
-from rdflib import DCTERMS, RDF, SKOS, Graph, Literal, URIRef
+from rdflib import RDF, SKOS, Graph, Literal, URIRef
 
 BASE = 'https://queerlit.dh.gu.se/qlit/v1/'
 

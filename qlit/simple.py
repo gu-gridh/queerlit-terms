@@ -189,9 +189,12 @@ class SimpleThesaurus(Thesaurus):
         dicts.sort(key=lambda term: term['prefLabel'].lower())
         return dicts
 
-    def get_collection(self, name):
+    def get_collection(self, name, tree=False):
         ref = name_to_ref(name)
-        return self.terms_if(lambda term: self[ref:SKOS.member:term])
+        terms = self.terms_if(lambda term: self[ref:SKOS.member:term])
+        if tree:
+            self.expand_narrower(terms)
+        return terms
 
     def get_labels(self):
         """All term labels, keyed by corresponding term identifiers."""
@@ -211,3 +214,12 @@ class SimpleThesaurus(Thesaurus):
                 self.index[name].append(word)
 
         return self.index
+
+    def expand_narrower(self, terms: list[SimpleTerm]):
+        """Instead of string names, look up and inflate narrower terms recursively."""
+        for term in terms:
+            expanded = []
+            for name in term["narrower"]:
+                expanded.append(self.get(name))
+            self.expand_narrower(expanded)
+            term["narrower"] = expanded
