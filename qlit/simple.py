@@ -3,6 +3,7 @@ Non-RDF interfaces to the thesaurus.
 """
 
 from os.path import basename
+import time
 import re
 from rdflib import SKOS, URIRef, Literal
 from qlit.thesaurus import BASE, Termset, Thesaurus
@@ -106,9 +107,20 @@ class SimpleThesaurus(Thesaurus):
         super().__init__(*args, **kwargs)
         self.rebuild()
 
-    def rebuild(self):
+    def rebuild(self, *, debug=False):
+        if debug:
+            print('Building simple terms... ', end="", flush=True)
+        tic = time.time()
         self.build_simple_terms()
+        if debug:
+            print("%.2fs" % (time.time() - tic,))
+
+        if debug:
+            print('Building search index... ', end="", flush=True)
+        tic = time.time()
         self.build_search_index()
+        if debug:
+            print("%.2fs" % (time.time() - tic,))
 
     def terms_if(self, f) -> list[SimpleTerm]:
         return SimpleTerm.from_termset(super().terms_if(f))

@@ -10,8 +10,7 @@ THESAURUS = Thesaurus().parse('qlit.nt')
 print(f'Loaded thesaurus with {len(THESAURUS.refs())} terms')
 
 THESAURUS_SIMPLE = SimpleThesaurus() + THESAURUS
-THESAURUS_SIMPLE.rebuild()
-print('Rebuilt simple thesaurus')
+THESAURUS_SIMPLE.rebuild(debug=True)
 
 FORMATS = {
     'ttl': 'text/turtle',
