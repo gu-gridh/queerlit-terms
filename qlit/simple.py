@@ -3,6 +3,7 @@ Non-RDF interfaces to the thesaurus.
 """
 
 from os.path import basename
+import time
 import re
 from rdflib import SKOS, URIRef, Literal
 from qlit.thesaurus import BASE, Termset, Thesaurus
@@ -106,9 +107,20 @@ class SimpleThesaurus(Thesaurus):
         super().__init__(*args, **kwargs)
         self.rebuild()
 
-    def rebuild(self):
+    def rebuild(self, *, debug=False):
+        if debug:
+            print('Building simple terms... ', end="", flush=True)
+        tic = time.time()
         self.build_simple_terms()
+        if debug:
+            print("%.2fs" % (time.time() - tic,))
+
+        if debug:
+            print('Building search index... ', end="", flush=True)
+        tic = time.time()
         self.build_search_index()
+        if debug:
+            print("%.2fs" % (time.time() - tic,))
 
     def terms_if(self, f) -> list[SimpleTerm]:
         return SimpleTerm.from_termset(super().terms_if(f))
@@ -177,9 +189,12 @@ class SimpleThesaurus(Thesaurus):
         dicts.sort(key=lambda term: term['prefLabel'].lower())
         return dicts
 
-    def get_collection(self, name):
+    def get_collection(self, name, tree=False):
         ref = name_to_ref(name)
-        return self.terms_if(lambda term: self[ref:SKOS.member:term])
+        terms = self.terms_if(lambda term: self[ref:SKOS.member:term])
+        if tree:
+            self.expand_narrower(terms)
+        return terms
 
     def get_labels(self):
         """All term labels, keyed by corresponding term identifiers."""
@@ -199,3 +214,12 @@ class SimpleThesaurus(Thesaurus):
                 self.index[name].append(word)
 
         return self.index
+
+    def expand_narrower(self, terms: list[SimpleTerm]):
+        """Instead of string names, look up and inflate narrower terms recursively."""
+        for term in terms:
+            expanded = []
+            for name in term["narrower"]:
+                expanded.append(self.get(name))
+            self.expand_narrower(expanded)
+            term["narrower"] = expanded

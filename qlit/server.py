@@ -10,8 +10,7 @@ THESAURUS = Thesaurus().parse('qlit.nt')
 print(f'Loaded thesaurus with {len(THESAURUS.refs())} terms')
 
 THESAURUS_SIMPLE = SimpleThesaurus() + THESAURUS
-THESAURUS_SIMPLE.rebuild()
-print('Rebuilt simple thesaurus')
+THESAURUS_SIMPLE.rebuild(debug=True)
 
 FORMATS = {
     'ttl': 'text/turtle',
@@ -93,7 +92,8 @@ def api_collections():
 
 @app.route("/api/collections/<name>")
 def api_collection(name):
-    return jsonify(THESAURUS_SIMPLE.get_collection(name))
+    tree = bool(request.args.get('tree'))
+    return jsonify(THESAURUS_SIMPLE.get_collection(name, tree))
 
 
 @app.route("/api/roots")
