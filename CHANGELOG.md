@@ -9,6 +9,8 @@ Changes to data are ignored for the purpose of this changelog.
 
 ## [Unreleased]
 
+## [1.3.1] (2023-06-21)
+
 ### Changed
 
 - Terms in a collection (`/api/collections/<name>`) are optionally expanded to full trees
@@ -57,7 +59,8 @@ Features:
 - A build script that compiles multiple RDF/SKOS files (terms) to one (thesaurus).
 - An HTTP server that exposes the data as RDF as well as more web-app-friendly JSON
 
-[unreleased]: https://github.com/gu-gridh/queerlit-terms/compare/v1.3.0...HEAD
+[unreleased]: https://github.com/gu-gridh/queerlit-terms/compare/v1.3.1...HEAD
+[1.3.1]: https://github.com/gu-gridh/queerlit-terms/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/gu-gridh/queerlit-terms/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/gu-gridh/queerlit-terms/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/gu-gridh/queerlit-terms/compare/v1.0.0...v1.1.0
