@@ -9,6 +9,10 @@ Changes to data are ignored for the purpose of this changelog.
 
 ## [Unreleased]
 
+### Changed
+
+- Moved autocomplete index building into first `/api/autocomplete` call, for faster server startup
+
 ## [1.3.1] (2023-06-21)
 
 ### Changed
