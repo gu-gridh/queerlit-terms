@@ -105,11 +105,11 @@ class SimpleTerm(dict):
                 yield word.lower()
 
 
-class SimpleThesaurus(Thesaurus):
+class SimpleThesaurus():
     """Like Thesaurus but with unqualified names as inputs and dicts as output."""
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    def __init__(self, thesaurus: Thesaurus):
+        self.t = thesaurus
         self.simple_terms = None
         self.index = None
 
@@ -128,24 +128,35 @@ class SimpleThesaurus(Thesaurus):
         if environ.get("FLASK_DEBUG"):
             print("%.2fs" % (time.time() - tic,))
 
-    def terms_if(self, f) -> list[SimpleTerm]:
-        return SimpleTerm.from_termset(super().terms_if(f))
-
     def get(self, name: str) -> SimpleTerm:
-        return SimpleTerm.from_subject(self, name_to_ref(name))
+        return SimpleTerm.from_subject(self.t, name_to_ref(name))
+
+    def get_roots(self) -> Termset:
+        """Find all terms without parents."""
+        termset = self.t.get_roots()
+        return SimpleTerm.from_termset(termset)
 
     def get_children(self, parent: str) -> list[SimpleTerm]:
-        return super().get_children(name_to_ref(parent))
+        ref = name_to_ref(parent)
+        termset = self.t.get_children(ref)
+        return SimpleTerm.from_termset(termset)
 
     def get_parents(self, child: str) -> list[SimpleTerm]:
-        return super().get_parents(name_to_ref(child))
+        ref = name_to_ref(child)
+        termset = self.t.get_parents(ref)
+        return SimpleTerm.from_termset(termset)
 
     def get_related(self, other: str) -> list[SimpleTerm]:
-        return super().get_related(name_to_ref(other))
+        ref = name_to_ref(other)
+        termset = self.t.get_related(ref)
+        return SimpleTerm.from_termset(termset)
 
     def get_all(self) -> list[SimpleTerm]:
         """All terms as dicts."""
-        return SimpleTerm.from_termset(self)
+        if not self.simple_terms:
+            self.rebuild(debug=True)
+        terms = self.simple_terms.values()
+        return sorted(terms, key=lambda term: term['prefLabel'].lower())
 
     def autocomplete(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
@@ -189,7 +200,7 @@ class SimpleThesaurus(Thesaurus):
         return terms
 
     def get_collections(self):
-        g = super().get_collections()
+        g = self.t.get_collections()
         dicts = [dict(
             name=ref_to_name(ref),
             uri=str(ref),
@@ -200,7 +211,8 @@ class SimpleThesaurus(Thesaurus):
 
     def get_collection(self, name, tree=False):
         ref = name_to_ref(name)
-        terms = self.terms_if(lambda term: self[ref:SKOS.member:term])
+        termset = self.t.terms_if(lambda term: self.t[ref:SKOS.member:term])
+        terms = SimpleTerm.from_termset(termset)
         if tree:
             self.expand_narrower(terms)
         return terms
@@ -213,7 +225,7 @@ class SimpleThesaurus(Thesaurus):
 
     def build_simple_terms(self):
         self.simple_terms : dict[str, SimpleTerm] = dict()
-        for simple_term in SimpleTerm.from_termset(self):
+        for simple_term in SimpleTerm.from_termset(self.t):
             self.simple_terms[simple_term['name']] = simple_term
 
     def build_search_index(self):
