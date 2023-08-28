@@ -13,10 +13,10 @@ class Searcher:
 
     @classmethod
     def tokenize(cls, phrase: str) -> list[str]:
-        return list(filter(None, cls.DELIMITER.split(phrase)))
+        return filter(None, cls.DELIMITER.split(phrase))
 
     def search(self, q: str) -> list[tuple[int, Item]]:
-        qws = self.tokenize(q)
+        qws = list(self.tokenize(q))
         hits = []
         for item in self._items:
             iws = self.tokenize(" ".join(self._get_strings(item)))
