@@ -153,7 +153,7 @@ class SimpleThesaurus():
         terms = self.simple_terms.values()
         return sorted(terms, key=lambda term: term['prefLabel'].lower())
 
-    def autocomplete(self, s: str) -> Termset:
+    def search(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
         scored_hits = self.searcher.search(s)
         hits = []

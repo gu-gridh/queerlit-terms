@@ -77,11 +77,11 @@ def api_labels():
     return jsonify(THESAURUS_SIMPLE.get_labels())
 
 
-@app.route("/api/autocomplete")
-def api_autocomplete():
+@app.route("/api/search")
+def api_search():
     # TODO Handle missing/bad arg
     s = request.args.get('s')
-    return jsonify(THESAURUS_SIMPLE.autocomplete(s))
+    return jsonify(THESAURUS_SIMPLE.search(s))
 
 
 @app.route("/api/collections")

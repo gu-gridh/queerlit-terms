@@ -11,6 +11,7 @@ Changes to data are ignored for the purpose of this changelog.
 
 ### Changed
 
+- MAJOR: Renamed `autocomplete` to `search`
 - Moved search mechanism to new module
 - SimpleThesaurus does not _inherit_ Thesaurus, but _has_ it
 - Get labels directly from graph, not from SimpleTerm list

@@ -67,7 +67,7 @@ See [server.py](qlit/server.py).
 | `/api/`                       | All terms as JSON data                      |
 | `/api/term/<name>`            | One term as JSON                            |
 | `/api/labels`                 | Labels for all terms, keyed by identifiers  |
-| `/api/autocomplete?s=<str>`   | Terms matching a partial label              |
+| `/api/search?s=<str>`         | Terms matching a partial label              |
 | `/api/collections`            | All collections                             |
 | `/api/collections/<name>`     | Terms within the collection `<name>`        |
 | `/api/roots`                  | All top-level terms                         |
