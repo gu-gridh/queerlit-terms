@@ -133,14 +133,14 @@ class SimpleThesaurus():
         termset = self.t.get_roots()
         return SimpleTerm.from_termset(termset)
 
-    def get_children(self, parent: str) -> list[SimpleTerm]:
-        ref = name_to_ref(parent)
-        termset = self.t.get_children(ref)
+    def get_narrower(self, broader: str) -> list[SimpleTerm]:
+        ref = name_to_ref(broader)
+        termset = self.t.get_narrower(ref)
         return SimpleTerm.from_termset(termset)
 
-    def get_parents(self, child: str) -> list[SimpleTerm]:
-        ref = name_to_ref(child)
-        termset = self.t.get_parents(ref)
+    def get_broader(self, narrower: str) -> list[SimpleTerm]:
+        ref = name_to_ref(narrower)
+        termset = self.t.get_broader(ref)
         return SimpleTerm.from_termset(termset)
 
     def get_related(self, other: str) -> list[SimpleTerm]:

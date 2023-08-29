@@ -60,20 +60,20 @@ See [server.py](qlit/server.py).
 
 ### HTTP API
 
-| Path                          | Response                                    |
-| ----------------------------- | ------------------------------------------- |
-| `/`                           | Full RDF data (see _Formats_ below)         |
-| `/<name>`                     | RDF data for one term (see _Formats_ below) |
-| `/api/`                       | All terms as JSON data                      |
-| `/api/term/<name>`            | One term as JSON                            |
-| `/api/labels`                 | Labels for all terms, keyed by identifiers  |
-| `/api/search?s=<str>`         | Terms matching a partial label              |
-| `/api/collections`            | All collections                             |
-| `/api/collections/<name>`     | Terms within the collection `<name>`        |
-| `/api/roots`                  | All top-level terms                         |
-| `/api/children?parent=<name>` | Terms narrower than the term `<name>`       |
-| `/api/parents?child=<name>`   | Terms broader than the term `<name>`        |
-| `/api/related?other=<name>`   | Terms related to `<name>`                   |
+| Path                           | Response                                    |
+| ------------------------------ | ------------------------------------------- |
+| `/`                            | Full RDF data (see _Formats_ below)         |
+| `/<name>`                      | RDF data for one term (see _Formats_ below) |
+| `/api/`                        | All terms as JSON data                      |
+| `/api/term/<name>`             | One term as JSON                            |
+| `/api/labels`                  | Labels for all terms, keyed by identifiers  |
+| `/api/search?s=<str>`          | Terms matching a partial label              |
+| `/api/collections`             | All collections                             |
+| `/api/collections/<name>`      | Terms within the collection `<name>`        |
+| `/api/roots`                   | All top-level terms                         |
+| `/api/narrower?broader=<name>` | Terms narrower than the term `<name>`       |
+| `/api/broader?narrower=<name>` | Terms broader than the term `<name>`        |
+| `/api/related?other=<name>`    | Terms related to `<name>`                   |
 
 ### Formats
 

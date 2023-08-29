@@ -100,18 +100,18 @@ def api_roots():
     return jsonify(THESAURUS_SIMPLE.get_roots())
 
 
-@app.route("/api/children")
-def api_children():
+@app.route("/api/narrower")
+def api_narrower():
     # TODO Handle missing/bad arg
-    parent = request.args.get('parent')
-    return jsonify(THESAURUS_SIMPLE.get_children(parent))
+    broader = request.args.get('broader')
+    return jsonify(THESAURUS_SIMPLE.get_narrower(broader))
 
 
-@app.route("/api/parents")
-def api_parents():
+@app.route("/api/broader")
+def api_broader():
     # TODO Handle missing/bad arg
-    child = request.args.get('child')
-    return jsonify(THESAURUS_SIMPLE.get_parents(child))
+    narrower = request.args.get('narrower')
+    return jsonify(THESAURUS_SIMPLE.get_broader(narrower))
 
 @app.route("/api/related")
 def api_related():

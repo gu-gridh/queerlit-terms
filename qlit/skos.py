@@ -29,10 +29,10 @@ def skos_complete_graph(g: Thesaurus) -> None:
 
   for term in g.concepts():
     # broader <-> narrower
-    for parent in g[term:SKOS.broader]:
-      g.add((parent, SKOS.narrower, term))
-    for child in g[term:SKOS.narrower]:
-      g.add((child, SKOS.broader, term))
+    for broader in g[term:SKOS.broader]:
+      g.add((broader, SKOS.narrower, term))
+    for narrower in g[term:SKOS.narrower]:
+      g.add((narrower, SKOS.broader, term))
 
     # related <-> related
     for relatee in g[term:SKOS.related]:

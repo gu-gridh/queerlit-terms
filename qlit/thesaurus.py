@@ -58,15 +58,15 @@ class Thesaurus(Termset):
         """Find all terms without parents."""
         return self.terms_if(lambda term: self[term:RDF.type:SKOS.Concept] and not self.value(term, SKOS.broader))
 
-    def get_children(self, parent: URIRef) -> Termset:
+    def get_narrower(self, broader: URIRef) -> Termset:
         """Find terms that are directly narrower than a given term."""
-        self.assert_term_exists(parent)
-        return self.terms_if(lambda term: self[term:SKOS.broader:parent])
+        self.assert_term_exists(broader)
+        return self.terms_if(lambda term: self[term:SKOS.broader:broader])
 
-    def get_parents(self, child: URIRef) -> Termset:
+    def get_broader(self, narrower: URIRef) -> Termset:
         """Find terms that are directly broader than a given term."""
-        self.assert_term_exists(child)
-        return self.terms_if(lambda term: self[child:SKOS.broader:term])
+        self.assert_term_exists(narrower)
+        return self.terms_if(lambda term: self[narrower:SKOS.broader:term])
 
     def get_related(self, other: URIRef) -> Termset:
         """Find terms that are related to a given term."""
