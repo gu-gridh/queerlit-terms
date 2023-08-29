@@ -8,7 +8,8 @@ import time
 import re
 from dotenv import load_dotenv
 from rdflib import SKOS, URIRef, Literal
-from qlit.thesaurus import BASE, Termset, Thesaurus
+from .thesaurus import BASE, Termset, Thesaurus
+from .search import Searcher
 from collections.abc import Generator
 
 
@@ -111,7 +112,7 @@ class SimpleThesaurus():
     def __init__(self, thesaurus: Thesaurus):
         self.t = thesaurus
         self.simple_terms = None
-        self.index = None
+        self.searcher = None
         self.rebuild()
 
     def rebuild(self):
@@ -122,12 +123,7 @@ class SimpleThesaurus():
         if environ.get("FLASK_DEBUG"):
             print("%.2fs" % (time.time() - tic,))
 
-        if environ.get("FLASK_DEBUG"):
-            print('Building search index... ', end="", flush=True)
-        tic = time.time()
-        self.build_search_index()
-        if environ.get("FLASK_DEBUG"):
-            print("%.2fs" % (time.time() - tic,))
+        self.searcher = Searcher(self.simple_terms.values(), lambda term: term.get_words())
 
     def get(self, name: str) -> SimpleTerm:
         return SimpleTerm.from_subject(self.t, name_to_ref(name))
@@ -159,41 +155,12 @@ class SimpleThesaurus():
 
     def autocomplete(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
-        search_words = [word.lower() for word in Tokenizer.split(s)]
-
-        def is_match(term_words):
-            # Match with all words in the query
-            return all(
-                # Match against any word in the term
-                any(term_word.startswith(search_word)
-                    for term_word in term_words)
-                for search_word in search_words)
-
-        # Get subset of terms that matches the query.
-        terms = [self.simple_terms[name] for name in self.index if is_match(self.index[name])]
-
-        def score(term : SimpleTerm) -> float:
-            """Calculate match score."""
-            # Map each word in the term to whether it contributes to the match.
-            term_word_hits = [any(t.startswith(s) for s in search_words) for t in term.get_words()]
-            # Score early matching words more than late ones.
-            score = sum(int(hit) / i for i, hit in enumerate(term_word_hits, start=1))
-            # Add a small bonus for root terms. Not sure if this is motivated.
-            score += 0.1 if len(term['broader']) == 0 else 0
-            return score
-
-        # Clone terms so that changes do not affect the originals.
-        terms = [SimpleTerm(**term) for term in terms]
-
-        # Calculate match score and add it to the term dict.
-        for term in terms:
-            term['score'] = score(term)
-
-        # Sort alphabetically first.
-        terms.sort(key=lambda term: term['prefLabel'].lower())
-        # More significantly, sort descending by match score.
-        terms.sort(key=lambda term: term['score'], reverse=True)
-        return terms
+        scored_hits = self.searcher.search(s)
+        hits = []
+        for (score, hit) in scored_hits:
+            hit["score"] = score
+            hits.append(hit)
+        return hits
 
     def get_collections(self):
         g = self.t.get_collections()
@@ -221,16 +188,6 @@ class SimpleThesaurus():
         self.simple_terms : dict[str, SimpleTerm] = dict()
         for simple_term in SimpleTerm.from_termset(self.t):
             self.simple_terms[simple_term['name']] = simple_term
-
-    def build_search_index(self):
-        self.index : dict[str, list[str]] = dict()
-
-        for name, term in self.simple_terms.items():
-            self.index[name] = []
-            for word in term.get_words():
-                self.index[name].append(word)
-
-        return self.index
 
     def expand_narrower(self, terms: list[SimpleTerm]):
         """Instead of string names, look up and inflate narrower terms recursively."""
