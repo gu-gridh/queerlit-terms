@@ -3,13 +3,10 @@ Non-RDF interfaces to the thesaurus.
 """
 
 from os.path import basename
-from os import environ
-import time
 import re
 from dotenv import load_dotenv
 from rdflib import SKOS, URIRef, Literal
 from .thesaurus import BASE, Termset, Thesaurus
-from .search import Searcher
 from collections.abc import Generator
 
 
@@ -111,19 +108,6 @@ class SimpleThesaurus():
 
     def __init__(self, thesaurus: Thesaurus):
         self.t = thesaurus
-        self.simple_terms = None
-        self.searcher = None
-        self.rebuild()
-
-    def rebuild(self):
-        if environ.get("FLASK_DEBUG"):
-            print('Building simple terms... ', end="", flush=True)
-        tic = time.time()
-        self.build_simple_terms()
-        if environ.get("FLASK_DEBUG"):
-            print("%.2fs" % (time.time() - tic,))
-
-        self.searcher = Searcher(self.simple_terms.values(), lambda term: term.get_words())
 
     def get(self, name: str) -> SimpleTerm:
         return SimpleTerm.from_subject(self.t, name_to_ref(name))
@@ -150,7 +134,8 @@ class SimpleThesaurus():
 
     def search(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
-        scored_hits = self.searcher.search(s)
+        scored_hits = [] # TODO: Do the thing!
+        raise NotImplemented
         hits = []
         for (score, hit) in scored_hits:
             hit["score"] = score
@@ -178,11 +163,6 @@ class SimpleThesaurus():
     def get_labels(self):
         """All term labels, keyed by corresponding term identifiers."""
         return dict((ref_to_name(name), label) for (name, label) in self.t.subject_objects(SKOS.prefLabel))
-
-    def build_simple_terms(self):
-        self.simple_terms : dict[str, SimpleTerm] = dict()
-        for simple_term in SimpleTerm.from_termset(self.t):
-            self.simple_terms[simple_term['name']] = simple_term
 
     def expand_narrower(self, terms: list[SimpleTerm]):
         """Instead of string names, look up and inflate narrower terms recursively."""
