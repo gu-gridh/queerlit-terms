@@ -64,7 +64,6 @@ See [server.py](qlit/server.py).
 | ------------------------------ | ------------------------------------------- |
 | `/`                            | Full RDF data (see _Formats_ below)         |
 | `/<name>`                      | RDF data for one term (see _Formats_ below) |
-| `/api/`                        | All terms as JSON data                      |
 | `/api/term/<name>`             | One term as JSON                            |
 | `/api/labels`                  | Labels for all terms, keyed by identifiers  |
 | `/api/search?s=<str>`          | Terms matching a partial label              |

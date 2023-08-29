@@ -62,11 +62,6 @@ def rdf_one(name):
 # "Api" routes are in simple non-RDF space.
 
 
-@app.route("/api/")
-def api_all():
-    return jsonify(THESAURUS_SIMPLE.get_all())
-
-
 @app.route("/api/term/<name>")
 def api_one(name):
     return jsonify(THESAURUS_SIMPLE.get(name))
