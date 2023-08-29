@@ -11,7 +11,9 @@ Changes to data are ignored for the purpose of this changelog.
 
 ### Changed
 
-- Moved autocomplete index building into first `/api/autocomplete` call, for faster server startup
+- Moved search mechanism to new module
+- SimpleThesaurus does not _inherit_ Thesaurus, but _has_ it
+- Get labels directly from graph, not from SimpleTerm list
 
 ## [1.3.1] (2023-06-21)
 
