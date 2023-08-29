@@ -215,7 +215,7 @@ class SimpleThesaurus():
 
     def get_labels(self):
         """All term labels, keyed by corresponding term identifiers."""
-        return dict((name, term['prefLabel']) for (name, term) in self.simple_terms.items())
+        return dict((ref_to_name(name), label) for (name, label) in self.t.subject_objects(SKOS.prefLabel))
 
     def build_simple_terms(self):
         self.simple_terms : dict[str, SimpleTerm] = dict()
