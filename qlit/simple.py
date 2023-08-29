@@ -112,6 +112,7 @@ class SimpleThesaurus():
         self.t = thesaurus
         self.simple_terms = None
         self.index = None
+        self.rebuild()
 
     def rebuild(self):
         if environ.get("FLASK_DEBUG"):
@@ -153,16 +154,11 @@ class SimpleThesaurus():
 
     def get_all(self) -> list[SimpleTerm]:
         """All terms as dicts."""
-        if not self.simple_terms:
-            self.rebuild(debug=True)
         terms = self.simple_terms.values()
         return sorted(terms, key=lambda term: term['prefLabel'].lower())
 
     def autocomplete(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
-        if not self.simple_terms:
-            self.rebuild()
-
         search_words = [word.lower() for word in Tokenizer.split(s)]
 
         def is_match(term_words):
@@ -219,8 +215,6 @@ class SimpleThesaurus():
 
     def get_labels(self):
         """All term labels, keyed by corresponding term identifiers."""
-        if not self.simple_terms:
-            self.rebuild()
         return dict((name, term['prefLabel']) for (name, term) in self.simple_terms.items())
 
     def build_simple_terms(self):
