@@ -79,8 +79,6 @@ def api_labels():
 
 @app.route("/api/autocomplete")
 def api_autocomplete():
-    if not THESAURUS_SIMPLE.index:
-        THESAURUS_SIMPLE.rebuild(debug=True)
     # TODO Handle missing/bad arg
     s = request.args.get('s')
     return jsonify(THESAURUS_SIMPLE.autocomplete(s))

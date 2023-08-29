@@ -3,11 +3,16 @@ Non-RDF interfaces to the thesaurus.
 """
 
 from os.path import basename
+from os import environ
 import time
 import re
+from dotenv import load_dotenv
 from rdflib import SKOS, URIRef, Literal
 from qlit.thesaurus import BASE, Termset, Thesaurus
 from collections.abc import Generator
+
+
+load_dotenv()
 
 
 HOMOSAURUS = Thesaurus().parse('homosaurus.ttl')
@@ -105,21 +110,22 @@ class SimpleThesaurus(Thesaurus):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.rebuild()
+        self.simple_terms = None
+        self.index = None
 
-    def rebuild(self, *, debug=False):
-        if debug:
+    def rebuild(self):
+        if environ.get("FLASK_DEBUG"):
             print('Building simple terms... ', end="", flush=True)
         tic = time.time()
         self.build_simple_terms()
-        if debug:
+        if environ.get("FLASK_DEBUG"):
             print("%.2fs" % (time.time() - tic,))
 
-        if debug:
+        if environ.get("FLASK_DEBUG"):
             print('Building search index... ', end="", flush=True)
         tic = time.time()
         self.build_search_index()
-        if debug:
+        if environ.get("FLASK_DEBUG"):
             print("%.2fs" % (time.time() - tic,))
 
     def terms_if(self, f) -> list[SimpleTerm]:
@@ -143,6 +149,9 @@ class SimpleThesaurus(Thesaurus):
 
     def autocomplete(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
+        if not self.simple_terms:
+            self.rebuild()
+
         search_words = [word.lower() for word in Tokenizer.split(s)]
 
         def is_match(term_words):
@@ -178,7 +187,7 @@ class SimpleThesaurus(Thesaurus):
         # More significantly, sort descending by match score.
         terms.sort(key=lambda term: term['score'], reverse=True)
         return terms
-    
+
     def get_collections(self):
         g = super().get_collections()
         dicts = [dict(
@@ -198,6 +207,8 @@ class SimpleThesaurus(Thesaurus):
 
     def get_labels(self):
         """All term labels, keyed by corresponding term identifiers."""
+        if not self.simple_terms:
+            self.rebuild()
         return dict((name, term['prefLabel']) for (name, term) in self.simple_terms.items())
 
     def build_simple_terms(self):
