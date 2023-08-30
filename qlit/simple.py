@@ -3,13 +3,11 @@ Non-RDF interfaces to the thesaurus.
 """
 
 from os.path import basename
-from os import environ
-import time
 import re
 from dotenv import load_dotenv
 from rdflib import SKOS, URIRef, Literal
 from .thesaurus import BASE, Termset, Thesaurus
-from .search import Searcher
+from math import log
 from collections.abc import Generator
 
 
@@ -56,7 +54,6 @@ class SimpleTerm(dict):
     @staticmethod
     def from_subject(termset: Termset, subject: URIRef) -> "SimpleTerm":
         """Make a simple dict with the predicate-objects of a term in the thesaurus."""
-        termset.assert_term_exists(subject)
         return SimpleTerm(
             name=ref_to_name(subject),
             uri=str(subject),
@@ -111,21 +108,12 @@ class SimpleThesaurus():
 
     def __init__(self, thesaurus: Thesaurus):
         self.t = thesaurus
-        self.simple_terms = None
-        self.searcher = None
-        self.rebuild()
-
-    def rebuild(self):
-        if environ.get("FLASK_DEBUG"):
-            print('Building simple terms... ', end="", flush=True)
-        tic = time.time()
-        self.build_simple_terms()
-        if environ.get("FLASK_DEBUG"):
-            print("%.2fs" % (time.time() - tic,))
-
-        self.searcher = Searcher(self.simple_terms.values(), lambda term: term.get_words())
+        self.th = Thesaurus()
+        self.th += self.t + HOMOSAURUS
 
     def get(self, name: str) -> SimpleTerm:
+        ref = name_to_ref(name)
+        self.t.assert_term_exists(ref)
         return SimpleTerm.from_subject(self.t, name_to_ref(name))
 
     def get_roots(self) -> Termset:
@@ -135,27 +123,65 @@ class SimpleThesaurus():
 
     def get_narrower(self, broader: str) -> list[SimpleTerm]:
         ref = name_to_ref(broader)
+        self.t.assert_term_exists(ref)
         termset = self.t.get_narrower(ref)
         return SimpleTerm.from_termset(termset)
 
     def get_broader(self, narrower: str) -> list[SimpleTerm]:
         ref = name_to_ref(narrower)
+        self.t.assert_term_exists(ref)
         termset = self.t.get_broader(ref)
         return SimpleTerm.from_termset(termset)
 
     def get_related(self, other: str) -> list[SimpleTerm]:
         ref = name_to_ref(other)
+        self.t.assert_term_exists(ref)
         termset = self.t.get_related(ref)
         return SimpleTerm.from_termset(termset)
 
     def search(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
-        scored_hits = self.searcher.search(s)
-        hits = []
-        for (score, hit) in scored_hits:
-            hit["score"] = score
-            hits.append(hit)
-        return hits
+        qws = list(Tokenizer.split(s.lower()))
+
+        def match(label: str) -> float:
+            lws = Tokenizer.split(label.lower())
+            return sum(
+                # The 1/log(i+3) series goes 0.91, 0.72, 0.62, 0.56, 0.51...
+                1 / log(i + 3) if lw.startswith(qw) else 0
+                for (i, lw) in enumerate(lws, 1)
+                for qw in qws
+            )
+
+        hits = dict()
+        def add_hit(ref, score):
+            if not ref in hits:
+                hits[ref] = 0
+            hits[ref] = max(hits[ref], score)
+
+        fields = {
+            SKOS.prefLabel: 1,
+            SKOS.altLabel: .8,
+            SKOS.hiddenLabel: .5,
+        }
+        for ref, p, label in self.th:
+            if p not in fields.keys(): continue
+
+            score = match(label) * fields[p]
+            if not score: continue
+
+            if (ref.startswith("https://queerlit")):
+                add_hit(ref, score)
+            for sref in self.th.subjects(SKOS.exactMatch, ref):
+                add_hit(sref, score * .8)
+            for sref in self.th.subjects(SKOS.closeMatch, ref):
+                add_hit(sref, score * .5)
+
+        scored_hits = []
+        for ref, score in hits.items():
+            term = SimpleTerm.from_subject(self.t, ref)
+            term['score'] = score
+            scored_hits.append(term)
+        return sorted(scored_hits, key=lambda term: term['score'], reverse=True)
 
     def get_collections(self):
         g = self.t.get_collections()
@@ -169,6 +195,7 @@ class SimpleThesaurus():
 
     def get_collection(self, name, tree=False):
         ref = name_to_ref(name)
+        self.t.assert_term_exists(ref)
         termset = self.t.terms_if(lambda term: self.t[ref:SKOS.member:term])
         terms = SimpleTerm.from_termset(termset)
         if tree:
@@ -178,11 +205,6 @@ class SimpleThesaurus():
     def get_labels(self):
         """All term labels, keyed by corresponding term identifiers."""
         return dict((ref_to_name(name), label) for (name, label) in self.t.subject_objects(SKOS.prefLabel))
-
-    def build_simple_terms(self):
-        self.simple_terms : dict[str, SimpleTerm] = dict()
-        for simple_term in SimpleTerm.from_termset(self.t):
-            self.simple_terms[simple_term['name']] = simple_term
 
     def expand_narrower(self, terms: list[SimpleTerm]):
         """Instead of string names, look up and inflate narrower terms recursively."""
