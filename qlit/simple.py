@@ -108,6 +108,8 @@ class SimpleThesaurus():
 
     def __init__(self, thesaurus: Thesaurus):
         self.t = thesaurus
+        self.th = Thesaurus()
+        self.th += self.t + HOMOSAURUS
 
     def get(self, name: str) -> SimpleTerm:
         return SimpleTerm.from_subject(self.t, name_to_ref(name))
@@ -134,13 +136,39 @@ class SimpleThesaurus():
 
     def search(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
-        scored_hits = [] # TODO: Do the thing!
-        raise NotImplemented
-        hits = []
-        for (score, hit) in scored_hits:
-            hit["score"] = score
-            hits.append(hit)
-        return hits
+        qws = list(Tokenizer.split(s.lower()))
+
+        def match(label: str):
+            lws = Tokenizer.split(label.lower())
+            return 1 if any(lw.startswith(qw) for qw in qws for lw in lws) else 0
+
+        hits = dict()
+        def add_hit(ref, score):
+            if not ref in hits:
+                hits[ref] = 0
+            hits[ref] = max(hits[ref], score)
+
+        for s, p, o in self.th:
+            if p in [SKOS.prefLabel, SKOS.altLabel, SKOS.hiddenLabel]:
+                score = match(str(o))
+                if not score:
+                    continue
+                score *= .5 if p == SKOS.hiddenLabel \
+                    else .8 if p == SKOS.altLabel \
+                    else 1
+                if (str(s).startswith("https://queerlit")):
+                    add_hit(s, score)
+                for ref in self.th.subjects(SKOS.exactMatch, s):
+                    add_hit(ref, score * .8)
+                for ref in self.th.subjects(SKOS.closeMatch, s):
+                    add_hit(ref, score * .5)
+
+        scored_hits = []
+        for ref, score in hits.items():
+            term = SimpleTerm.from_subject(self.t, ref)
+            term['score'] = score
+            scored_hits.append(term)
+        return sorted(scored_hits, key=lambda term: term['score'], reverse=True)
 
     def get_collections(self):
         g = self.t.get_collections()
