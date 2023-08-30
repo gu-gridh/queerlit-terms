@@ -142,9 +142,10 @@ class SimpleThesaurus():
         def match(label: str):
             lws = Tokenizer.split(label.lower())
             return sum(
-                1 / log(i + 2) if lw.startswith(qw) else 0
-                for qw in qws
+                # The 1/log(i+3) series goes 0.91, 0.72, 0.62, 0.56, 0.51...
+                1 / log(i + 3) if lw.startswith(qw) else 0
                 for (i, lw) in enumerate(lws, 1)
+                for qw in qws
             )
 
         hits = dict()
