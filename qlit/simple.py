@@ -7,6 +7,7 @@ import re
 from dotenv import load_dotenv
 from rdflib import SKOS, URIRef, Literal
 from .thesaurus import BASE, Termset, Thesaurus
+from math import log
 from collections.abc import Generator
 
 
@@ -140,7 +141,11 @@ class SimpleThesaurus():
 
         def match(label: str):
             lws = Tokenizer.split(label.lower())
-            return 1 if any(lw.startswith(qw) for qw in qws for lw in lws) else 0
+            return sum(
+                1 / log(i + 2) if lw.startswith(qw) else 0
+                for qw in qws
+                for (i, lw) in enumerate(lws, 1)
+            )
 
         hits = dict()
         def add_hit(ref, score):
@@ -148,20 +153,23 @@ class SimpleThesaurus():
                 hits[ref] = 0
             hits[ref] = max(hits[ref], score)
 
+        fields = {
+            SKOS.prefLabel: 1,
+            SKOS.altLabel: .8,
+            SKOS.hiddenLabel: .5,
+        }
         for s, p, o in self.th:
-            if p in [SKOS.prefLabel, SKOS.altLabel, SKOS.hiddenLabel]:
-                score = match(str(o))
-                if not score:
-                    continue
-                score *= .5 if p == SKOS.hiddenLabel \
-                    else .8 if p == SKOS.altLabel \
-                    else 1
-                if (str(s).startswith("https://queerlit")):
-                    add_hit(s, score)
-                for ref in self.th.subjects(SKOS.exactMatch, s):
-                    add_hit(ref, score * .8)
-                for ref in self.th.subjects(SKOS.closeMatch, s):
-                    add_hit(ref, score * .5)
+            if p not in fields.keys(): continue
+
+            score = match(str(o)) * fields[p]
+            if not score: continue
+
+            if (str(s).startswith("https://queerlit")):
+                add_hit(s, score)
+            for ref in self.th.subjects(SKOS.exactMatch, s):
+                add_hit(ref, score * .8)
+            for ref in self.th.subjects(SKOS.closeMatch, s):
+                add_hit(ref, score * .5)
 
         scored_hits = []
         for ref, score in hits.items():
