@@ -54,7 +54,6 @@ class SimpleTerm(dict):
     @staticmethod
     def from_subject(termset: Termset, subject: URIRef) -> "SimpleTerm":
         """Make a simple dict with the predicate-objects of a term in the thesaurus."""
-        termset.assert_term_exists(subject)
         return SimpleTerm(
             name=ref_to_name(subject),
             uri=str(subject),
@@ -113,6 +112,8 @@ class SimpleThesaurus():
         self.th += self.t + HOMOSAURUS
 
     def get(self, name: str) -> SimpleTerm:
+        ref = name_to_ref(name)
+        self.t.assert_term_exists(ref)
         return SimpleTerm.from_subject(self.t, name_to_ref(name))
 
     def get_roots(self) -> Termset:
@@ -122,16 +123,19 @@ class SimpleThesaurus():
 
     def get_narrower(self, broader: str) -> list[SimpleTerm]:
         ref = name_to_ref(broader)
+        self.t.assert_term_exists(ref)
         termset = self.t.get_narrower(ref)
         return SimpleTerm.from_termset(termset)
 
     def get_broader(self, narrower: str) -> list[SimpleTerm]:
         ref = name_to_ref(narrower)
+        self.t.assert_term_exists(ref)
         termset = self.t.get_broader(ref)
         return SimpleTerm.from_termset(termset)
 
     def get_related(self, other: str) -> list[SimpleTerm]:
         ref = name_to_ref(other)
+        self.t.assert_term_exists(ref)
         termset = self.t.get_related(ref)
         return SimpleTerm.from_termset(termset)
 
@@ -139,7 +143,7 @@ class SimpleThesaurus():
         """Find terms matching a user-given incremental (startswith) search string."""
         qws = list(Tokenizer.split(s.lower()))
 
-        def match(label: str):
+        def match(label: str) -> float:
             lws = Tokenizer.split(label.lower())
             return sum(
                 # The 1/log(i+3) series goes 0.91, 0.72, 0.62, 0.56, 0.51...
@@ -159,18 +163,18 @@ class SimpleThesaurus():
             SKOS.altLabel: .8,
             SKOS.hiddenLabel: .5,
         }
-        for s, p, o in self.th:
+        for ref, p, label in self.th:
             if p not in fields.keys(): continue
 
-            score = match(str(o)) * fields[p]
+            score = match(label) * fields[p]
             if not score: continue
 
-            if (str(s).startswith("https://queerlit")):
-                add_hit(s, score)
-            for ref in self.th.subjects(SKOS.exactMatch, s):
-                add_hit(ref, score * .8)
-            for ref in self.th.subjects(SKOS.closeMatch, s):
-                add_hit(ref, score * .5)
+            if (ref.startswith("https://queerlit")):
+                add_hit(ref, score)
+            for sref in self.th.subjects(SKOS.exactMatch, ref):
+                add_hit(sref, score * .8)
+            for sref in self.th.subjects(SKOS.closeMatch, ref):
+                add_hit(sref, score * .5)
 
         scored_hits = []
         for ref, score in hits.items():
@@ -191,6 +195,7 @@ class SimpleThesaurus():
 
     def get_collection(self, name, tree=False):
         ref = name_to_ref(name)
+        self.t.assert_term_exists(ref)
         termset = self.t.terms_if(lambda term: self.t[ref:SKOS.member:term])
         terms = SimpleTerm.from_termset(termset)
         if tree:
