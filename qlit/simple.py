@@ -145,12 +145,12 @@ class SimpleThesaurus():
 
         def match(label: str) -> float:
             lws = Tokenizer.split(label.lower())
-            return sum(
-                # The 1/log(i+3) series goes 0.91, 0.72, 0.62, 0.56, 0.51...
-                1 / log(i + 3) if lw.startswith(qw) else 0
-                for (i, lw) in enumerate(lws, 1)
-                for qw in qws
-            )
+            for i, lw in enumerate(lws):
+                if any(lw.startswith(qw) for qw in qws):
+                    # Score more if match appears early in label
+                    return 10 - min(i, 5)
+            return 0
+
 
         hits = dict()
         def add_hit(ref, score):
@@ -161,7 +161,7 @@ class SimpleThesaurus():
         fields = {
             SKOS.prefLabel: 1,
             SKOS.altLabel: .8,
-            SKOS.hiddenLabel: .5,
+            SKOS.hiddenLabel: .6,
         }
         for ref, p, label in self.th:
             if p not in fields.keys(): continue
