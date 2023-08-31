@@ -9,8 +9,7 @@ CORS(app)
 THESAURUS = Thesaurus().parse('qlit.nt')
 print(f'Loaded thesaurus with {len(THESAURUS.refs())} terms')
 
-THESAURUS_SIMPLE = SimpleThesaurus() + THESAURUS
-THESAURUS_SIMPLE.rebuild(debug=True)
+THESAURUS_SIMPLE = SimpleThesaurus(THESAURUS)
 
 FORMATS = {
     'ttl': 'text/turtle',
@@ -63,11 +62,6 @@ def rdf_one(name):
 # "Api" routes are in simple non-RDF space.
 
 
-@app.route("/api/")
-def api_all():
-    return jsonify(THESAURUS_SIMPLE.get_all())
-
-
 @app.route("/api/term/<name>")
 def api_one(name):
     return jsonify(THESAURUS_SIMPLE.get(name))
@@ -78,11 +72,11 @@ def api_labels():
     return jsonify(THESAURUS_SIMPLE.get_labels())
 
 
-@app.route("/api/autocomplete")
-def api_autocomplete():
+@app.route("/api/search")
+def api_search():
     # TODO Handle missing/bad arg
     s = request.args.get('s')
-    return jsonify(THESAURUS_SIMPLE.autocomplete(s))
+    return jsonify(THESAURUS_SIMPLE.search(s))
 
 
 @app.route("/api/collections")
@@ -101,18 +95,18 @@ def api_roots():
     return jsonify(THESAURUS_SIMPLE.get_roots())
 
 
-@app.route("/api/children")
-def api_children():
+@app.route("/api/narrower")
+def api_narrower():
     # TODO Handle missing/bad arg
-    parent = request.args.get('parent')
-    return jsonify(THESAURUS_SIMPLE.get_children(parent))
+    broader = request.args.get('broader')
+    return jsonify(THESAURUS_SIMPLE.get_narrower(broader))
 
 
-@app.route("/api/parents")
-def api_parents():
+@app.route("/api/broader")
+def api_broader():
     # TODO Handle missing/bad arg
-    child = request.args.get('child')
-    return jsonify(THESAURUS_SIMPLE.get_parents(child))
+    narrower = request.args.get('narrower')
+    return jsonify(THESAURUS_SIMPLE.get_broader(narrower))
 
 @app.route("/api/related")
 def api_related():

@@ -9,6 +9,16 @@ Changes to data are ignored for the purpose of this changelog.
 
 ## [Unreleased]
 
+## [2.0.0] (2023-08-30)
+
+### Changed
+
+- MAJOR: Removed `/api/` route (`get_all`)
+- MAJOR: Renamed `autocomplete` to `search`, `parents` to `broader`, and `children` to `narrower`
+- MINOR: Rewrote search so no startup-time processing is needed
+- SimpleThesaurus does not _inherit_ Thesaurus, but _has_ it
+- Get labels directly from graph, not from SimpleTerm list
+
 ## [1.3.1] (2023-06-21)
 
 ### Changed
@@ -59,7 +69,8 @@ Features:
 - A build script that compiles multiple RDF/SKOS files (terms) to one (thesaurus).
 - An HTTP server that exposes the data as RDF as well as more web-app-friendly JSON
 
-[unreleased]: https://github.com/gu-gridh/queerlit-terms/compare/v1.3.1...HEAD
+[unreleased]: https://github.com/gu-gridh/queerlit-terms/compare/v2.0.0...HEAD
+[1.3.1]: https://github.com/gu-gridh/queerlit-terms/compare/v1.3.1...v2.0.0
 [1.3.1]: https://github.com/gu-gridh/queerlit-terms/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/gu-gridh/queerlit-terms/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/gu-gridh/queerlit-terms/compare/v1.1.0...v1.2.0

@@ -3,11 +3,15 @@ Non-RDF interfaces to the thesaurus.
 """
 
 from os.path import basename
-import time
 import re
+from dotenv import load_dotenv
 from rdflib import SKOS, URIRef, Literal
-from qlit.thesaurus import BASE, Termset, Thesaurus
+from .thesaurus import BASE, Termset, Thesaurus
+from math import log
 from collections.abc import Generator
+
+
+load_dotenv()
 
 
 HOMOSAURUS = Thesaurus().parse('homosaurus.ttl')
@@ -50,7 +54,6 @@ class SimpleTerm(dict):
     @staticmethod
     def from_subject(termset: Termset, subject: URIRef) -> "SimpleTerm":
         """Make a simple dict with the predicate-objects of a term in the thesaurus."""
-        termset.assert_term_exists(subject)
         return SimpleTerm(
             name=ref_to_name(subject),
             uri=str(subject),
@@ -100,87 +103,88 @@ class SimpleTerm(dict):
                 yield word.lower()
 
 
-class SimpleThesaurus(Thesaurus):
+class SimpleThesaurus():
     """Like Thesaurus but with unqualified names as inputs and dicts as output."""
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.rebuild()
-
-    def rebuild(self, *, debug=False):
-        if debug:
-            print('Building simple terms... ', end="", flush=True)
-        tic = time.time()
-        self.build_simple_terms()
-        if debug:
-            print("%.2fs" % (time.time() - tic,))
-
-        if debug:
-            print('Building search index... ', end="", flush=True)
-        tic = time.time()
-        self.build_search_index()
-        if debug:
-            print("%.2fs" % (time.time() - tic,))
-
-    def terms_if(self, f) -> list[SimpleTerm]:
-        return SimpleTerm.from_termset(super().terms_if(f))
+    def __init__(self, thesaurus: Thesaurus):
+        self.t = thesaurus
+        self.th = Thesaurus()
+        self.th += self.t + HOMOSAURUS
 
     def get(self, name: str) -> SimpleTerm:
-        return SimpleTerm.from_subject(self, name_to_ref(name))
+        ref = name_to_ref(name)
+        self.t.assert_term_exists(ref)
+        return SimpleTerm.from_subject(self.t, name_to_ref(name))
 
-    def get_children(self, parent: str) -> list[SimpleTerm]:
-        return super().get_children(name_to_ref(parent))
+    def get_roots(self) -> Termset:
+        """Find all terms without parents."""
+        termset = self.t.get_roots()
+        return SimpleTerm.from_termset(termset)
 
-    def get_parents(self, child: str) -> list[SimpleTerm]:
-        return super().get_parents(name_to_ref(child))
+    def get_narrower(self, broader: str) -> list[SimpleTerm]:
+        ref = name_to_ref(broader)
+        self.t.assert_term_exists(ref)
+        termset = self.t.get_narrower(ref)
+        return SimpleTerm.from_termset(termset)
+
+    def get_broader(self, narrower: str) -> list[SimpleTerm]:
+        ref = name_to_ref(narrower)
+        self.t.assert_term_exists(ref)
+        termset = self.t.get_broader(ref)
+        return SimpleTerm.from_termset(termset)
 
     def get_related(self, other: str) -> list[SimpleTerm]:
-        return super().get_related(name_to_ref(other))
+        ref = name_to_ref(other)
+        self.t.assert_term_exists(ref)
+        termset = self.t.get_related(ref)
+        return SimpleTerm.from_termset(termset)
 
-    def get_all(self) -> list[SimpleTerm]:
-        """All terms as dicts."""
-        return SimpleTerm.from_termset(self)
-
-    def autocomplete(self, s: str) -> Termset:
+    def search(self, s: str) -> Termset:
         """Find terms matching a user-given incremental (startswith) search string."""
-        search_words = [word.lower() for word in Tokenizer.split(s)]
+        qws = list(Tokenizer.split(s.lower()))
 
-        def is_match(term_words):
-            # Match with all words in the query
-            return all(
-                # Match against any word in the term
-                any(term_word.startswith(search_word)
-                    for term_word in term_words)
-                for search_word in search_words)
+        def match(label: str) -> float:
+            lws = Tokenizer.split(label.lower())
+            for i, lw in enumerate(lws):
+                if any(lw.startswith(qw) for qw in qws):
+                    # Score more if match appears early in label
+                    return 10 - min(i, 5)
+            return 0
 
-        # Get subset of terms that matches the query.
-        terms = [self.simple_terms[name] for name in self.index if is_match(self.index[name])]
 
-        def score(term : SimpleTerm) -> float:
-            """Calculate match score."""
-            # Map each word in the term to whether it contributes to the match.
-            term_word_hits = [any(t.startswith(s) for s in search_words) for t in term.get_words()]
-            # Score early matching words more than late ones.
-            score = sum(int(hit) / i for i, hit in enumerate(term_word_hits, start=1))
-            # Add a small bonus for root terms. Not sure if this is motivated.
-            score += 0.1 if len(term['broader']) == 0 else 0
-            return score
+        hits = dict()
+        def add_hit(ref, score):
+            if not ref in hits:
+                hits[ref] = 0
+            hits[ref] = max(hits[ref], score)
 
-        # Clone terms so that changes do not affect the originals.
-        terms = [SimpleTerm(**term) for term in terms]
+        fields = {
+            SKOS.prefLabel: 1,
+            SKOS.altLabel: .8,
+            SKOS.hiddenLabel: .6,
+        }
+        for ref, p, label in self.th:
+            if p not in fields.keys(): continue
 
-        # Calculate match score and add it to the term dict.
-        for term in terms:
-            term['score'] = score(term)
+            score = match(label) * fields[p]
+            if not score: continue
 
-        # Sort alphabetically first.
-        terms.sort(key=lambda term: term['prefLabel'].lower())
-        # More significantly, sort descending by match score.
-        terms.sort(key=lambda term: term['score'], reverse=True)
-        return terms
-    
+            if (ref.startswith("https://queerlit")):
+                add_hit(ref, score)
+            for sref in self.th.subjects(SKOS.exactMatch, ref):
+                add_hit(sref, score * .8)
+            for sref in self.th.subjects(SKOS.closeMatch, ref):
+                add_hit(sref, score * .5)
+
+        scored_hits = []
+        for ref, score in hits.items():
+            term = SimpleTerm.from_subject(self.t, ref)
+            term['score'] = score
+            scored_hits.append(term)
+        return sorted(scored_hits, key=lambda term: term['score'], reverse=True)
+
     def get_collections(self):
-        g = super().get_collections()
+        g = self.t.get_collections()
         dicts = [dict(
             name=ref_to_name(ref),
             uri=str(ref),
@@ -191,29 +195,16 @@ class SimpleThesaurus(Thesaurus):
 
     def get_collection(self, name, tree=False):
         ref = name_to_ref(name)
-        terms = self.terms_if(lambda term: self[ref:SKOS.member:term])
+        self.t.assert_term_exists(ref)
+        termset = self.t.terms_if(lambda term: self.t[ref:SKOS.member:term])
+        terms = SimpleTerm.from_termset(termset)
         if tree:
             self.expand_narrower(terms)
         return terms
 
     def get_labels(self):
         """All term labels, keyed by corresponding term identifiers."""
-        return dict((name, term['prefLabel']) for (name, term) in self.simple_terms.items())
-
-    def build_simple_terms(self):
-        self.simple_terms : dict[str, SimpleTerm] = dict()
-        for simple_term in SimpleTerm.from_termset(self):
-            self.simple_terms[simple_term['name']] = simple_term
-
-    def build_search_index(self):
-        self.index : dict[str, list[str]] = dict()
-
-        for name, term in self.simple_terms.items():
-            self.index[name] = []
-            for word in term.get_words():
-                self.index[name].append(word)
-
-        return self.index
+        return dict((ref_to_name(name), label) for (name, label) in self.t.subject_objects(SKOS.prefLabel))
 
     def expand_narrower(self, terms: list[SimpleTerm]):
         """Instead of string names, look up and inflate narrower terms recursively."""
