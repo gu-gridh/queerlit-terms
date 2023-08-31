@@ -63,7 +63,7 @@ class Thesaurus(Termset):
         self.assert_term_exists(broader)
         return self.terms_if(lambda term: self[term:SKOS.broader:broader])
 
-    def get_parents(self, narrower: URIRef) -> Termset:
+    def get_broader(self, narrower: URIRef) -> Termset:
         """Find terms that are directly broader than a given term."""
         self.assert_term_exists(narrower)
         return self.terms_if(lambda term: self[narrower:SKOS.broader:term])
