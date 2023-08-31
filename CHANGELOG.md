@@ -9,6 +9,10 @@ Changes to data are ignored for the purpose of this changelog.
 
 ## [Unreleased]
 
+### Added
+
+- Some tests for the build script
+
 ### Changed
 
 - Sort search hits alphabetically (among others with the same score)

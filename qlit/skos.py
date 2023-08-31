@@ -9,7 +9,7 @@ def skos_validate_partial(g: Graph) -> Generator[str]:
   # Catch common syntax mistake
   for s, p, o in g:
     if p.endswith(':'):
-      yield f'Predicate ends with colon: {p}'
+      yield f'Predicate ends with colon: "{p}"'
 
 
 def skos_validate_graph(g: Thesaurus) -> Generator[str]:
