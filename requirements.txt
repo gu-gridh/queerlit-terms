@@ -3,3 +3,4 @@ rdflib==6.2.0
 StringGenerator==0.4.4
 Flask==2.2.2
 Flask-Cors==3.0.10
+pytest==7.4.0
