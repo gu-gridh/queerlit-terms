@@ -11,7 +11,7 @@ Changes to data are ignored for the purpose of this changelog.
 
 ### Added
 
-- Some tests for the build script
+- Some tests, and a GitHub workflow script to run them
 
 ### Changed
 
