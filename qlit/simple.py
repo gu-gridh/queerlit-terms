@@ -181,7 +181,10 @@ class SimpleThesaurus():
             term = SimpleTerm.from_subject(self.t, ref)
             term['score'] = score
             scored_hits.append(term)
-        return sorted(scored_hits, key=lambda term: term['score'], reverse=True)
+
+        scored_hits.sort(key=lambda term: term['prefLabel'])
+        scored_hits.sort(key=lambda term: term['score'], reverse=True)
+        return scored_hits
 
     def get_collections(self):
         g = self.t.get_collections()

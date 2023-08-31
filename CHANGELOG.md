@@ -9,6 +9,10 @@ Changes to data are ignored for the purpose of this changelog.
 
 ## [Unreleased]
 
+### Changed
+
+- Sort search hits alphabetically (among others with the same score)
+
 ## [2.0.1] (2023-08-30)
 
 ### Fixed
