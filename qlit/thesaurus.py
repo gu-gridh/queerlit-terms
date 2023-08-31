@@ -61,7 +61,7 @@ class Thesaurus(Termset):
     def get_narrower(self, broader: URIRef) -> Termset:
         """Find terms that are directly narrower than a given term."""
         self.assert_term_exists(broader)
-        return self.terms_if(lambda term: self[term:SKOS.broader:broader])
+        return self.terms_if(lambda term: self[broader:SKOS.narrower:term])
 
     def get_broader(self, narrower: URIRef) -> Termset:
         """Find terms that are directly broader than a given term."""
@@ -71,7 +71,7 @@ class Thesaurus(Termset):
     def get_related(self, other: URIRef) -> Termset:
         """Find terms that are related to a given term."""
         self.assert_term_exists(other)
-        return self.terms_if(lambda term: self[term:SKOS.related:other])
+        return self.terms_if(lambda term: self[other:SKOS.related:term])
 
 
 class TermNotFoundError(KeyError):
