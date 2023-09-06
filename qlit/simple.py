@@ -7,7 +7,6 @@ import re
 from dotenv import load_dotenv
 from rdflib import SKOS, URIRef, Literal
 from .thesaurus import BASE, Termset, Thesaurus
-from math import log
 from collections.abc import Generator
 
 
@@ -44,8 +43,8 @@ def resolve_homosaurus_term(ref):
     altLabels = list(HOMOSAURUS.objects(ref, SKOS.altLabel))
     return SimpleTerm(
         uri=str(ref),
-        prefLabel=prefLabel,
-        altLabels=altLabels
+        prefLabel=str(prefLabel),
+        altLabels=[str(l) for l in altLabels]
     )
 
 
@@ -57,10 +56,10 @@ class SimpleTerm(dict):
         return SimpleTerm(
             name=ref_to_name(subject),
             uri=str(subject),
-            prefLabel=termset.value(subject, SKOS.prefLabel),
-            altLabels=list(termset.objects(subject, SKOS.altLabel)),
-            hiddenLabels=list(termset.objects(subject, SKOS.hiddenLabel)),
-            scopeNote=termset.value(subject, SKOS.scopeNote),
+            prefLabel=str(termset.value(subject, SKOS.prefLabel)),
+            altLabels=[str(l) for l in termset.objects(subject, SKOS.altLabel)],
+            hiddenLabels=[str(l) for l in termset.objects(subject, SKOS.hiddenLabel)],
+            scopeNote=str(termset.value(subject, SKOS.scopeNote)),
             # Relations to QLIT terms
             broader=[ref_to_name(ref)
                      for ref in termset.objects(subject, SKOS.broader)],
@@ -181,7 +180,10 @@ class SimpleThesaurus():
             term = SimpleTerm.from_subject(self.t, ref)
             term['score'] = score
             scored_hits.append(term)
-        return sorted(scored_hits, key=lambda term: term['score'], reverse=True)
+
+        scored_hits.sort(key=lambda term: term['prefLabel'])
+        scored_hits.sort(key=lambda term: term['score'], reverse=True)
+        return scored_hits
 
     def get_collections(self):
         g = self.t.get_collections()
