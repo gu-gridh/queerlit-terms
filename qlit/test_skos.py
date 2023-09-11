@@ -1,4 +1,4 @@
-from rdflib import Graph, URIRef, Literal, RDF, SKOS
+from rdflib import Graph, URIRef, Literal, DCTERMS, RDF, SKOS
 from .skos import skos_validate_partial, skos_validate_graph, skos_complete_graph
 from .thesaurus import Thesaurus
 
@@ -32,13 +32,16 @@ def test_skos_complete_graph():
     t = Thesaurus()
     food = URIRef("https://queerlit.dh.gu.se/qlit/v1/food")
     fruit = URIRef("https://queerlit.dh.gu.se/qlit/v1/fruit")
+    friut = URIRef("https://queerlit.dh.gu.se/qlit/v1/friut")
     vegetable = URIRef("https://queerlit.dh.gu.se/qlit/v1/vegetable")
     t.add((food, RDF.type, SKOS.Concept))
     t.add((fruit, RDF.type, SKOS.Concept))
+    t.add((friut, RDF.type, SKOS.Concept))
     t.add((vegetable, RDF.type, SKOS.Concept))
     t.add((food, SKOS.narrower, fruit))
     t.add((vegetable, SKOS.broader, food))
     t.add((vegetable, SKOS.related, fruit))
+    t.add((friut, DCTERMS.isReplacedBy, fruit))
 
     skos_complete_graph(t)
     assert (fruit, SKOS.inScheme, t.scheme) in t
@@ -48,3 +51,4 @@ def test_skos_complete_graph():
     assert (food, SKOS.topConceptOf, t.scheme) in t
     assert (fruit, SKOS.topConceptOf, t.scheme) not in t
     assert (t.scheme, SKOS.hasTopConcept, food) in t
+    assert (fruit, DCTERMS.replaces, friut) in t
