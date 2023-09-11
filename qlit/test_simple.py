@@ -1,7 +1,6 @@
 from rdflib import URIRef, RDF, SKOS
 from .thesaurus import Thesaurus, Termset
 from .simple import SimpleThesaurus, SimpleTerm, ref_to_name, name_to_ref, Tokenizer
-from json import dumps
 
 def test_tokenizer():
     assert list(Tokenizer.split("foo bar")) == ["foo", "bar"]
