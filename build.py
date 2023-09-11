@@ -56,7 +56,7 @@ def replace_identifier(thesaurus: Thesaurus, old_id: str, new_id: str):
 def check_changes(thesaurus: Thesaurus, thesaurus_prev: Thesaurus):
     uris = thesaurus.refs()
     uris_prev = thesaurus_prev.refs()
-    
+
     count_new = 0
     count_changed = 0
     count_removed = len(list(uri for uri in uris_prev if uri not in uris))
@@ -97,7 +97,10 @@ if __name__ == '__main__':
     thesaurus = Thesaurus()
 
     # Prepare parsing.
-    fns = [join(indir, fn) for indir in INDIR.split(':') for fn in os.listdir(indir) if is_infile(fn)]
+    indirs = INDIR.split(":")
+    for indir in indirs:
+        print(f'Reading files from {indir}')
+    fns = [join(indir, fn) for indir in indirs for fn in os.listdir(indir) if is_infile(fn)]
     print(f'Parsing {len(fns)} files...')
     skipped = []
 
