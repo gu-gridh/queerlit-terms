@@ -11,7 +11,9 @@ Changes to data are ignored for the purpose of this changelog.
 
 ### Added
 
-- Support for deprecated terms: Any term having `owl:deprecated  "true"^^xsd:boolean` will be present in the RDF API but omitted from the JSON API.
+- Support for deprecated terms:
+  - Any term having `owl:deprecated  "true"^^xsd:boolean` will be present in the RDF API but omitted from the JSON API.
+  - `dcterms:replaces` is mirrored with `dcterms:isReplacedBy`
 
 ## [2.0.2] (2023-09-06)
 
