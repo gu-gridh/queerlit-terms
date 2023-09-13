@@ -43,3 +43,9 @@ def skos_complete_graph(g: Thesaurus) -> None:
     if not g.value(term, SKOS.broader):
       g.set((term, SKOS.topConceptOf, g.scheme))
       g.add((g.scheme, SKOS.hasTopConcept, term))
+
+    # replaces <-> isReplacedBy
+    for replaced in g[term:DCTERMS.replaces]:
+      g.add((replaced, DCTERMS.isReplacedBy, term))
+    for replacer in g[term:DCTERMS.isReplacedBy]:
+      g.add((replacer, DCTERMS.replaces, term))

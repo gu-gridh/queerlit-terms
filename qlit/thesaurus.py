@@ -1,4 +1,4 @@
-from rdflib import RDF, SKOS, Graph, Literal, URIRef
+from rdflib import RDF, OWL, SKOS, Graph, Literal, URIRef
 
 BASE = 'https://queerlit.dh.gu.se/qlit/v1/'
 
@@ -39,6 +39,9 @@ class Thesaurus(Termset):
         g = Termset(base=self.base)
         for term in self.refs():
             if f(term):
+                # Skip any deprecated term.
+                if self.value(term, OWL.deprecated):
+                    continue;
                 g += self.triples((term, None, None))
         return g
 

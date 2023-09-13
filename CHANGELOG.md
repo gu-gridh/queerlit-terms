@@ -9,6 +9,14 @@ Changes to data are ignored for the purpose of this changelog.
 
 ## [Unreleased]
 
+## [2.1.0] (2023-09-13)
+
+### Added
+
+- Support for deprecated terms:
+  - Any term having `owl:deprecated  "true"^^xsd:boolean` will be present in the RDF API but omitted from the JSON API.
+  - `dcterms:replaces` is mirrored with `dcterms:isReplacedBy`
+
 ## [2.0.2] (2023-09-06)
 
 ### Added
@@ -85,7 +93,8 @@ Features:
 - A build script that compiles multiple RDF/SKOS files (terms) to one (thesaurus).
 - An HTTP server that exposes the data as RDF as well as more web-app-friendly JSON
 
-[unreleased]: https://github.com/gu-gridh/queerlit-terms/compare/v2.0.2...HEAD
+[unreleased]: https://github.com/gu-gridh/queerlit-terms/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/gu-gridh/queerlit-terms/compare/v2.0.2...v2.1.0
 [2.0.2]: https://github.com/gu-gridh/queerlit-terms/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/gu-gridh/queerlit-terms/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/gu-gridh/queerlit-terms/compare/v1.3.1...v2.0.0

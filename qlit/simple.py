@@ -5,7 +5,7 @@ Non-RDF interfaces to the thesaurus.
 from os.path import basename
 import re
 from dotenv import load_dotenv
-from rdflib import SKOS, URIRef, Literal
+from rdflib import OWL, SKOS, URIRef, Literal
 from .thesaurus import BASE, Termset, Thesaurus
 from collections.abc import Generator
 
@@ -177,6 +177,7 @@ class SimpleThesaurus():
 
         scored_hits = []
         for ref, score in hits.items():
+            if self.th.value(ref, OWL.deprecated): continue
             term = SimpleTerm.from_subject(self.t, ref)
             term['score'] = score
             scored_hits.append(term)

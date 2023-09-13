@@ -1,7 +1,6 @@
 from rdflib import URIRef, RDF, SKOS
 from .thesaurus import Thesaurus, Termset
 from .simple import SimpleThesaurus, SimpleTerm, ref_to_name, name_to_ref, Tokenizer
-from json import dumps
 
 def test_tokenizer():
     assert list(Tokenizer.split("foo bar")) == ["foo", "bar"]
@@ -46,12 +45,28 @@ def test_simple_term_from_termset():
 
     terms = SimpleTerm.from_termset(termset)
     assert len(terms) == 2
-    # Convert to json to compare objects
-    terms_json = dumps(terms, sort_keys=True)
-    term1 = SimpleTerm.from_subject(T, URIRef("https://queerlit.dh.gu.se/qlit/v1/ez04as46"))
-    term2 = SimpleTerm.from_subject(T, URIRef("https://queerlit.dh.gu.se/qlit/v1/lx88hn91"))
-    assert dumps(term1, sort_keys=True) in terms_json
-    assert dumps(term2, sort_keys=True) in terms_json
+    term1 = next(term for term in terms if term['name'] == 'ez04as46')
+    term2 = next(term for term in terms if term['name'] == 'lx88hn91')
+    assert term1['prefLabel'] == "Syskon"
+    assert term2['prefLabel'] == "Intersexseparatism"
+
+    sterm1 = SimpleTerm.from_subject(T, URIRef("https://queerlit.dh.gu.se/qlit/v1/ez04as46"))
+    sterm2 = SimpleTerm.from_subject(T, URIRef("https://queerlit.dh.gu.se/qlit/v1/lx88hn91"))
+    for term, sterm in ((term1, sterm1), (term2, sterm2)):
+
+        # Compare string values
+        for prop in ['name', 'uri', 'prefLabel', 'scopeNote']:
+            assert term[prop] == sterm[prop]
+
+        # Compare lists of strings
+        for prop in ['altLabels', 'hiddenLabels', 'broader', 'narrower', 'related']:
+            assert sorted(term[prop]) == sorted(sterm[prop])
+
+        # Compare lists of terms
+        for prop in ['exactMatch', 'closeMatch']:
+            def sort_by_uri(dicts):
+                return sorted(dicts, key=lambda t: t['uri'])
+            assert sort_by_uri(term[prop]) == sort_by_uri(sterm[prop])
 
 def test_simple_term_get_labels():
     term = SimpleTerm.from_subject(T, URIRef("https://queerlit.dh.gu.se/qlit/v1/xy93px60"))
