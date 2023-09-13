@@ -6780,7 +6780,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/nj44aa03> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av homosexuella, bisexuella, transpersoner, queera och/eller intersexpersoner som beskrivs som icke-vita. Icke-vit förstås här som en rasifierande kategori som markerar personer med melaninrik hud eller andra karakteristika som rasifieras som icke-vita. Ämnesordet används för skildringar där identiteten som icke-vit är i fokus." .
 <https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://purl.org/dc/terms/identifier> "nj45ko84" .
 <https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://purl.org/dc/terms/modified> "2023-02-07T17:15:49"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://purl.org/dc/terms/modified> "2023-09-13T11:44:16"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://www.w3.org/2004/02/skos/core#altLabel> "Bikvinnor" .
 <https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://www.w3.org/2004/02/skos/core#altLabel> "Kvinnliga bisexuella" .
@@ -6793,7 +6793,6 @@
 <https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/cq47se04> .
 <https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/os42ys07> .
 <https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/pc36se94> .
-<https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/px69nf52> .
 <https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bisexuella kvinnor" .
 <https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/dq66qs98> .
 <https://queerlit.dh.gu.se/qlit/v1/nj45ko84> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/px69nf52> .
@@ -8213,10 +8212,9 @@
 <https://queerlit.dh.gu.se/qlit/v1/px55pp67> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av HBTQI-personer som är anhängare av romersk-katolska kyrkan. Används även för skildringar av andra katolikers förhållningssätt till HBTQI." .
 <https://queerlit.dh.gu.se/qlit/v1/px69nf52> <http://purl.org/dc/terms/identifier> "px69nf52" .
 <https://queerlit.dh.gu.se/qlit/v1/px69nf52> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/px69nf52> <http://purl.org/dc/terms/modified> "2023-02-07T17:15:49"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/px69nf52> <http://purl.org/dc/terms/modified> "2023-09-13T11:44:16"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/px69nf52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/px69nf52> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/cb49gf75> .
-<https://queerlit.dh.gu.se/qlit/v1/px69nf52> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/nj45ko84> .
 <https://queerlit.dh.gu.se/qlit/v1/px69nf52> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/px69nf52> <http://www.w3.org/2004/02/skos/core#narrower> <https://queerlit.dh.gu.se/qlit/v1/qo25ba41> .
 <https://queerlit.dh.gu.se/qlit/v1/px69nf52> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kärlek mellan kvinnor" .
