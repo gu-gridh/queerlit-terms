@@ -157,23 +157,29 @@ class SimpleThesaurus():
                 hits[ref] = 0
             hits[ref] = max(hits[ref], score)
 
+        # The different label fields should give different scores
         fields = {
             SKOS.prefLabel: 1,
             SKOS.altLabel: .8,
             SKOS.hiddenLabel: .6,
         }
-        for ref, p, label in self.th:
-            if p not in fields.keys(): continue
 
-            score = match(label) * fields[p]
-            if not score: continue
+        # Check all QLIT/Homosaurus terms
+        for ref in self.th.concepts():
+            for predicate, relevance in fields.items():
+                # Score each label against the search string
+                for label in self.th[ref:predicate]:
+                    score = match(label) * relevance
+                    if not score: continue
 
-            if (ref.startswith("https://queerlit")):
-                add_hit(ref, score)
-            for sref in self.th.subjects(SKOS.exactMatch, ref):
-                add_hit(sref, score * .8)
-            for sref in self.th.subjects(SKOS.closeMatch, ref):
-                add_hit(sref, score * .5)
+                    # Is a QLIT term: Record score for it
+                    if (ref.startswith("https://queerlit")):
+                        add_hit(ref, score)
+                    # Is a Homosaurus term: Record score for the matching QLIT term
+                    for sref in self.th.subjects(SKOS.exactMatch, ref):
+                        add_hit(sref, score * .8)
+                    for sref in self.th.subjects(SKOS.closeMatch, ref):
+                        add_hit(sref, score * .5)
 
         scored_hits = []
         for ref, score in hits.items():

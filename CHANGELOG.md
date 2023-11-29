@@ -9,6 +9,10 @@ Changes to data are ignored for the purpose of this changelog.
 
 ## [Unreleased]
 
+### Fixed
+
+- Limit search to Concepts
+
 ## [2.1.0] (2023-09-13)
 
 ### Added
