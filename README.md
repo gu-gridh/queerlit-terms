@@ -10,7 +10,7 @@ This code is written primarily to fulfill the needs of the [Queerlit](https://qu
 - Requirement: Complement source data (mirror relations, fix `topConceptOf`, etc)
 - Requirement: HTTP server for full data
 
-## Code
+## Development
 
 This codebase has three parts:
 
@@ -19,6 +19,25 @@ This codebase has three parts:
 3. [HTTP server](#http-server)
 
 Dependencies can be managed with [Conda](https://docs.conda.io/en/latest/), see [environment.yml](./environment.yml). Most importantly, it is based on [RDFLib](https://rdflib.readthedocs.io/en/stable/) and [Flask](https://flask.palletsprojects.com/en/2.1.x/).
+
+### Branch model
+
+Commit changes to the `dev` branch and make sure to keep [CHANGELOG.md](CHANGELOG.md) updated. Data updates with `build.py` do not need to be changelogged.
+
+To release:
+
+1. Update [CHANGELOG.md](CHANGELOG.md):
+   1. Determine new version number
+   2. Add a version heading
+   3. Update link hrefs in the bottom
+2. Commit to `dev`
+3. Push and check the [GitHub Actions](https://github.com/gu-gridh/queerlit-terms/actions) page to make sure that tests are passing
+4. Merge `dev` into `main`
+5. Tag the merge commit with the version number prefixed by `v`
+6. Push `main` and the tag
+7. Deploy to server
+
+**If there are only data changes**, skip the changelog and tag steps (1 and 5).
 
 ## Thesaurus library
 
