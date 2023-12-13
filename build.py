@@ -62,29 +62,34 @@ def check_changes(thesaurus: Thesaurus, thesaurus_prev: Thesaurus):
     count_removed = len(list(uri for uri in uris_prev if uri not in uris))
 
     for term_uri in uris:
-        if term_uri not in uris_prev:
-            # This term is a new addition.
-            thesaurus.set((term_uri, DCTERMS.issued, rdf_now))
-            thesaurus.set((term_uri, DCTERMS.modified, rdf_now))
-            count_new += 1
-        else:
-            # Are there any changes in the term?
-            changed_ps = []
-            for p in P_TRACKED:
-                a = sorted(thesaurus.objects(term_uri, p))
-                b = sorted(thesaurus_prev.objects(term_uri, p))
-                if a != b:
-                    changed_ps.append(p)
-            if (changed_ps):
-                # The term has changes.
-                p_names = [re.sub(r'.*[/#]', '', p) for p in changed_ps]
-                print(f'Changes for {ref_to_name(term_uri)} in {", ".join(p_names)}')
+        try:
+            if term_uri not in uris_prev:
+                # This term is a new addition.
+                thesaurus.set((term_uri, DCTERMS.issued, rdf_now))
                 thesaurus.set((term_uri, DCTERMS.modified, rdf_now))
-                count_changed += 1
+                count_new += 1
             else:
-                # No changes. Copy old dates.
-                thesaurus.set((term_uri, DCTERMS.issued, thesaurus_prev.value(term_uri, DCTERMS.issued)))
-                thesaurus.set((term_uri, DCTERMS.modified, thesaurus_prev.value(term_uri, DCTERMS.modified)))
+                # Are there any changes in the term?
+                changed_ps = []
+                for p in P_TRACKED:
+                    a = sorted(thesaurus.objects(term_uri, p))
+                    b = sorted(thesaurus_prev.objects(term_uri, p))
+                    if a != b:
+                        changed_ps.append(p)
+                if (changed_ps):
+                    # The term has changes.
+                    p_names = [re.sub(r'.*[/#]', '', p) for p in changed_ps]
+                    print(f'Changes for {ref_to_name(term_uri)} in {", ".join(p_names)}')
+                    thesaurus.set((term_uri, DCTERMS.modified, rdf_now))
+                    count_changed += 1
+                else:
+                    # No changes. Copy old dates.
+                    thesaurus.set((term_uri, DCTERMS.issued, thesaurus_prev.value(term_uri, DCTERMS.issued)))
+                    thesaurus.set((term_uri, DCTERMS.modified, thesaurus_prev.value(term_uri, DCTERMS.modified)))
+        except Exception as e:
+            # On any error, re-raise it after mentioning the faulty term uri
+            print(f'\nError when checking changes for {term_uri}:')
+            raise e
     return count_changed, count_new, count_removed
 
 
