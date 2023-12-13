@@ -1933,6 +1933,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/do74lo00> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av hbtqi-personer som är ateister. Används även för skildringar av hbtqi-personers förhållningssätt till ateism eller andra ateisters förhållningssätt till hbtqi." .
 <https://queerlit.dh.gu.se/qlit/v1/do74lo00> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/dp07bs97> <http://purl.org/dc/terms/identifier> "dp07bs97" .
+<https://queerlit.dh.gu.se/qlit/v1/dp07bs97> <http://purl.org/dc/terms/issued> "2022-12-19T13:03:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/dp07bs97> <http://purl.org/dc/terms/modified> "2023-12-06T09:24:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/dp07bs97> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
 <https://queerlit.dh.gu.se/qlit/v1/dp07bs97> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
@@ -2216,6 +2217,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/eh13ix50> <http://www.w3.org/2004/02/skos/core#prefLabel> "Transpar" .
 <https://queerlit.dh.gu.se/qlit/v1/eh13ix50> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av parrelationer mellan transpersoner." .
 <https://queerlit.dh.gu.se/qlit/v1/eh72ht67> <http://purl.org/dc/terms/identifier> "eh72ht67" .
+<https://queerlit.dh.gu.se/qlit/v1/eh72ht67> <http://purl.org/dc/terms/issued> "2022-12-19T13:03:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/eh72ht67> <http://purl.org/dc/terms/modified> "2023-12-06T09:24:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/eh72ht67> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
 <https://queerlit.dh.gu.se/qlit/v1/eh72ht67> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
@@ -4356,6 +4358,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/iu41ao66> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/gg03fm98> .
 <https://queerlit.dh.gu.se/qlit/v1/iu41ao66> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av parrelationer mellan hbtqi-personer." .
 <https://queerlit.dh.gu.se/qlit/v1/iu48hl96> <http://purl.org/dc/terms/identifier> "iu48hl96" .
+<https://queerlit.dh.gu.se/qlit/v1/iu48hl96> <http://purl.org/dc/terms/issued> "2022-12-19T13:03:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/iu48hl96> <http://purl.org/dc/terms/modified> "2023-12-06T09:24:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/iu48hl96> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
 <https://queerlit.dh.gu.se/qlit/v1/iu48hl96> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
@@ -6238,6 +6241,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/mk46kv76> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/kp91xn92> .
 <https://queerlit.dh.gu.se/qlit/v1/mk46kv76> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av bisexuella personer som hemlighåller eller inte offentliggör sin sexuella läggning." .
 <https://queerlit.dh.gu.se/qlit/v1/ml53hr68> <http://purl.org/dc/terms/identifier> "ml53hr68" .
+<https://queerlit.dh.gu.se/qlit/v1/ml53hr68> <http://purl.org/dc/terms/issued> "2022-12-19T13:03:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ml53hr68> <http://purl.org/dc/terms/modified> "2023-12-06T09:24:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ml53hr68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
 <https://queerlit.dh.gu.se/qlit/v1/ml53hr68> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
@@ -6414,6 +6418,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/ms78ss65> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bajssex" .
 <https://queerlit.dh.gu.se/qlit/v1/ms78ss65> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av sexuell tillfredställelse med hjälp av avföring." .
 <https://queerlit.dh.gu.se/qlit/v1/mt38ga61> <http://purl.org/dc/terms/identifier> "mt38ga61" .
+<https://queerlit.dh.gu.se/qlit/v1/mt38ga61> <http://purl.org/dc/terms/issued> "2022-12-19T13:03:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/mt38ga61> <http://purl.org/dc/terms/modified> "2023-12-06T09:24:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/mt38ga61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
 <https://queerlit.dh.gu.se/qlit/v1/mt38ga61> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
@@ -7667,6 +7672,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/ot53zk29> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer som beskrivs som homosexuella, bisexuella, transpersoner, queera och/eller intersexpersoner, eller som på andra sätt genom begär, praktik, identitet och/eller kropp bryter mot hetero- och/eller cisnormer." .
 <https://queerlit.dh.gu.se/qlit/v1/ot53zk29> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/ou65rx96> <http://purl.org/dc/terms/identifier> "ou65rx96" .
+<https://queerlit.dh.gu.se/qlit/v1/ou65rx96> <http://purl.org/dc/terms/issued> "2022-12-19T13:03:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ou65rx96> <http://purl.org/dc/terms/modified> "2023-12-06T09:24:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/ou65rx96> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
 <https://queerlit.dh.gu.se/qlit/v1/ou65rx96> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
@@ -8602,6 +8608,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/qo25ba41> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/yj75on39> .
 <https://queerlit.dh.gu.se/qlit/v1/qo25ba41> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av kärlek mellan flickor - i regel personer under 15 år - oavsett hur dessa definierar sin sexuella läggning." .
 <https://queerlit.dh.gu.se/qlit/v1/qo73uy24> <http://purl.org/dc/terms/identifier> "qo73uy24" .
+<https://queerlit.dh.gu.se/qlit/v1/qo73uy24> <http://purl.org/dc/terms/issued> "2022-12-19T13:03:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/qo73uy24> <http://purl.org/dc/terms/modified> "2023-12-06T09:24:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/qo73uy24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
 <https://queerlit.dh.gu.se/qlit/v1/qo73uy24> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
@@ -11637,6 +11644,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/wo70nt95> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/gx13uu85> .
 <https://queerlit.dh.gu.se/qlit/v1/wo70nt95> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av en nära krets personer som stöttar varandra och förenas i läderkulturen." .
 <https://queerlit.dh.gu.se/qlit/v1/wp43vv13> <http://purl.org/dc/terms/identifier> "wp43vv13" .
+<https://queerlit.dh.gu.se/qlit/v1/wp43vv13> <http://purl.org/dc/terms/issued> "2022-12-19T13:03:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/wp43vv13> <http://purl.org/dc/terms/modified> "2023-12-06T09:24:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/wp43vv13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
 <https://queerlit.dh.gu.se/qlit/v1/wp43vv13> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
@@ -12271,6 +12279,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/xw74zj20> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av häxor - personer som tros ha övernaturliga krafter eller magiska kunskaper - där kopplingen till hbtqi har en framträdande betydelse och/eller där begreppet används som en kulturell symbol i hbtqi-sammanhang." .
 <https://queerlit.dh.gu.se/qlit/v1/xw74zj20> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/xw99iq72> <http://purl.org/dc/terms/identifier> "xw99iq72" .
+<https://queerlit.dh.gu.se/qlit/v1/xw99iq72> <http://purl.org/dc/terms/issued> "2022-12-19T13:03:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/xw99iq72> <http://purl.org/dc/terms/modified> "2023-12-06T09:24:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/xw99iq72> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
 <https://queerlit.dh.gu.se/qlit/v1/xw99iq72> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
