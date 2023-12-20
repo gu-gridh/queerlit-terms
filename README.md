@@ -2,6 +2,10 @@
 
 This code is written primarily to fulfill the needs of the [Queerlit](https://queerlit.dh.gu.se/) project, but with the possibility in mind to adapt to other similar projects.
 
+The thesaurus creation and this code repository are described in:
+
+> Matsson, A. and Kriström, O. (2023) “Building and Serving the Queerlit Thesaurus as Linked Open Data”, _Digital Humanities in the Nordic and Baltic Countries Publications_. Oslo, Norway, 5(1), pp. 29–39. doi: 10.5617/dhnbpub.10648.
+
 ## Use case
 
 - Goal: An RDF/[SKOS](https://www.w3.org/2004/02/skos/) ontology shall be made available online
