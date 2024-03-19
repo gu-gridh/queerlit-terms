@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from itertools import filterfalse
 import os
 from os.path import join
@@ -22,7 +22,7 @@ if not INDIR:
     raise EnvironmentError('Error: INDIR missing from env')
 
 rdf_now = Literal(
-    datetime.utcnow().isoformat().split('.')[0],
+    datetime.now(timezone.utc).isoformat().split('.')[0],
     datatype=XSD.dateTime)
 
 P_TRACKED = [SKOS.altLabel, SKOS.broader, SKOS.broadMatch, SKOS.exactMatch, SKOS.narrower, SKOS.prefLabel, SKOS.related, SKOS.scopeNote]
