@@ -17,6 +17,7 @@
         <eg84dq15>,
         <hp00qz40>,
         <iu41ao66>,
+        <id89zs88>,
         <jz19cb14>,
         <ln82yo33>,
         <nf03ub67>,
@@ -38,8 +39,7 @@
         <ye10vq18>,
         <ym67gh06>,
         <yq72vv00>,
-        <zt16av80>,
-        <Idr ;
+        <zt16av80>;
     skos:prefLabel "Hbtqi-personer" ;
     skos:related <mb29ll46>,
         <jv45ng56>,

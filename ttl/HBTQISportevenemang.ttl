@@ -14,7 +14,7 @@
     skos:closeMatch <https://homosaurus.org/v3/homoit0000949> ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:prefLabel "Hbtqi-sportevenemang" ;
-    skos:related <IdrottareHBTQI> ;
+    skos:related <id89zs88> ;
     skos:scopeNote "Används för skildringar av sportevenemang där kopplingen till hbtqi har en framträdande betydelse." ;
     skos:topConceptOf <https://queerlit.dh.gu.se/qlit/v1> .
 

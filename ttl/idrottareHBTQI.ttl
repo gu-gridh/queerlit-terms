@@ -3,8 +3,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<idrottareHBTQI> a skos:Concept ;
-    dcterms:identifier "IdrottareHBTQI" ;
+<id89zs88> a skos:Concept ;
+    dcterms:identifier "id89zs88" ;
     dcterms:issued "2022-05-19T10:12:00"^^xsd:dateTime ;
     dcterms:modified "2022-05-19T10:12:00"^^xsd:dateTime ;
     skos:altLabel "Idrottskvinnor (hbtqi)",

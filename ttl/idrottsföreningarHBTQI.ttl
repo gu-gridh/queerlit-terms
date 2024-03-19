@@ -15,7 +15,7 @@
     skos:hiddenLabel "Idrotts-föreningar (hbtqi)" ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:prefLabel "Idrottsföreningar (hbtqi)" ;
-    skos:related <IdrottareHBTQI> ;
+    skos:related <id89zs88> ;
     skos:scopeNote "Används för skildringar av föreningar för hbtqi-personer som startats med syfte att utöva och ofta tävla i en eller flera idrotter." ;
     skos:topConceptOf <https://queerlit.dh.gu.se/qlit/v1> .
 
