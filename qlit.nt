@@ -9355,7 +9355,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/rq71or71> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av organisationer som strävar efter sexuella reformer, kämpar för sexuella rättigheter och/eller förmedlar information om sex." .
 <https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://purl.org/dc/terms/identifier> "rq99eq34" .
 <https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://purl.org/dc/terms/modified> "2023-03-29T10:53:01"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://purl.org/dc/terms/modified> "2024-03-19T12:38:35"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://www.w3.org/2004/02/skos/core#altLabel> "Don Juanism" .
 <https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://www.w3.org/2004/02/skos/core#altLabel> "Furor amatorius" .
@@ -9365,7 +9365,6 @@
 <https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://www.w3.org/2004/02/skos/core#altLabel> "Översexualitet" .
 <https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/xn31ff26> .
 <https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0000656> .
-<https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://id.kb.se/term/sao/Hypersexualitet> .
 <https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "Hyper-sexualitet" .
 <https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/rq99eq34> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hypersexualitet" .

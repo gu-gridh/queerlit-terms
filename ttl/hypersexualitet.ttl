@@ -6,7 +6,7 @@
 <rq99eq34> a skos:Concept ;
     dcterms:identifier "rq99eq34" ;
     dcterms:issued "2022-05-19T10:12:00"^^xsd:dateTime ;
-    dcterms:modified "2022-05-19T10:12:00"^^xsd:dateTime ;
+    dcterms:modified "2024-03-19T13:12:00"^^xsd:dateTime ;
     skos:altLabel "Don Juanism",
         "Furor amatorius",
         "Furor uterinus",
@@ -14,8 +14,7 @@
         "Satyriasis",
         "Översexualitet" ;
     skos:broader <xn31ff26> ;
-    skos:exactMatch <https://homosaurus.org/v3/homoit0000656>,
-        <https://id.kb.se/term/sao/Hypersexualitet> ;
+    skos:exactMatch <https://homosaurus.org/v3/homoit0000656> ;
     skos:hiddenLabel "Hyper-sexualitet" ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:prefLabel "Hypersexualitet" ;
