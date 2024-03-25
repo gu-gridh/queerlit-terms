@@ -11,7 +11,7 @@
         "Idrottsmän (hbtqi)",
         "Idrottspersoner (hbtqi)" ;
     skos:broader <ot53zk29> ;
-    skos:closeMatch <https://homosaurus.org/v3/homoit0000070> ;
+    skos:closeMatch <https://homosaurus.org/v3/homoit0001929> ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:prefLabel "Idrottare (hbtqi)" ;
     skos:related <sk93nk73>,

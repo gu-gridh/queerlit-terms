@@ -16,6 +16,6 @@
         <nf03ub67>,
         <nl86cd25>,
         <qs74zg73> ;
-    skos:scopeNote "Används för skildringar som använder begreppet allosexualitet - förmågan att känna sexuell attraktion eller vilja till sexuella relationer med andra personer, i relation till motsatsen asexualitet." ;
+    skos:scopeNote "Används för skildringar där begreppet allosexualitet används för att beskriva förmågan att känna sexuell attraktion eller vilja till sexuella relationer med andra personer, i relation till motsatsen asexualitet." ;
     skos:topConceptOf <https://queerlit.dh.gu.se/qlit/v1> .
 

@@ -850,7 +850,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/bq82fj53> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/br29bz72> <http://purl.org/dc/terms/identifier> "br29bz72" .
 <https://queerlit.dh.gu.se/qlit/v1/br29bz72> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/br29bz72> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/br29bz72> <http://purl.org/dc/terms/modified> "2024-03-25T13:01:23"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/br29bz72> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/br29bz72> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/zv66nv87> .
 <https://queerlit.dh.gu.se/qlit/v1/br29bz72> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://homosaurus.org/v3/homoit0001531> .
@@ -861,7 +861,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/br29bz72> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/nf03ub67> .
 <https://queerlit.dh.gu.se/qlit/v1/br29bz72> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/nl86cd25> .
 <https://queerlit.dh.gu.se/qlit/v1/br29bz72> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/qs74zg73> .
-<https://queerlit.dh.gu.se/qlit/v1/br29bz72> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar som använder begreppet allosexualitet - förmågan att känna sexuell attraktion eller vilja till sexuella relationer med andra personer, i relation till motsatsen asexualitet." .
+<https://queerlit.dh.gu.se/qlit/v1/br29bz72> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar där begreppet allosexualitet används för att beskriva förmågan att känna sexuell attraktion eller vilja till sexuella relationer med andra personer, i relation till motsatsen asexualitet." .
 <https://queerlit.dh.gu.se/qlit/v1/br29ok75> <http://purl.org/dc/terms/identifier> "br29ok75" .
 <https://queerlit.dh.gu.se/qlit/v1/br29ok75> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/br29ok75> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -4000,7 +4000,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/id89zs88> <http://www.w3.org/2004/02/skos/core#altLabel> "Idrottsmän (hbtqi)" .
 <https://queerlit.dh.gu.se/qlit/v1/id89zs88> <http://www.w3.org/2004/02/skos/core#altLabel> "Idrottspersoner (hbtqi)" .
 <https://queerlit.dh.gu.se/qlit/v1/id89zs88> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/ot53zk29> .
-<https://queerlit.dh.gu.se/qlit/v1/id89zs88> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://homosaurus.org/v3/homoit0000070> .
+<https://queerlit.dh.gu.se/qlit/v1/id89zs88> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://homosaurus.org/v3/homoit0001929> .
 <https://queerlit.dh.gu.se/qlit/v1/id89zs88> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/id89zs88> <http://www.w3.org/2004/02/skos/core#prefLabel> "Idrottare (hbtqi)" .
 <https://queerlit.dh.gu.se/qlit/v1/id89zs88> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/mz51ub78> .
@@ -11208,7 +11208,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/vh55tv72> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av äktenskap - juridiskt, kulturellt och/eller religiöst erkända samlevnadsformer mellan personer som gift sig." .
 <https://queerlit.dh.gu.se/qlit/v1/vh80ls37> <http://purl.org/dc/terms/identifier> "vh80ls37" .
 <https://queerlit.dh.gu.se/qlit/v1/vh80ls37> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://queerlit.dh.gu.se/qlit/v1/vh80ls37> <http://purl.org/dc/terms/modified> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://queerlit.dh.gu.se/qlit/v1/vh80ls37> <http://purl.org/dc/terms/modified> "2024-03-25T13:01:23"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/vh80ls37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://queerlit.dh.gu.se/qlit/v1/vh80ls37> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/kn70dj43> .
 <https://queerlit.dh.gu.se/qlit/v1/vh80ls37> <http://www.w3.org/2004/02/skos/core#broader> <https://queerlit.dh.gu.se/qlit/v1/op23ar73> .
@@ -11216,7 +11216,7 @@
 <https://queerlit.dh.gu.se/qlit/v1/vh80ls37> <http://www.w3.org/2004/02/skos/core#inScheme> <https://queerlit.dh.gu.se/qlit/v1> .
 <https://queerlit.dh.gu.se/qlit/v1/vh80ls37> <http://www.w3.org/2004/02/skos/core#prefLabel> "Androgynos" .
 <https://queerlit.dh.gu.se/qlit/v1/vh80ls37> <http://www.w3.org/2004/02/skos/core#related> <https://queerlit.dh.gu.se/qlit/v1/ob41my06> .
-<https://queerlit.dh.gu.se/qlit/v1/vh80ls37> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar i judisk tradition av personer med manliga och kvinnliga könskarakteristika. Kan även användas om dubbelkönade mytologiska varelser i rabbinsk tradition." .
+<https://queerlit.dh.gu.se/qlit/v1/vh80ls37> <http://www.w3.org/2004/02/skos/core#scopeNote> "Används för skildringar av personer i judisk tradition med manliga och kvinnliga könskarakteristika. Kan även användas om dubbelkönade mytologiska varelser i rabbinsk tradition." .
 <https://queerlit.dh.gu.se/qlit/v1/vi05is98> <http://purl.org/dc/terms/identifier> "vi05is98" .
 <https://queerlit.dh.gu.se/qlit/v1/vi05is98> <http://purl.org/dc/terms/issued> "2022-05-19T10:12:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://queerlit.dh.gu.se/qlit/v1/vi05is98> <http://purl.org/dc/terms/modified> "2023-12-06T09:24:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

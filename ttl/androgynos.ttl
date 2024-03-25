@@ -13,6 +13,6 @@
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:prefLabel "Androgynos" ;
     skos:related <ob41my06> ;
-    skos:scopeNote "Används för skildringar i judisk tradition av personer med manliga och kvinnliga könskarakteristika. Kan även användas om dubbelkönade mytologiska varelser i rabbinsk tradition." ;
+    skos:scopeNote "Används för skildringar av personer i judisk tradition med manliga och kvinnliga könskarakteristika. Kan även användas om dubbelkönade mytologiska varelser i rabbinsk tradition." ;
     skos:topConceptOf <https://queerlit.dh.gu.se/qlit/v1> .
 
