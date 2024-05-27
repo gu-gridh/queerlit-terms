@@ -10,7 +10,7 @@
     skos:altLabel "18 kap. 10 \u00a7 strafflagen",
         "Antigaylagstiftning",
         "Antihomosexuella lagar",
-        "Kriminaliserat samkönat sex",
+        "Kriminaliserat samkönat se",
         "Sodomilagar" ;
     skos:broader <sf04qa15> ;
     skos:exactMatch <https://homosaurus.org/v3/homoit0001326> ;
