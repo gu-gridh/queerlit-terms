@@ -13,7 +13,8 @@
         "Dragshows",
         "Draguppträdanden" ;
     skos:broader <pu79ko70> ;
-    skos:closeMatch <https://homosaurus.org/v3/homoit0000367> ;
+    skos:closeMatch <https://homosaurus.org/v3/homoit0000367>,
+        <http://id.loc.gov/authorities/subjects/sh2020011587> ;
     skos:hiddenLabel "Drag-framträdanden",
         "Drag-föreställningar",
         "Drag-uppträdanden",

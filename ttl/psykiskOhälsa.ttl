@@ -13,7 +13,8 @@
         "Psykiska störningar",
         "Psykisk hälsa" ;
     skos:closeMatch <https://id.kb.se/term/sao/Psykisk%20h%C3%A4lsa>,
-        <https://id.kb.se/term/sao/Psykiska%20sjukdomar> ;
+        <https://id.kb.se/term/sao/Psykiska%20sjukdomar>,
+        <http://id.loc.gov/authorities/subjects/sh85083643>;
     skos:exactMatch <https://homosaurus.org/v3/homoit0001011>,
         <https://id.kb.se/term/barn/Psykisk%20oh%C3%A4lsa> ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
