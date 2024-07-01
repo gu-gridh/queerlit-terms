@@ -10,7 +10,8 @@
     skos:altLabel "Ickebinära ungdomar" ;
     skos:broader <uw18hz12>,
         <gz45ku14> ;
-    skos:exactMatch <https://homosaurus.org/v3/homoit0002223> ;
+    skos:exactMatch <https://homosaurus.org/v3/homoit0002223>,
+        <https://id.kb.se/term/sao/Ickebin%C3%A4ra%20ungdomar> ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:prefLabel "Unga ickebinära" ;
     skos:scopeNote "Används för skildringar av ungdomar som beskrivs som ickebinära." ;

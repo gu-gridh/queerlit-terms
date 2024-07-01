@@ -19,10 +19,10 @@
         "Regnbågsbarer",
         "Transbarer" ;
     skos:closeMatch <https://homosaurus.org/v3/homoit0000100> ;
+    skos:exactMatch <https://id.kb.se/term/sao/Hbtqi-barer> ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:prefLabel "Hbtqi-barer" ;
     skos:related <as34mb58>,
         <gu58dv81>,
         <tm21us57> ;
     skos:scopeNote "Används för skildringar av barer som främst besöks av och/eller drivs av hbtqi-personer." .
-
