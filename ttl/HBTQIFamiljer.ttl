@@ -9,6 +9,7 @@
     dcterms:modified "2022-05-19T10:12:00"^^xsd:dateTime ;
     skos:altLabel "Regnbågsfamiljer" ;
     skos:closeMatch <https://homosaurus.org/v3/homoit0000420> ;
+    skos:exactMatch <https://id.kb.se/term/sao/Hbtqi-familjer> ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:narrower <bi99oj90>,
         <bk40bw82>,

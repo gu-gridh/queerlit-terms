@@ -11,6 +11,7 @@
         "Hbtq-personer",
         "Sexuella minoriteter" ;
     skos:closeMatch <https://homosaurus.org/v3/homoit0000915> ;
+    skos:exactMatch <https://id.kb.se/term/sao/Hbtqi-personer> ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:narrower <ae46oh82>,
         <dq66qs98>,

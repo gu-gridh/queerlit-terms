@@ -8,7 +8,8 @@
     dcterms:issued "2022-05-19T10:12:00"^^xsd:dateTime ;
     dcterms:modified "2022-05-19T10:12:00"^^xsd:dateTime ;
     skos:broader <sq10os38> ;
-    skos:exactMatch <https://homosaurus.org/v3/homoit0001242> ;
+    skos:closeMatch <https://homosaurus.org/v3/homoit0001242>,
+        <http://id.loc.gov/authorities/subjects/sh85114860> ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:narrower <vr46nj48> ;
     skos:prefLabel "Rollspel (sexualitet)" ;

@@ -10,7 +10,8 @@
     skos:altLabel "Stonewallkravallerna",
         "Stonewallupploppen" ;
     skos:broader <lj92bs38> ;
-    skos:exactMatch <https://homosaurus.org/v3/homoit0001341> ;
+    skos:exactMatch <https://homosaurus.org/v3/homoit0001341>,
+        <http://id.loc.gov/authorities/subjects/sh92005716> ;
     skos:hiddenLabel "Stonewall-kravallerna",
         "Stonewall-upploppen",
         "Stonewall-upproret"  ;

@@ -7,6 +7,7 @@
     dcterms:identifier "ap82ka21" ;
     dcterms:issued "2022-05-19T10:12:00"^^xsd:dateTime ;
     dcterms:modified "2022-05-19T10:12:00"^^xsd:dateTime ;
+    skos:exactMatch <https://id.kb.se/term/sao/Hbtqi-aktivism> ;
     skos:closeMatch <https://homosaurus.org/v3/homoit0000006> ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:narrower <bw67sm50>,
@@ -20,4 +21,3 @@
     skos:prefLabel "Hbtqi-aktivism" ;
     skos:related <ae46oh82> ;
     skos:scopeNote "Används för skildringar av aktivism med fokus på hbtqi-personers rättigheter och levnadsvillkor." .
-

@@ -10,7 +10,8 @@
     skos:broader <nk19mk45> ;
     skos:exactMatch <https://homosaurus.org/v3/homoit0000377>,
         <https://id.kb.se/term/barn/K%C3%B6rkort>,
-        <https://id.kb.se/term/sao/K%C3%B6rkort> ;
+        <https://id.kb.se/term/sao/K%C3%B6rkort>,
+        <http://id.loc.gov/authorities/subjects/sh85010130> ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:prefLabel "Körkort" ;
     skos:related <aa40zb14>,

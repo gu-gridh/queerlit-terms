@@ -10,6 +10,7 @@
     skos:broader <fr82xo46>,
         <lm49rl65> ;
     skos:exactMatch <https://homosaurus.org/v3/homoit0000230> ;
+    skos:closeMatch <http://id.loc.gov/authorities/subjects/sh2012003858> ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:prefLabel "Butch-femme relationer" ;
     skos:related <iy93lr17>,

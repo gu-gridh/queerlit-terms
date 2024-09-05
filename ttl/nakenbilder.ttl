@@ -9,7 +9,8 @@
     dcterms:modified "2022-05-19T10:12:00"^^xsd:dateTime ;
     skos:altLabel "Nakenfotografier",
         "Nakenfoton" ;
-    skos:exactMatch <https://homosaurus.org/v3/homoit0001051> ;
+    skos:closeMatch <https://homosaurus.org/v3/homoit0001051>,
+    <http://id.loc.gov/authorities/subjects/sh85093169> ;
     skos:hiddenLabel "Naken-bilder",
         "Naken-fotografier",
         "Naken-foton" ;
