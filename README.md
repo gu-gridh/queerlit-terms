@@ -77,7 +77,7 @@ The new ids are saved to `qlit.nt` but not in the source files, so the next run 
    THESAURUSFILE=qlit.nt
    FLASK_DEBUG=1
    ```
-2. Run `flask run`
+2. Run `flask run` for development. On the server it is run with gunicorn.
 
 See [server.py](qlit/server.py).
 
