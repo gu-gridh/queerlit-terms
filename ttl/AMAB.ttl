@@ -11,7 +11,7 @@
         "Tilldelat manligt kön vid födseln",
         "Tillskrivet manligt kön vid födseln" ;
     skos:broader <vr86mj99> ;
-    skos:exactMatch <https://homosaurus.org/v3/homoit0000077> ;
+    skos:exactMatch <https://homosaurus.org/v3/homoit0000079> ;
     skos:inScheme <https://queerlit.dh.gu.se/qlit/v1> ;
     skos:prefLabel "AMAB" ;
     skos:related <tc60ce15>,
