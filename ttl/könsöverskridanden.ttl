@@ -48,6 +48,7 @@
         <ux60ib70>,
         <or82kx62>,
         <xr55rs91> ;
+    skos:exactMatch <https://homosaurus.org/v3/homoit0001816> ;
     skos:prefLabel "Könsöverskridanden" ;
     skos:scopeNote "Används för skildringar där könsidentiteter, könsuttryck eller föreställningar om kön beskrivs som överskridande binära könsnormer. Detta övergripande ämnesord är huvudsakligen menat som ett paraplybegrepp för att möjliggöra inkluderande sökningar, eller för skildringar där ingen smalare term är tillämpbar." .
 
